@@ -39,9 +39,12 @@ VMware Bridge 설정 완료(window 클라이언트와 통신 확인)
 
 ## 유용한 URL 정리 : 
 
-Linux File Transfer S/C : https://ofstack.com/C++/9959/c-language-to-achieve-linux-socket-file-transfer-instances.html  
-Vmware Network Adapter 설정 : https://lifegoesonme.tistory.com/388  
+Linux File Transfer S/C  
+- https://ofstack.com/C++/9959/c-language-to-achieve-linux-socket-file-transfer-instances.html  
+
+Vmware Network Adapter 설정  
+- https://lifegoesonme.tistory.com/388  
 
 ---
-추후 필터링 및 로그인 기능 추가 예정  
-상황에 따른 쓰레드 사용 고려 예정  
+- 추후 필터링 및 로그인 기능 추가 예정  
+- 상황에 따른 쓰레드 사용 고려 예정  
