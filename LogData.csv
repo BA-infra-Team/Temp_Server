@@ -1,0 +1,992 @@
+Job ID,Job Status,Error Code,Job Type,Backup Method,Client,Job,Schedule,Files,Files Size,Write Size,Data Transferred,Throughput,Start Time,End Time,Elapsed Time,Server,Volume Pool,Storage,Tape Drive,Volume
+1644897067,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,12993,18.02 MB,9.48 MB,22.42 MB,40.2 KB/s,2022-02-15 오후 12:51:07,2022-02-15 오후 12:58:48,0:07:41,jh,add,add,-,1644897067
+1644896461,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,15491,7.46 GB,10.33 GB,15.5 GB,57.01 MB/s,2022-02-15 오후 12:41:01,2022-02-15 오후 12:43:17,0:02:16,jh,dsk,dsk,-,1644896461
+1644895855,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,7178,2.4 GB,23.02 GB,9.9 GB,4.67 MB/s,2022-02-15 오후 12:30:55,2022-02-15 오후 12:39:44,0:08:49,jh,add,add,-,1644895855
+1644895249,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,4146,30.57 GB,15.53 GB,26.86 GB,92.6 MB/s,2022-02-15 오후 12:20:49,2022-02-15 오후 12:26:29,0:05:40,jh,ddd,ddd,-,1644895249
+1644894643,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,2106,18.12 GB,9.73 GB,19.6 GB,38.57 MB/s,2022-02-15 오후 12:10:43,2022-02-15 오후 12:18:46,0:08:03,jh,add,add,-,1644894643
+1644894037,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,4893,18.38 GB,13.83 GB,23.57 GB,109.41 MB/s,2022-02-15 오후 12:00:37,2022-02-15 오후 12:03:31,0:02:54,jh,dsk,dsk,-,1644894037
+1644893431,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,24699,23.57 GB,26.7 GB,29.32 GB,180.14 MB/s,2022-02-15 오전 11:50:31,2022-02-15 오전 11:52:47,0:02:16,jh,add,add,-,1644893431
+1644892825,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,7437,30.96 MB,14.24 MB,20.9 MB,141.54 KB/s,2022-02-15 오전 11:40:25,2022-02-15 오전 11:44:11,0:03:46,jh,ddd,ddd,-,1644892825
+1644892219,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,5689,22.79 MB,25.66 MB,30.51 MB,54.02 KB/s,2022-02-15 오전 11:30:19,2022-02-15 오전 11:37:33,0:07:14,jh,add,add,-,1644892219
+1644891613,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,8673,21.43 GB,17.79 GB,4.68 GB,45.9 MB/s,2022-02-15 오전 11:20:13,2022-02-15 오전 11:28:13,0:08:00,jh,dsk,dsk,-,1644891613
+1644891007,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,25997,5.07 KB,12.55 KB,29.83 KB,1 KB/s,2022-02-15 오전 11:10:07,2022-02-15 오전 11:17:58,0:07:51,jh,add,add,-,1644891007
+1644890401,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,1773,9.36 GB,21.37 GB,11.37 GB,43.75 MB/s,2022-02-15 오전 11:00:01,2022-02-15 오전 11:03:42,0:03:41,jh,ddd,ddd,-,1644890401
+1644889795,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,17786,21.83 GB,670 MB,22.71 GB,73.79 MB/s,2022-02-15 오전 10:49:55,2022-02-15 오전 10:55:00,0:05:05,jh,add,add,-,1644889795
+1644889189,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,23880,27.2 KB,23.64 KB,30.91 KB,1 KB/s,2022-02-15 오전 10:39:49,2022-02-15 오전 10:46:03,0:06:14,jh,dsk,dsk,-,1644889189
+1644888583,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,29296,20.47 KB,9.71 KB,22.33 KB,1 KB/s,2022-02-15 오전 10:29:43,2022-02-15 오전 10:31:23,0:01:40,jh,add,add,-,1644888583
+1644887977,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,14018,8.66 GB,14.03 GB,21.47 GB,68.23 MB/s,2022-02-15 오전 10:19:37,2022-02-15 오전 10:21:49,0:02:12,jh,ddd,ddd,-,1644887977
+1644887371,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,8364,25.95 MB,10.62 MB,4.4 MB,58.66 KB/s,2022-02-15 오전 10:09:31,2022-02-15 오전 10:17:06,0:07:35,jh,add,add,-,1644887371
+1644886765,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,32643,1.65 GB,20.98 GB,7.16 GB,3.32 MB/s,2022-02-15 오전 9:59:25,2022-02-15 오전 10:07:57,0:08:32,jh,dsk,dsk,-,1644886765
+1644886159,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,32613,10.25 GB,11.91 GB,20.17 GB,20.5 MB/s,2022-02-15 오전 9:49:19,2022-02-15 오전 9:57:53,0:08:34,jh,add,add,-,1644886159
+1644885553,Suspended,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,19626,14.41 GB,29.71 GB,4.48 GB,24.71 MB/s,2022-02-15 오전 9:39:13,2022-02-15 오전 9:49:12,0:09:59,jh,ddd,ddd,-,1644885553
+1644884947,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,6903,9.41 GB,24.04 GB,28.37 GB,55.68 MB/s,2022-02-15 오전 9:29:07,2022-02-15 오전 9:32:02,0:02:55,jh,add,add,-,1644884947
+1644884341,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,30830,30.01 GB,27.82 GB,2.2 GB,135.96 MB/s,2022-02-15 오전 9:19:01,2022-02-15 오전 9:22:49,0:03:48,jh,dsk,dsk,-,1644884341
+1644883735,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,11102,22.44 GB,27.43 GB,5.4 GB,40.74 MB/s,2022-02-15 오전 9:08:55,2022-02-15 오전 9:18:21,0:09:26,jh,add,add,-,1644883735
+1644883129,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,15999,31.54 KB,19.9 KB,31.01 KB,1 KB/s,2022-02-15 오전 8:58:49,2022-02-15 오전 9:06:51,0:08:02,jh,ddd,ddd,-,1644883129
+1644882523,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,17858,7 MB,31.01 MB,16.78 MB,12.65 KB/s,2022-02-15 오전 8:48:43,2022-02-15 오전 8:58:12,0:09:29,jh,add,add,-,1644882523
+1644881917,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,26566,23.7 MB,29.81 MB,19.32 MB,152.66 KB/s,2022-02-15 오전 8:38:37,2022-02-15 오전 8:41:18,0:02:41,jh,dsk,dsk,-,1644881917
+1644881311,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,2790,14.17 GB,6.54 GB,6.26 GB,26.33 MB/s,2022-02-15 오전 8:28:31,2022-02-15 오전 8:37:44,0:09:13,jh,add,add,-,1644881311
+1644880705,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,686,28.79 GB,4.95 GB,20.21 GB,75.22 MB/s,2022-02-15 오전 8:18:25,2022-02-15 오전 8:24:59,0:06:34,jh,ddd,ddd,-,1644880705
+1644880099,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,6581,30.37 GB,10.4 GB,7.67 GB,69.26 MB/s,2022-02-15 오전 8:08:19,2022-02-15 오전 8:15:50,0:07:31,jh,add,add,-,1644880099
+1644879493,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,13724,7.43 GB,3.08 GB,27.44 GB,80.97 MB/s,2022-02-15 오전 7:58:13,2022-02-15 오전 7:59:49,0:01:36,jh,dsk,dsk,-,1644879493
+1644878887,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,5186,6.95 GB,19.57 GB,31.06 GB,50.11 MB/s,2022-02-15 오전 7:48:07,2022-02-15 오전 7:50:31,0:02:24,jh,add,add,-,1644878887
+1644878281,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,31561,27.63 GB,19.34 GB,4.15 GB,102.87 MB/s,2022-02-15 오전 7:38:01,2022-02-15 오전 7:42:38,0:04:37,jh,ddd,ddd,-,1644878281
+1644877675,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,14075,28.55 GB,20.11 GB,392 MB,50.58 MB/s,2022-02-15 오전 7:27:55,2022-02-15 오전 7:37:35,0:09:40,jh,add,add,-,1644877675
+1644877069,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,7435,23.2 GB,30.08 GB,1.89 GB,42.26 MB/s,2022-02-15 오전 7:17:49,2022-02-15 오전 7:27:13,0:09:24,jh,dsk,dsk,-,1644877069
+1644876463,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,11479,28.83 GB,18.55 GB,3.34 GB,58.8 MB/s,2022-02-15 오전 7:07:43,2022-02-15 오전 7:16:07,0:08:24,jh,add,add,-,1644876463
+1644875857,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,5470,20.68 KB,24.23 KB,10.18 KB,1 KB/s,2022-02-15 오전 6:57:37,2022-02-15 오전 7:06:55,0:09:18,jh,ddd,ddd,-,1644875857
+1644875251,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,16587,5.93 GB,7.24 GB,769 MB,10.75 MB/s,2022-02-15 오전 6:47:31,2022-02-15 오전 6:56:58,0:09:27,jh,add,add,-,1644875251
+1644874645,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,15656,16.47 GB,21.09 GB,27.73 GB,52.53 MB/s,2022-02-15 오전 6:37:25,2022-02-15 오전 6:42:48,0:05:23,jh,dsk,dsk,-,1644874645
+1644874039,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,7117,28.31 GB,3.34 GB,19.32 GB,54.29 MB/s,2022-02-15 오전 6:27:19,2022-02-15 오전 6:36:15,0:08:56,jh,add,add,-,1644874039
+1644873433,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,20617,28.85 MB,12.24 MB,6.41 MB,100.49 KB/s,2022-02-15 오전 6:17:13,2022-02-15 오전 6:22:09,0:04:56,jh,ddd,ddd,-,1644873433
+1644872827,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,14376,10.44 GB,7.51 GB,19.08 GB,69.42 MB/s,2022-02-15 오전 6:07:07,2022-02-15 오전 6:09:43,0:02:36,jh,add,add,-,1644872827
+1644872221,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,1081,21.39 GB,10.62 GB,22.55 GB,54.9 MB/s,2022-02-15 오전 5:57:01,2022-02-15 오전 6:03:42,0:06:41,jh,dsk,dsk,-,1644872221
+1644871615,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,26099,25.13 KB,21.4 KB,16.71 KB,1 KB/s,2022-02-15 오전 5:46:55,2022-02-15 오전 5:55:53,0:08:58,jh,add,add,-,1644871615
+1644871009,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,8902,13.9 MB,1.66 MB,19.22 MB,49.77 KB/s,2022-02-15 오전 5:36:49,2022-02-15 오전 5:41:37,0:04:48,jh,ddd,ddd,-,1644871009
+1644870403,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,31206,9.1 GB,10.62 GB,13.99 GB,17.79 MB/s,2022-02-15 오전 5:26:43,2022-02-15 오전 5:35:29,0:08:46,jh,add,add,-,1644870403
+1644869797,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,2344,18.06 GB,29.59 GB,27.95 GB,31.89 MB/s,2022-02-15 오전 5:16:37,2022-02-15 오전 5:26:19,0:09:42,jh,dsk,dsk,-,1644869797
+1644869191,Partially Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,22244,10.79 GB,22.07 GB,7.8 GB,60.68 MB/s,2022-02-15 오전 5:06:31,2022-02-15 오전 5:09:35,0:03:04,jh,add,add,-,1644869191
+1644868585,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,27786,19.63 KB,16.93 KB,3.85 KB,1 KB/s,2022-02-15 오전 4:56:25,2022-02-15 오전 4:58:50,0:02:25,jh,ddd,ddd,-,1644868585
+1644867979,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,17392,3.88 GB,725 MB,15.02 GB,20.29 MB/s,2022-02-15 오전 4:46:19,2022-02-15 오전 4:49:37,0:03:18,jh,add,add,-,1644867979
+1644867373,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,10041,2.85 GB,10.38 GB,18.51 GB,29.14 MB/s,2022-02-15 오전 4:36:13,2022-02-15 오전 4:37:55,0:01:42,jh,dsk,dsk,-,1644867373
+1644866767,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,15210,23.97 KB,18.46 KB,29.85 KB,1 KB/s,2022-02-15 오전 4:26:07,2022-02-15 오전 4:31:40,0:05:33,jh,add,add,-,1644866767
+1644866161,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,28948,2.62 GB,8.38 GB,25.04 GB,17.43 MB/s,2022-02-15 오전 4:16:01,2022-02-15 오전 4:18:37,0:02:36,jh,ddd,ddd,-,1644866161
+1644865555,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,26055,20.83 GB,24.87 GB,1.08 GB,170.65 MB/s,2022-02-15 오전 4:05:55,2022-02-15 오전 4:08:02,0:02:07,jh,add,add,-,1644865555
+1644864949,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,28665,28.78 GB,5.56 GB,17.34 GB,86.17 MB/s,2022-02-15 오전 3:55:49,2022-02-15 오전 4:01:33,0:05:44,jh,dsk,dsk,-,1644864949
+1644864343,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,4384,9.72 GB,1.85 GB,5.86 GB,111.83 MB/s,2022-02-15 오전 3:45:43,2022-02-15 오전 3:47:14,0:01:31,jh,add,add,-,1644864343
+1644863737,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,1791,13.52 GB,393 MB,8.71 GB,62.67 MB/s,2022-02-15 오전 3:35:37,2022-02-15 오전 3:39:20,0:03:43,jh,ddd,ddd,-,1644863737
+1644863131,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,76,5.58 GB,30.74 GB,23.73 GB,12.52 MB/s,2022-02-15 오전 3:25:31,2022-02-15 오전 3:33:09,0:07:38,jh,add,add,-,1644863131
+1644862525,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,18296,21.02 GB,25.6 GB,11.2 GB,53.55 MB/s,2022-02-15 오전 3:15:25,2022-02-15 오전 3:22:09,0:06:44,jh,dsk,dsk,-,1644862525
+1644861919,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,12125,15.43 GB,29.68 GB,12.54 GB,225.69 MB/s,2022-02-15 오전 3:05:19,2022-02-15 오전 3:06:31,0:01:12,jh,add,add,-,1644861919
+1644861313,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,29978,29.94 GB,4.72 GB,5.78 GB,519.63 MB/s,2022-02-15 오전 2:55:13,2022-02-15 오전 2:56:14,0:01:01,jh,ddd,ddd,-,1644861313
+1644860707,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,30912,26.1 MB,30.14 MB,24.18 MB,460.81 KB/s,2022-02-15 오전 2:45:07,2022-02-15 오전 2:46:07,0:01:00,jh,add,add,-,1644860707
+1644860101,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,16057,20.39 GB,279 MB,6.16 GB,58.99 MB/s,2022-02-15 오전 2:35:01,2022-02-15 오전 2:40:57,0:05:56,jh,dsk,dsk,-,1644860101
+1644859495,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,11599,12.67 GB,28.14 GB,28.73 GB,44.89 MB/s,2022-02-15 오전 2:24:55,2022-02-15 오전 2:29:46,0:04:51,jh,add,add,-,1644859495
+1644858889,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,12154,5.83 GB,20.31 GB,4.97 GB,9.94 MB/s,2022-02-15 오전 2:14:49,2022-02-15 오전 2:24:52,0:10:03,jh,ddd,ddd,-,1644858889
+1644858283,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,779,15.83 KB,9.78 KB,25.26 KB,1 KB/s,2022-02-15 오전 2:04:43,2022-02-15 오전 2:08:44,0:04:01,jh,add,add,-,1644858283
+1644857677,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,105,19.92 GB,935 MB,4.85 GB,38.42 MB/s,2022-02-15 오전 1:54:37,2022-02-15 오전 2:03:30,0:08:53,jh,dsk,dsk,-,1644857677
+1644857071,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,2405,25.82 GB,18.21 GB,12.99 GB,78.22 MB/s,2022-02-15 오전 1:44:31,2022-02-15 오전 1:50:11,0:05:40,jh,add,add,-,1644857071
+1644856465,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,26831,14.52 GB,8.29 GB,11.7 GB,25.08 MB/s,2022-02-15 오전 1:34:25,2022-02-15 오전 1:44:20,0:09:55,jh,ddd,ddd,-,1644856465
+1644855859,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,26427,2.08 GB,18.05 GB,19.03 GB,4.07 MB/s,2022-02-15 오전 1:24:19,2022-02-15 오전 1:33:03,0:08:44,jh,add,add,-,1644855859
+1644855253,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,25549,15.53 KB,12.49 KB,22.28 KB,1 KB/s,2022-02-15 오전 1:14:13,2022-02-15 오전 1:20:06,0:05:53,jh,dsk,dsk,-,1644855253
+1644854647,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,22001,16.51 GB,18.41 GB,23.63 GB,38.08 MB/s,2022-02-15 오전 1:04:07,2022-02-15 오전 1:11:33,0:07:26,jh,add,add,-,1644854647
+1644854041,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,11254,26.24 GB,3.29 GB,6.06 GB,54.95 MB/s,2022-02-15 오전 12:54:01,2022-02-15 오전 1:02:12,0:08:11,jh,ddd,ddd,-,1644854041
+1644853435,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,26191,20.71 GB,8.82 GB,7.32 GB,54.64 MB/s,2022-02-15 오전 12:43:55,2022-02-15 오전 12:50:25,0:06:30,jh,add,add,-,1644853435
+1644852829,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,31232,11.7 MB,477 KB,17.16 MB,41.32 KB/s,2022-02-15 오전 12:33:49,2022-02-15 오전 12:38:41,0:04:52,jh,dsk,dsk,-,1644852829
+1644852223,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,28428,12.87 GB,12.99 GB,13.95 GB,25.25 MB/s,2022-02-15 오전 12:23:43,2022-02-15 오전 12:32:27,0:08:44,jh,add,add,-,1644852223
+1644851617,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,29134,29.23 GB,26.15 GB,16.8 GB,78.57 MB/s,2022-02-15 오전 12:13:37,2022-02-15 오전 12:20:00,0:06:23,jh,ddd,ddd,-,1644851617
+1644851011,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,25139,22.22 MB,31.35 MB,28.06 MB,37.68 KB/s,2022-02-15 오전 12:03:31,2022-02-15 오전 12:13:37,0:10:06,jh,add,add,-,1644851011
+1644850405,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,10588,27.28 GB,9.53 GB,15.85 GB,153.51 MB/s,2022-02-14 오후 11:53:25,2022-02-14 오후 11:56:29,0:03:04,jh,dsk,dsk,-,1644850405
+1644849799,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,32188,28.6 GB,6.76 GB,7.87 GB,93.86 MB/s,2022-02-14 오후 11:43:19,2022-02-14 오후 11:48:33,0:05:14,jh,add,add,-,1644849799
+1644849193,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,26446,3.44 GB,22.86 GB,20.43 GB,10.22 MB/s,2022-02-14 오후 11:33:13,2022-02-14 오후 11:39:00,0:05:47,jh,ddd,ddd,-,1644849193
+1644848587,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,11533,26.1 MB,27.24 MB,16.37 MB,139.21 KB/s,2022-02-14 오후 11:23:07,2022-02-14 오후 11:26:21,0:03:14,jh,add,add,-,1644848587
+1644847981,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,11063,2.3 GB,15.05 GB,17.85 GB,4.82 MB/s,2022-02-14 오후 11:13:01,2022-02-14 오후 11:21:12,0:08:11,jh,dsk,dsk,-,1644847981
+1644847375,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,19538,4.83 GB,11.43 GB,860 MB,14.76 MB/s,2022-02-14 오후 11:02:55,2022-02-14 오후 11:08:32,0:05:37,jh,add,add,-,1644847375
+1644846769,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,22486,7.75 MB,6.89 MB,30.39 MB,14.71 KB/s,2022-02-14 오후 10:52:49,2022-02-14 오후 11:01:50,0:09:01,jh,ddd,ddd,-,1644846769
+1644846163,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,9145,28.44 MB,15.46 MB,5.55 MB,75.83 KB/s,2022-02-14 오후 10:42:43,2022-02-14 오후 10:49:09,0:06:26,jh,add,add,-,1644846163
+1644845557,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,32722,2.86 GB,445 MB,23.86 GB,5.41 MB/s,2022-02-14 오후 10:32:37,2022-02-14 오후 10:41:40,0:09:03,jh,dsk,dsk,-,1644845557
+1644844951,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,12312,23.84 GB,16.55 GB,3.03 GB,63.09 MB/s,2022-02-14 오후 10:22:31,2022-02-14 오후 10:29:00,0:06:29,jh,add,add,-,1644844951
+1644844345,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,28612,17.75 MB,21.71 MB,21.2 MB,58.83 KB/s,2022-02-14 오후 10:12:25,2022-02-14 오후 10:17:36,0:05:11,jh,ddd,ddd,-,1644844345
+1644843739,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,30609,15.93 GB,22.45 GB,4.78 GB,29.23 MB/s,2022-02-14 오후 10:02:19,2022-02-14 오후 10:11:39,0:09:20,jh,add,add,-,1644843739
+1644843133,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,11405,17.08 GB,13.23 GB,31.38 GB,37.62 MB/s,2022-02-14 오후 9:52:13,2022-02-14 오후 10:00:00,0:07:47,jh,dsk,dsk,-,1644843133
+1644842527,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,3114,3.57 GB,13.99 GB,17.91 GB,25.94 MB/s,2022-02-14 오후 9:42:07,2022-02-14 오후 9:44:30,0:02:23,jh,add,add,-,1644842527
+1644841921,Partially Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,19273,31.17 GB,4.78 GB,20.78 GB,65.95 MB/s,2022-02-14 오후 9:32:01,2022-02-14 오후 9:40:07,0:08:06,jh,ddd,ddd,-,1644841921
+1644841315,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,19313,7.16 MB,26.21 MB,26.74 MB,81.43 KB/s,2022-02-14 오후 9:21:55,2022-02-14 오후 9:23:27,0:01:32,jh,add,add,-,1644841315
+1644840709,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,22622,27.17 GB,1.08 GB,18.85 GB,81.1 MB/s,2022-02-14 오후 9:11:49,2022-02-14 오후 9:17:34,0:05:45,jh,dsk,dsk,-,1644840709
+1644840103,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,12707,17.89 GB,1 GB,21.04 GB,48.84 MB/s,2022-02-14 오후 9:01:43,2022-02-14 오후 9:08:00,0:06:17,jh,add,add,-,1644840103
+1644839497,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,1403,13.74 GB,1.74 GB,15.75 GB,61.45 MB/s,2022-02-14 오후 8:51:37,2022-02-14 오후 8:55:28,0:03:51,jh,ddd,ddd,-,1644839497
+1644838891,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,2041,26.19 GB,7.55 GB,17.93 GB,103.97 MB/s,2022-02-14 오후 8:41:31,2022-02-14 오후 8:45:51,0:04:20,jh,add,add,-,1644838891
+1644838285,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,6786,2.43 MB,12.46 MB,19.48 MB,10.2 KB/s,2022-02-14 오후 8:31:25,2022-02-14 오후 8:35:31,0:04:06,jh,dsk,dsk,-,1644838285
+1644837679,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,8443,3.76 GB,30.83 GB,20.3 GB,7.34 MB/s,2022-02-14 오후 8:21:19,2022-02-14 오후 8:30:06,0:08:47,jh,add,add,-,1644837679
+1644837073,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,15277,10.7 GB,11.91 GB,2.86 GB,27.26 MB/s,2022-02-14 오후 8:11:13,2022-02-14 오후 8:17:57,0:06:44,jh,ddd,ddd,-,1644837073
+1644836467,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,2834,25.5 GB,25.35 GB,4.93 GB,48.09 MB/s,2022-02-14 오후 8:01:07,2022-02-14 오후 8:10:12,0:09:05,jh,add,add,-,1644836467
+1644835861,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,3956,18.48 KB,19.28 KB,17.46 KB,1 KB/s,2022-02-14 오후 7:51:01,2022-02-14 오후 7:55:48,0:04:47,jh,dsk,dsk,-,1644835861
+1644835255,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,28846,191 MB,11.87 GB,6.31 GB,473.57 KB/s,2022-02-14 오후 7:40:55,2022-02-14 오후 7:47:50,0:06:55,jh,add,add,-,1644835255
+1644834649,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,14589,28.86 GB,10.22 GB,23.4 GB,347.72 MB/s,2022-02-14 오후 7:30:49,2022-02-14 오후 7:32:16,0:01:27,jh,ddd,ddd,-,1644834649
+1644834043,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,5813,15.16 GB,24.89 GB,17.35 GB,27.37 MB/s,2022-02-14 오후 7:20:43,2022-02-14 오후 7:30:12,0:09:29,jh,add,add,-,1644834043
+1644833437,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,2077,19.4 GB,10.22 GB,23.86 GB,54.57 MB/s,2022-02-14 오후 7:10:37,2022-02-14 오후 7:16:43,0:06:06,jh,dsk,dsk,-,1644833437
+1644832831,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,23840,31.95 GB,28.42 GB,2.23 GB,68.58 MB/s,2022-02-14 오후 7:00:31,2022-02-14 오후 7:08:30,0:07:59,jh,add,add,-,1644832831
+1644832225,Partially Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,15918,14.21 GB,2.28 GB,1.76 GB,29.87 MB/s,2022-02-14 오후 6:50:25,2022-02-14 오후 6:58:34,0:08:09,jh,ddd,ddd,-,1644832225
+1644831619,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,8937,31.39 GB,251 MB,4.66 GB,74.41 MB/s,2022-02-14 오후 6:40:19,2022-02-14 오후 6:47:33,0:07:14,jh,add,add,-,1644831619
+1644831013,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,26444,4.03 GB,27.95 GB,1.08 GB,37.86 MB/s,2022-02-14 오후 6:30:13,2022-02-14 오후 6:32:04,0:01:51,jh,dsk,dsk,-,1644831013
+1644830407,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,17854,15.16 GB,19.99 GB,21.87 GB,36.88 MB/s,2022-02-14 오후 6:20:07,2022-02-14 오후 6:27:10,0:07:03,jh,add,add,-,1644830407
+1644829801,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,6583,10.07 GB,17.91 GB,24.99 GB,83.16 MB/s,2022-02-14 오후 6:10:01,2022-02-14 오후 6:12:07,0:02:06,jh,ddd,ddd,-,1644829801
+1644829195,Suspended,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,30477,9.43 GB,27.75 GB,11.83 GB,43.12 MB/s,2022-02-14 오후 5:59:55,2022-02-14 오후 6:03:41,0:03:46,jh,add,add,-,1644829195
+1644828589,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,359,25.31 KB,31.13 KB,24.79 KB,1 KB/s,2022-02-14 오후 5:49:49,2022-02-14 오후 5:58:21,0:08:32,jh,dsk,dsk,-,1644828589
+1644827983,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,7016,13.7 GB,8.17 GB,17.08 GB,78.8 MB/s,2022-02-14 오후 5:39:43,2022-02-14 오후 5:42:43,0:03:00,jh,add,add,-,1644827983
+1644827377,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,1050,20.88 GB,27.93 GB,20.45 GB,48.15 MB/s,2022-02-14 오후 5:29:37,2022-02-14 오후 5:37:03,0:07:26,jh,ddd,ddd,-,1644827377
+1644826771,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,11863,25.67 GB,23.5 GB,30.77 GB,84.52 MB/s,2022-02-14 오후 5:19:31,2022-02-14 오후 5:24:44,0:05:13,jh,add,add,-,1644826771
+1644826165,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,4705,15.66 GB,22.21 GB,511 MB,254.52 MB/s,2022-02-14 오후 5:09:25,2022-02-14 오후 5:10:30,0:01:05,jh,dsk,dsk,-,1644826165
+1644825559,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,1037,7.32 GB,28.01 GB,7.49 GB,34.39 MB/s,2022-02-14 오후 4:59:19,2022-02-14 오후 5:02:59,0:03:40,jh,add,add,-,1644825559
+1644824953,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,29815,18.45 MB,9.2 MB,12.52 MB,56.05 KB/s,2022-02-14 오후 4:49:13,2022-02-14 오후 4:54:52,0:05:39,jh,ddd,ddd,-,1644824953
+1644824347,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,2971,14.12 GB,21.94 GB,16.57 GB,26.15 MB/s,2022-02-14 오후 4:39:07,2022-02-14 오후 4:48:22,0:09:15,jh,add,add,-,1644824347
+1644823741,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,7661,11.42 GB,2.08 GB,27.7 GB,24.94 MB/s,2022-02-14 오후 4:29:01,2022-02-14 오후 4:36:52,0:07:51,jh,dsk,dsk,-,1644823741
+1644823135,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,14230,12.73 MB,25.06 MB,25.54 MB,21.73 KB/s,2022-02-14 오후 4:18:55,2022-02-14 오후 4:28:57,0:10:02,jh,add,add,-,1644823135
+1644822529,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,24931,31.85 GB,15.09 GB,11.37 GB,89.84 MB/s,2022-02-14 오후 4:08:49,2022-02-14 오후 4:14:54,0:06:05,jh,ddd,ddd,-,1644822529
+1644821923,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,16462,30.23 GB,28.54 GB,29.58 GB,76.25 MB/s,2022-02-14 오후 3:58:43,2022-02-14 오후 4:05:31,0:06:48,jh,add,add,-,1644821923
+1644821317,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,19954,21.42 GB,514 MB,24.5 GB,65.1 MB/s,2022-02-14 오후 3:48:37,2022-02-14 오후 3:54:16,0:05:39,jh,dsk,dsk,-,1644821317
+1644820711,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,23046,6.37 GB,26.91 GB,5.81 GB,30.75 MB/s,2022-02-14 오후 3:38:31,2022-02-14 오후 3:42:05,0:03:34,jh,add,add,-,1644820711
+1644820105,Partially Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,8693,21.83 GB,28.18 GB,10.78 GB,90.51 MB/s,2022-02-14 오후 3:28:25,2022-02-14 오후 3:32:34,0:04:09,jh,ddd,ddd,-,1644820105
+1644819499,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,2764,6.95 GB,19.44 GB,289 MB,12.12 MB/s,2022-02-14 오후 3:18:19,2022-02-14 오후 3:28:08,0:09:49,jh,add,add,-,1644819499
+1644818893,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,9025,16.51 GB,31.36 GB,25.87 GB,42.92 MB/s,2022-02-14 오후 3:08:13,2022-02-14 오후 3:14:49,0:06:36,jh,dsk,dsk,-,1644818893
+1644818287,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,22241,10.03 GB,18.27 GB,19.71 GB,17.68 MB/s,2022-02-14 오후 2:58:07,2022-02-14 오후 3:07:50,0:09:43,jh,add,add,-,1644818287
+1644817681,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,25376,24.82 GB,28.29 GB,12.05 GB,61.23 MB/s,2022-02-14 오후 2:48:01,2022-02-14 오후 2:54:58,0:06:57,jh,ddd,ddd,-,1644817681
+1644817075,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,20440,12.15 GB,5.28 GB,5.98 GB,21.09 MB/s,2022-02-14 오후 2:37:55,2022-02-14 오후 2:47:47,0:09:52,jh,add,add,-,1644817075
+1644816469,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,3204,21.23 GB,29.73 GB,24.48 GB,127.89 MB/s,2022-02-14 오후 2:27:49,2022-02-14 오후 2:30:41,0:02:52,jh,dsk,dsk,-,1644816469
+1644815863,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,460,12.34 GB,20.69 GB,24.44 GB,63.51 MB/s,2022-02-14 오후 2:17:43,2022-02-14 오후 2:21:04,0:03:21,jh,add,add,-,1644815863
+1644815257,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,25927,11.44 GB,20.84 GB,6.96 GB,48.61 MB/s,2022-02-14 오후 2:07:37,2022-02-14 오후 2:11:40,0:04:03,jh,ddd,ddd,-,1644815257
+1644814651,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,4963,16.37 MB,28 MB,12.31 MB,32.48 KB/s,2022-02-14 오후 1:57:31,2022-02-14 오후 2:06:09,0:08:38,jh,add,add,-,1644814651
+1644814045,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,14201,16.52 GB,3.76 GB,31.02 GB,43.48 MB/s,2022-02-14 오후 1:47:25,2022-02-14 오후 1:53:56,0:06:31,jh,dsk,dsk,-,1644814045
+1644813439,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,117,22.98 GB,29.78 GB,7.26 GB,129.27 MB/s,2022-02-14 오후 1:37:19,2022-02-14 오후 1:40:23,0:03:04,jh,add,add,-,1644813439
+1644812833,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,30220,8.67 GB,10.49 GB,28.77 GB,19.18 MB/s,2022-02-14 오후 1:27:13,2022-02-14 오후 1:34:58,0:07:45,jh,ddd,ddd,-,1644812833
+1644812227,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,29840,19.8 GB,7.73 GB,578 MB,51.85 MB/s,2022-02-14 오후 1:17:07,2022-02-14 오후 1:23:40,0:06:33,jh,add,add,-,1644812227
+1644811621,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,12383,18.46 GB,10.38 GB,23.13 GB,70.54 MB/s,2022-02-14 오후 1:07:01,2022-02-14 오후 1:11:31,0:04:30,jh,dsk,dsk,-,1644811621
+1644811015,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,16820,28.75 GB,23 GB,14.12 GB,147.91 MB/s,2022-02-14 오후 12:56:55,2022-02-14 오후 1:00:16,0:03:21,jh,add,add,-,1644811015
+1644810409,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,23147,26.49 KB,17.14 KB,12.31 KB,1 KB/s,2022-02-14 오후 12:46:49,2022-02-14 오후 12:54:38,0:07:49,jh,ddd,ddd,-,1644810409
+1644809803,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,4342,27.69 GB,12.78 GB,9.79 GB,77.26 MB/s,2022-02-14 오후 12:36:43,2022-02-14 오후 12:42:52,0:06:09,jh,add,add,-,1644809803
+1644809197,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,9134,10.16 GB,27.75 GB,11.91 GB,21.86 MB/s,2022-02-14 오후 12:26:37,2022-02-14 오후 12:34:35,0:07:58,jh,dsk,dsk,-,1644809197
+1644808591,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,1521,20.46 GB,11.03 GB,15.53 GB,63.12 MB/s,2022-02-14 오후 12:16:31,2022-02-14 오후 12:22:05,0:05:34,jh,add,add,-,1644808591
+1644807985,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,7430,18.12 GB,23.2 GB,20.13 GB,53.79 MB/s,2022-02-14 오후 12:06:25,2022-02-14 오후 12:12:12,0:05:47,jh,ddd,ddd,-,1644807985
+1644807379,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,29479,18.97 GB,5.63 GB,22.77 GB,53.82 MB/s,2022-02-14 오전 11:56:19,2022-02-14 오후 12:02:22,0:06:03,jh,add,add,-,1644807379
+1644806773,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,22029,27.59 GB,5.65 GB,22.97 GB,139.88 MB/s,2022-02-14 오전 11:46:13,2022-02-14 오전 11:49:37,0:03:24,jh,dsk,dsk,-,1644806773
+1644806167,Suspended,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,15559,19.66 GB,25.7 GB,26.81 GB,70.87 MB/s,2022-02-14 오전 11:36:07,2022-02-14 오전 11:40:53,0:04:46,jh,add,add,-,1644806167
+1644805561,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,29889,22.84 GB,13.16 GB,31.71 GB,41.91 MB/s,2022-02-14 오전 11:26:01,2022-02-14 오전 11:35:21,0:09:20,jh,ddd,ddd,-,1644805561
+1644804955,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,28784,5.24 KB,22 KB,24.74 KB,1 KB/s,2022-02-14 오전 11:15:55,2022-02-14 오전 11:19:19,0:03:24,jh,add,add,-,1644804955
+1644804349,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,9855,12.58 GB,6.54 GB,29.02 GB,40.02 MB/s,2022-02-14 오전 11:05:49,2022-02-14 오전 11:11:13,0:05:24,jh,dsk,dsk,-,1644804349
+1644803743,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,15335,18.04 GB,17.5 GB,19.64 GB,35.6 MB/s,2022-02-14 오전 10:55:43,2022-02-14 오전 11:04:24,0:08:41,jh,add,add,-,1644803743
+1644803137,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,14224,16.32 GB,26.58 GB,12.72 GB,97.14 MB/s,2022-02-14 오전 10:45:37,2022-02-14 오전 10:48:31,0:02:54,jh,ddd,ddd,-,1644803137
+1644802531,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,6624,5.02 GB,28.04 GB,3.98 GB,58.43 MB/s,2022-02-14 오전 10:35:31,2022-02-14 오전 10:37:01,0:01:30,jh,add,add,-,1644802531
+1644801925,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,11998,21.83 GB,14.55 GB,15.07 GB,83.39 MB/s,2022-02-14 오전 10:25:25,2022-02-14 오전 10:29:55,0:04:30,jh,dsk,dsk,-,1644801925
+1644801319,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,4929,14.86 GB,3.57 GB,9.86 GB,60.4 MB/s,2022-02-14 오전 10:15:19,2022-02-14 오전 10:19:33,0:04:14,jh,add,add,-,1644801319
+1644800713,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,3470,1.58 GB,1.22 GB,5.34 GB,2.95 MB/s,2022-02-14 오전 10:05:13,2022-02-14 오전 10:14:23,0:09:10,jh,ddd,ddd,-,1644800713
+1644800107,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,9357,30.42 KB,28.5 KB,31.19 KB,1 KB/s,2022-02-14 오전 9:55:07,2022-02-14 오전 10:01:26,0:06:19,jh,add,add,-,1644800107
+1644799501,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,22156,20.95 GB,29.24 GB,21.13 GB,51.21 MB/s,2022-02-14 오전 9:45:01,2022-02-14 오전 9:52:02,0:07:01,jh,dsk,dsk,-,1644799501
+1644798895,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,608,1.02 GB,23.38 GB,18.67 GB,4.28 MB/s,2022-02-14 오전 9:34:55,2022-02-14 오전 9:39:00,0:04:05,jh,add,add,-,1644798895
+1644798289,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,22608,25.47 GB,31.63 GB,28.7 GB,66.19 MB/s,2022-02-14 오전 9:24:49,2022-02-14 오전 9:31:25,0:06:36,jh,ddd,ddd,-,1644798289
+1644797683,Partially Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,27925,6.97 GB,23.02 GB,26.68 GB,30.64 MB/s,2022-02-14 오전 9:14:43,2022-02-14 오전 9:18:38,0:03:55,jh,add,add,-,1644797683
+1644797077,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,27494,12.7 GB,21.09 GB,23.59 GB,36.13 MB/s,2022-02-14 오전 9:04:37,2022-02-14 오전 9:10:39,0:06:02,jh,dsk,dsk,-,1644797077
+1644796471,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,21268,10.98 MB,18.87 MB,4.09 MB,76.52 KB/s,2022-02-14 오전 8:54:31,2022-02-14 오전 8:57:00,0:02:29,jh,add,add,-,1644796471
+1644795865,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,634,13.7 KB,19.98 KB,10.29 KB,1 KB/s,2022-02-14 오전 8:44:25,2022-02-14 오전 8:46:53,0:02:28,jh,ddd,ddd,-,1644795865
+1644795259,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,31329,11.9 GB,31.44 GB,24.34 GB,86.42 MB/s,2022-02-14 오전 8:34:19,2022-02-14 오전 8:36:42,0:02:23,jh,add,add,-,1644795259
+1644794653,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,5371,16.1 GB,13.98 GB,11.97 GB,31.83 MB/s,2022-02-14 오전 8:24:13,2022-02-14 오전 8:32:53,0:08:40,jh,dsk,dsk,-,1644794653
+1644794047,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,7509,27.6 MB,28.19 MB,3.73 MB,48.89 KB/s,2022-02-14 오전 8:14:07,2022-02-14 오전 8:23:47,0:09:40,jh,add,add,-,1644794047
+1644793441,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,11154,5.48 GB,16.24 GB,17.5 GB,9.43 MB/s,2022-02-14 오전 8:04:01,2022-02-14 오전 8:13:58,0:09:57,jh,ddd,ddd,-,1644793441
+1644792835,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,9136,15.64 GB,9.22 GB,29.53 GB,84.31 MB/s,2022-02-14 오전 7:53:55,2022-02-14 오전 7:57:07,0:03:12,jh,add,add,-,1644792835
+1644792229,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,13821,5.75 GB,31.31 GB,26.47 GB,17.95 MB/s,2022-02-14 오전 7:43:49,2022-02-14 오전 7:49:19,0:05:30,jh,dsk,dsk,-,1644792229
+1644791623,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,14437,20.6 GB,10 GB,9.93 GB,44.87 MB/s,2022-02-14 오전 7:33:43,2022-02-14 오전 7:41:35,0:07:52,jh,add,add,-,1644791623
+1644791017,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,25619,8.68 GB,642 MB,18.19 GB,38.49 MB/s,2022-02-14 오전 7:23:37,2022-02-14 오전 7:27:30,0:03:53,jh,ddd,ddd,-,1644791017
+1644790411,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,15826,23.7 GB,1.88 GB,23.63 GB,63.37 MB/s,2022-02-14 오전 7:13:31,2022-02-14 오전 7:19:56,0:06:25,jh,add,add,-,1644790411
+1644789805,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,4087,146 MB,11.04 GB,854 MB,747.52 KB/s,2022-02-14 오전 7:03:25,2022-02-14 오전 7:06:47,0:03:22,jh,dsk,dsk,-,1644789805
+1644789199,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,23863,13 MB,7.36 GB,10.11 GB,29.39 KB/s,2022-02-14 오전 6:53:19,2022-02-14 오전 7:00:54,0:07:35,jh,add,add,-,1644789199
+1644788593,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,28100,24.58 GB,21.39 GB,15.35 GB,46.44 MB/s,2022-02-14 오전 6:43:13,2022-02-14 오전 6:52:17,0:09:04,jh,ddd,ddd,-,1644788593
+1644787987,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,29618,27.79 GB,7.51 GB,12.54 GB,90.64 MB/s,2022-02-14 오전 6:33:07,2022-02-14 오전 6:38:23,0:05:16,jh,add,add,-,1644787987
+1644787381,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,15678,24.08 GB,2.5 GB,8.01 GB,293.52 MB/s,2022-02-14 오전 6:23:01,2022-02-14 오전 6:24:27,0:01:26,jh,dsk,dsk,-,1644787381
+1644786775,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,15886,13.36 MB,110 KB,1.56 MB,58.71 KB/s,2022-02-14 오전 6:12:55,2022-02-14 오전 6:16:50,0:03:55,jh,add,add,-,1644786775
+1644786169,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,13384,7.15 GB,16.93 GB,8.81 GB,13.83 MB/s,2022-02-14 오전 6:02:49,2022-02-14 오전 6:11:40,0:08:51,jh,ddd,ddd,-,1644786169
+1644785563,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,11801,23.33 GB,24.4 GB,31.91 GB,236.58 MB/s,2022-02-14 오전 5:52:43,2022-02-14 오전 5:54:26,0:01:43,jh,add,add,-,1644785563
+1644784957,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,21803,6.1 GB,13.98 GB,17.2 GB,14.77 MB/s,2022-02-14 오전 5:42:37,2022-02-14 오전 5:49:42,0:07:05,jh,dsk,dsk,-,1644784957
+1644784351,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,5992,31.63 GB,26.9 GB,29.41 GB,177.97 MB/s,2022-02-14 오전 5:32:31,2022-02-14 오전 5:35:35,0:03:04,jh,add,add,-,1644784351
+1644783745,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,29176,17.93 GB,11.2 GB,20.99 GB,113.32 MB/s,2022-02-14 오전 5:22:25,2022-02-14 오전 5:25:09,0:02:44,jh,ddd,ddd,-,1644783745
+1644783139,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,11951,14.22 GB,8.62 GB,6.19 GB,35.6 MB/s,2022-02-14 오전 5:12:19,2022-02-14 오전 5:19:10,0:06:51,jh,add,add,-,1644783139
+1644782533,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,20105,8.03 GB,16.25 GB,15.54 GB,33.44 MB/s,2022-02-14 오전 5:02:13,2022-02-14 오전 5:06:21,0:04:08,jh,dsk,dsk,-,1644782533
+1644781927,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,32283,5.13 MB,21.72 MB,25.02 MB,25.65 KB/s,2022-02-14 오전 4:52:07,2022-02-14 오전 4:55:34,0:03:27,jh,add,add,-,1644781927
+1644781321,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,13551,21.46 GB,11.42 GB,23.73 GB,56.63 MB/s,2022-02-14 오전 4:42:01,2022-02-14 오전 4:48:31,0:06:30,jh,ddd,ddd,-,1644781321
+1644780715,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,16965,5.92 GB,26.77 GB,14.55 GB,13.63 MB/s,2022-02-14 오전 4:31:55,2022-02-14 오전 4:39:22,0:07:27,jh,add,add,-,1644780715
+1644780109,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,29771,15.54 GB,14.73 GB,19.37 GB,39.5 MB/s,2022-02-14 오전 4:21:49,2022-02-14 오전 4:28:34,0:06:45,jh,dsk,dsk,-,1644780109
+1644779503,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,28351,2.1 MB,10.02 MB,5.63 MB,3.78 KB/s,2022-02-14 오전 4:11:43,2022-02-14 오전 4:21:13,0:09:30,jh,add,add,-,1644779503
+1644778897,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,14437,30.25 GB,9.11 GB,3.22 GB,166.56 MB/s,2022-02-14 오전 4:01:37,2022-02-14 오전 4:04:45,0:03:08,jh,ddd,ddd,-,1644778897
+1644778291,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,11856,3.9 GB,8.73 GB,28.53 GB,13.51 MB/s,2022-02-14 오전 3:51:31,2022-02-14 오전 3:56:29,0:04:58,jh,add,add,-,1644778291
+1644777685,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,130,6.8 GB,23.62 GB,27.99 GB,28.91 MB/s,2022-02-14 오전 3:41:25,2022-02-14 오전 3:45:28,0:04:03,jh,dsk,dsk,-,1644777685
+1644777079,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,25165,7.12 KB,13.37 KB,28.33 KB,1 KB/s,2022-02-14 오전 3:31:19,2022-02-14 오전 3:39:53,0:08:34,jh,add,add,-,1644777079
+1644776473,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,17984,12.37 GB,21.46 GB,31.93 GB,38.96 MB/s,2022-02-14 오전 3:21:13,2022-02-14 오전 3:26:40,0:05:27,jh,ddd,ddd,-,1644776473
+1644775867,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,15799,18.33 KB,25.51 KB,26.56 KB,1 KB/s,2022-02-14 오전 3:11:07,2022-02-14 오전 3:14:10,0:03:03,jh,add,add,-,1644775867
+1644775261,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,12684,8.19 GB,14.75 GB,21.08 GB,23.82 MB/s,2022-02-14 오전 3:01:01,2022-02-14 오전 3:06:55,0:05:54,jh,dsk,dsk,-,1644775261
+1644774655,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,27655,28.44 GB,19.74 GB,11.34 GB,147.1 MB/s,2022-02-14 오전 2:50:55,2022-02-14 오전 2:54:15,0:03:20,jh,add,add,-,1644774655
+1644774049,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,5351,14.48 GB,29.97 GB,8.61 GB,138.61 MB/s,2022-02-14 오전 2:40:49,2022-02-14 오전 2:42:38,0:01:49,jh,ddd,ddd,-,1644774049
+1644773443,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,4304,28.12 GB,17.13 GB,30.3 GB,152.36 MB/s,2022-02-14 오전 2:30:43,2022-02-14 오전 2:33:54,0:03:11,jh,add,add,-,1644773443
+1644772837,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,28047,22.05 GB,26.26 GB,20.57 GB,39.13 MB/s,2022-02-14 오전 2:20:37,2022-02-14 오전 2:30:16,0:09:39,jh,dsk,dsk,-,1644772837
+1644772231,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,9370,26.98 KB,8.23 KB,31.63 KB,1 KB/s,2022-02-14 오전 2:10:31,2022-02-14 오전 2:14:16,0:03:45,jh,add,add,-,1644772231
+1644771625,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,21847,9.62 GB,9.43 GB,23.41 GB,46.69 MB/s,2022-02-14 오전 2:00:25,2022-02-14 오전 2:03:58,0:03:33,jh,ddd,ddd,-,1644771625
+1644771019,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,5287,1.28 GB,23.57 GB,7.73 GB,8.01 MB/s,2022-02-14 오전 1:50:19,2022-02-14 오전 1:53:05,0:02:46,jh,add,add,-,1644771019
+1644770413,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,18471,15.54 MB,24.14 MB,30.15 MB,37.18 KB/s,2022-02-14 오전 1:40:13,2022-02-14 오전 1:47:23,0:07:10,jh,dsk,dsk,-,1644770413
+1644769807,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,26241,28.22 GB,1.51 GB,27.79 GB,136.97 MB/s,2022-02-14 오전 1:30:07,2022-02-14 오전 1:33:40,0:03:33,jh,add,add,-,1644769807
+1644769201,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,25978,18.35 GB,211 MB,17.03 GB,110.54 MB/s,2022-02-14 오전 1:20:01,2022-02-14 오전 1:22:53,0:02:52,jh,ddd,ddd,-,1644769201
+1644768595,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,17792,20.58 GB,3.83 GB,20.1 GB,38.17 MB/s,2022-02-14 오전 1:09:55,2022-02-14 오전 1:19:09,0:09:14,jh,add,add,-,1644768595
+1644767989,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,32349,15.53 GB,21.52 GB,1.34 GB,66.24 MB/s,2022-02-14 오전 12:59:49,2022-02-14 오전 1:03:51,0:04:02,jh,dsk,dsk,-,1644767989
+1644767383,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,8107,25.94 GB,6.7 GB,29.3 GB,390.56 MB/s,2022-02-14 오전 12:49:43,2022-02-14 오전 12:50:53,0:01:10,jh,add,add,-,1644767383
+1644766777,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,23222,12.6 GB,842 MB,10.86 GB,50.22 MB/s,2022-02-14 오전 12:39:37,2022-02-14 오전 12:43:56,0:04:19,jh,ddd,ddd,-,1644766777
+1644766171,Partially Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,8350,3.49 KB,7.95 KB,13.72 KB,1 KB/s,2022-02-14 오전 12:29:31,2022-02-14 오전 12:39:21,0:09:50,jh,add,add,-,1644766171
+1644765565,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,15579,18.52 GB,16.79 GB,23.08 GB,33.62 MB/s,2022-02-14 오전 12:19:25,2022-02-14 오전 12:28:51,0:09:26,jh,dsk,dsk,-,1644765565
+1644764959,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,15454,6.64 KB,9.87 KB,1.03 KB,1 KB/s,2022-02-14 오전 12:09:19,2022-02-14 오전 12:11:48,0:02:29,jh,add,add,-,1644764959
+1644764353,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,22723,23.04 GB,17.9 GB,25.34 GB,41.75 MB/s,2022-02-13 오후 11:59:13,2022-02-14 오전 12:08:40,0:09:27,jh,ddd,ddd,-,1644764353
+1644763747,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,26947,25.52 GB,11.2 GB,17.47 GB,119.35 MB/s,2022-02-13 오후 11:49:07,2022-02-13 오후 11:52:48,0:03:41,jh,add,add,-,1644763747
+1644763141,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,17500,16.72 GB,31.58 GB,19.89 GB,123.15 MB/s,2022-02-13 오후 11:39:01,2022-02-13 오후 11:41:22,0:02:21,jh,dsk,dsk,-,1644763141
+1644762535,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,28508,23.94 GB,13.08 GB,8.09 GB,46.52 MB/s,2022-02-13 오후 11:28:55,2022-02-13 오후 11:37:44,0:08:49,jh,add,add,-,1644762535
+1644761929,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,26817,22.95 GB,18.35 GB,3.24 GB,41.81 MB/s,2022-02-13 오후 11:18:49,2022-02-13 오후 11:28:13,0:09:24,jh,ddd,ddd,-,1644761929
+1644761323,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,9465,31.79 MB,15.28 MB,19.23 MB,105.68 KB/s,2022-02-13 오후 11:08:43,2022-02-13 오후 11:13:53,0:05:10,jh,add,add,-,1644761323
+1644760717,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,16488,9.07 GB,1.47 GB,19.67 GB,34.54 MB/s,2022-02-13 오후 10:58:37,2022-02-13 오후 11:03:08,0:04:31,jh,dsk,dsk,-,1644760717
+1644760111,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,23366,11.66 GB,23.03 GB,14.02 GB,119.37 MB/s,2022-02-13 오후 10:48:31,2022-02-13 오후 10:50:13,0:01:42,jh,add,add,-,1644760111
+1644759505,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,17544,9.78 GB,24.93 GB,7.03 GB,24.86 MB/s,2022-02-13 오후 10:38:25,2022-02-13 오후 10:45:10,0:06:45,jh,ddd,ddd,-,1644759505
+1644758899,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,29458,9.9 GB,13.57 GB,26.04 GB,31.09 MB/s,2022-02-13 오후 10:28:19,2022-02-13 오후 10:33:47,0:05:28,jh,add,add,-,1644758899
+1644758293,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,25663,10.45 GB,24.58 GB,19.93 GB,69.04 MB/s,2022-02-13 오후 10:18:13,2022-02-13 오후 10:20:50,0:02:37,jh,dsk,dsk,-,1644758293
+1644757687,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,24895,1 KB,12.18 KB,17.22 KB,1 KB/s,2022-02-13 오후 10:08:07,2022-02-13 오후 10:16:24,0:08:17,jh,add,add,-,1644757687
+1644757081,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,19008,17.17 MB,4.09 MB,15.4 MB,65.6 KB/s,2022-02-13 오후 9:58:01,2022-02-13 오후 10:02:31,0:04:30,jh,ddd,ddd,-,1644757081
+1644756475,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,9069,17.23 KB,9.48 KB,29.11 KB,1 KB/s,2022-02-13 오후 9:47:55,2022-02-13 오후 9:54:00,0:06:05,jh,add,add,-,1644756475
+1644755869,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,8724,23.82 KB,16.95 KB,1.69 KB,1 KB/s,2022-02-13 오후 9:37:49,2022-02-13 오후 9:46:41,0:08:52,jh,dsk,dsk,-,1644755869
+1644755263,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,6356,13.14 GB,17.53 GB,30.78 GB,25.3 MB/s,2022-02-13 오후 9:27:43,2022-02-13 오후 9:36:37,0:08:54,jh,add,add,-,1644755263
+1644754657,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,3122,30.53 GB,11.12 GB,3.76 GB,130.82 MB/s,2022-02-13 오후 9:17:37,2022-02-13 오후 9:21:38,0:04:01,jh,ddd,ddd,-,1644754657
+1644754051,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,12409,15.43 GB,4.86 GB,26.65 GB,34.04 MB/s,2022-02-13 오후 9:07:31,2022-02-13 오후 9:15:17,0:07:46,jh,add,add,-,1644754051
+1644753445,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,4221,20.53 GB,15.73 GB,15.92 GB,273 MB/s,2022-02-13 오후 8:57:25,2022-02-13 오후 8:58:44,0:01:19,jh,dsk,dsk,-,1644753445
+1644752839,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,13594,9.15 GB,13.91 GB,2.54 GB,32.98 MB/s,2022-02-13 오후 8:47:19,2022-02-13 오후 8:52:05,0:04:46,jh,add,add,-,1644752839
+1644752233,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,12512,19.28 KB,17.63 KB,17.77 KB,1 KB/s,2022-02-13 오후 8:37:13,2022-02-13 오후 8:40:02,0:02:49,jh,ddd,ddd,-,1644752233
+1644751627,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,126,25.25 MB,19.41 MB,17.47 MB,66.48 KB/s,2022-02-13 오후 8:27:07,2022-02-13 오후 8:33:38,0:06:31,jh,add,add,-,1644751627
+1644751021,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,21033,21.65 GB,19.18 GB,27.47 GB,85.26 MB/s,2022-02-13 오후 8:17:01,2022-02-13 오후 8:21:23,0:04:22,jh,dsk,dsk,-,1644751021
+1644750415,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,23319,25.98 GB,14.84 GB,12.51 GB,104.74 MB/s,2022-02-13 오후 8:06:55,2022-02-13 오후 8:11:11,0:04:16,jh,add,add,-,1644750415
+1644749809,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,5970,26.54 MB,14.34 MB,29.06 MB,50.7 KB/s,2022-02-13 오후 7:56:49,2022-02-13 오후 8:05:47,0:08:58,jh,ddd,ddd,-,1644749809
+1644749203,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,4632,10.77 GB,26.24 GB,22.45 GB,145.07 MB/s,2022-02-13 오후 7:46:43,2022-02-13 오후 7:48:01,0:01:18,jh,add,add,-,1644749203
+1644748597,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,5074,5.35 KB,28.48 KB,17.69 KB,1 KB/s,2022-02-13 오후 7:36:37,2022-02-13 오후 7:39:36,0:02:59,jh,dsk,dsk,-,1644748597
+1644747991,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,11621,19.9 GB,5.96 GB,12.62 GB,38.08 MB/s,2022-02-13 오후 7:26:31,2022-02-13 오후 7:35:28,0:08:57,jh,add,add,-,1644747991
+1644747385,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,29618,17.43 GB,6.15 GB,17.9 GB,70.28 MB/s,2022-02-13 오후 7:16:25,2022-02-13 오후 7:20:41,0:04:16,jh,ddd,ddd,-,1644747385
+1644746779,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,30726,5.77 KB,24.43 KB,14.8 KB,1 KB/s,2022-02-13 오후 7:06:19,2022-02-13 오후 7:12:47,0:06:28,jh,add,add,-,1644746779
+1644746173,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,29812,21.37 GB,12.36 GB,30.51 GB,40.9 MB/s,2022-02-13 오후 6:56:13,2022-02-13 오후 7:05:10,0:08:57,jh,dsk,dsk,-,1644746173
+1644745567,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,4371,29.19 GB,4.01 GB,21.71 GB,54.65 MB/s,2022-02-13 오후 6:46:07,2022-02-13 오후 6:55:16,0:09:09,jh,add,add,-,1644745567
+1644744961,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,22553,2.99 GB,12.61 GB,7.95 GB,6.12 MB/s,2022-02-13 오후 6:36:01,2022-02-13 오후 6:44:23,0:08:22,jh,ddd,ddd,-,1644744961
+1644744355,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,18468,19.63 GB,5.69 GB,8.08 GB,73.9 MB/s,2022-02-13 오후 6:25:55,2022-02-13 오후 6:30:29,0:04:34,jh,add,add,-,1644744355
+1644743749,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,27583,13.54 GB,11.57 GB,23.1 GB,35.82 MB/s,2022-02-13 오후 6:15:49,2022-02-13 오후 6:22:18,0:06:29,jh,dsk,dsk,-,1644743749
+1644743143,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,28621,11.04 MB,6.39 MB,8.91 MB,90.4 KB/s,2022-02-13 오후 6:05:43,2022-02-13 오후 6:07:50,0:02:07,jh,add,add,-,1644743143
+1644742537,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,23978,12.52 GB,10.58 GB,18.14 GB,44.22 MB/s,2022-02-13 오후 5:55:37,2022-02-13 오후 6:00:29,0:04:52,jh,ddd,ddd,-,1644742537
+1644741931,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,25012,11.32 GB,4.07 GB,23.13 GB,43.42 MB/s,2022-02-13 오후 5:45:31,2022-02-13 오후 5:50:00,0:04:29,jh,add,add,-,1644741931
+1644741325,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,712,19.33 KB,8.08 KB,6.15 KB,1 KB/s,2022-02-13 오후 5:35:25,2022-02-13 오후 5:41:45,0:06:20,jh,dsk,dsk,-,1644741325
+1644740719,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,31549,1.08 GB,28.27 GB,26.3 GB,4.69 MB/s,2022-02-13 오후 5:25:19,2022-02-13 오후 5:29:17,0:03:58,jh,add,add,-,1644740719
+1644740113,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,25055,15.65 KB,28.29 KB,8.53 KB,1 KB/s,2022-02-13 오후 5:15:13,2022-02-13 오후 5:18:42,0:03:29,jh,ddd,ddd,-,1644740113
+1644739507,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,12003,12.9 GB,17.71 GB,22.73 GB,31.44 MB/s,2022-02-13 오후 5:05:07,2022-02-13 오후 5:12:09,0:07:02,jh,add,add,-,1644739507
+1644738901,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,29445,23.56 GB,225 MB,14.62 GB,92.42 MB/s,2022-02-13 오후 4:55:01,2022-02-13 오후 4:59:24,0:04:23,jh,dsk,dsk,-,1644738901
+1644738295,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,13747,12.92 GB,24.26 GB,15.85 GB,24.54 MB/s,2022-02-13 오후 4:44:55,2022-02-13 오후 4:53:56,0:09:01,jh,add,add,-,1644738295
+1644737689,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,3105,6.83 GB,7.7 GB,9.26 GB,16.98 MB/s,2022-02-13 오후 4:34:49,2022-02-13 오후 4:41:43,0:06:54,jh,ddd,ddd,-,1644737689
+1644737083,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,17802,19.17 GB,23.66 GB,15.13 GB,96.2 MB/s,2022-02-13 오후 4:24:43,2022-02-13 오후 4:28:09,0:03:26,jh,add,add,-,1644737083
+1644736477,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,32634,7.03 GB,4.47 GB,10.16 GB,18.89 MB/s,2022-02-13 오후 4:14:37,2022-02-13 오후 4:21:00,0:06:23,jh,dsk,dsk,-,1644736477
+1644735871,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,17411,6.33 GB,19.67 GB,11.75 GB,16.05 MB/s,2022-02-13 오후 4:04:31,2022-02-13 오후 4:11:17,0:06:46,jh,add,add,-,1644735871
+1644735265,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,3997,1.48 GB,28.14 GB,29.61 GB,2.65 MB/s,2022-02-13 오후 3:54:25,2022-02-13 오후 4:03:58,0:09:33,jh,ddd,ddd,-,1644735265
+1644734659,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,2867,12.75 GB,2.84 GB,31.32 GB,126.79 MB/s,2022-02-13 오후 3:44:19,2022-02-13 오후 3:46:04,0:01:45,jh,add,add,-,1644734659
+1644734053,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,7214,11.35 GB,9.24 GB,23.98 GB,121.09 MB/s,2022-02-13 오후 3:34:13,2022-02-13 오후 3:35:51,0:01:38,jh,dsk,dsk,-,1644734053
+1644733447,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,19629,13.36 GB,24.27 GB,2.97 GB,28.44 MB/s,2022-02-13 오후 3:24:07,2022-02-13 오후 3:32:10,0:08:03,jh,add,add,-,1644733447
+1644732841,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,23892,28.64 GB,28.29 GB,50 MB,143.07 MB/s,2022-02-13 오후 3:14:01,2022-02-13 오후 3:17:28,0:03:27,jh,ddd,ddd,-,1644732841
+1644732235,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,16478,29.44 MB,3.93 MB,17.23 MB,108.43 KB/s,2022-02-13 오후 3:03:55,2022-02-13 오후 3:08:35,0:04:40,jh,add,add,-,1644732235
+1644731629,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,14307,24.75 GB,17.29 GB,1.38 GB,77.27 MB/s,2022-02-13 오후 2:53:49,2022-02-13 오후 2:59:19,0:05:30,jh,dsk,dsk,-,1644731629
+1644731023,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,26690,15.16 GB,21.7 GB,17.21 GB,76.87 MB/s,2022-02-13 오후 2:43:43,2022-02-13 오후 2:47:07,0:03:24,jh,add,add,-,1644731023
+1644730417,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,14963,29.24 GB,3.48 GB,16.38 GB,336.43 MB/s,2022-02-13 오후 2:33:37,2022-02-13 오후 2:35:08,0:01:31,jh,ddd,ddd,-,1644730417
+1644729811,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,5892,24.81 KB,3.4 KB,17.6 KB,1 KB/s,2022-02-13 오후 2:23:31,2022-02-13 오후 2:28:19,0:04:48,jh,add,add,-,1644729811
+1644729205,Failed,E6422013,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,15365,21.96 GB,10.12 GB,8.78 GB,54.33 MB/s,2022-02-13 오후 2:13:25,2022-02-13 오후 2:20:21,0:06:56,jh,dsk,dsk,-,1644729205
+1644728599,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,26372,10.75 GB,23.36 GB,11.07 GB,38.61 MB/s,2022-02-13 오후 2:03:19,2022-02-13 오후 2:08:06,0:04:47,jh,add,add,-,1644728599
+1644727993,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,28388,885 KB,7.25 MB,18.96 MB,2.29 KB/s,2022-02-13 오후 1:53:13,2022-02-13 오후 1:59:42,0:06:29,jh,ddd,ddd,-,1644727993
+1644727387,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,14426,23.25 GB,6.63 GB,20.78 GB,119.07 MB/s,2022-02-13 오후 1:43:07,2022-02-13 오후 1:46:29,0:03:22,jh,add,add,-,1644727387
+1644726781,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,5857,27.2 GB,3.06 GB,8.35 GB,49.38 MB/s,2022-02-13 오후 1:33:01,2022-02-13 오후 1:42:27,0:09:26,jh,dsk,dsk,-,1644726781
+1644726175,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,28622,30.43 GB,31.92 GB,31.64 GB,158.16 MB/s,2022-02-13 오후 1:22:55,2022-02-13 오후 1:26:14,0:03:19,jh,add,add,-,1644726175
+1644725569,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,35,10.14 GB,6.3 GB,7.97 GB,20.65 MB/s,2022-02-13 오후 1:12:49,2022-02-13 오후 1:21:14,0:08:25,jh,ddd,ddd,-,1644725569
+1644724963,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,24025,22.23 KB,19.01 KB,1.26 KB,1 KB/s,2022-02-13 오후 1:02:43,2022-02-13 오후 1:08:20,0:05:37,jh,add,add,-,1644724963
+1644724357,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,25624,21.16 GB,24.21 GB,21.14 GB,87 MB/s,2022-02-13 오후 12:52:37,2022-02-13 오후 12:56:48,0:04:11,jh,dsk,dsk,-,1644724357
+1644723751,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,15412,23.18 GB,31.36 GB,10.29 GB,60.09 MB/s,2022-02-13 오후 12:42:31,2022-02-13 오후 12:49:08,0:06:37,jh,add,add,-,1644723751
+1644723145,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,11348,29.66 GB,5.69 GB,23.74 GB,172.59 MB/s,2022-02-13 오후 12:32:25,2022-02-13 오후 12:35:23,0:02:58,jh,ddd,ddd,-,1644723145
+1644722539,Suspended,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,24957,4.86 GB,12.19 GB,9.11 GB,32.29 MB/s,2022-02-13 오후 12:22:19,2022-02-13 오후 12:24:55,0:02:36,jh,add,add,-,1644722539
+1644721933,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,1877,9.1 GB,26.22 GB,11.9 GB,17.3 MB/s,2022-02-13 오후 12:12:13,2022-02-13 오후 12:21:14,0:09:01,jh,dsk,dsk,-,1644721933
+1644721327,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,30189,10.75 GB,8.58 GB,5.9 GB,19.41 MB/s,2022-02-13 오후 12:02:07,2022-02-13 오후 12:11:36,0:09:29,jh,add,add,-,1644721327
+1644720721,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,6547,20.47 GB,13.39 GB,1.14 GB,120.44 MB/s,2022-02-13 오전 11:52:01,2022-02-13 오전 11:54:57,0:02:56,jh,ddd,ddd,-,1644720721
+1644720115,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,26955,13.84 GB,26.3 GB,11.1 GB,32.07 MB/s,2022-02-13 오전 11:41:55,2022-02-13 오전 11:49:19,0:07:24,jh,add,add,-,1644720115
+1644719509,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,19773,7.03 GB,11.81 GB,28.3 GB,20.94 MB/s,2022-02-13 오전 11:31:49,2022-02-13 오전 11:37:35,0:05:46,jh,dsk,dsk,-,1644719509
+1644718903,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,31088,21.59 GB,27.6 GB,2.27 GB,64.65 MB/s,2022-02-13 오전 11:21:43,2022-02-13 오전 11:27:27,0:05:44,jh,add,add,-,1644718903
+1644718297,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,28045,25.09 KB,5.11 KB,7.04 KB,1 KB/s,2022-02-13 오전 11:11:37,2022-02-13 오전 11:13:28,0:01:51,jh,ddd,ddd,-,1644718297
+1644717691,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,4632,31.71 GB,21.33 GB,4.73 GB,64.42 MB/s,2022-02-13 오전 11:01:31,2022-02-13 오전 11:09:57,0:08:26,jh,add,add,-,1644717691
+1644717085,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,26278,6.86 GB,30.2 GB,23.83 GB,16.3 MB/s,2022-02-13 오전 10:51:25,2022-02-13 오전 10:58:38,0:07:13,jh,dsk,dsk,-,1644717085
+1644716479,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,476,5.65 GB,9.25 GB,12.93 GB,35.47 MB/s,2022-02-13 오전 10:41:19,2022-02-13 오전 10:44:04,0:02:45,jh,add,add,-,1644716479
+1644715873,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,16719,20.18 MB,2.48 MB,9.84 MB,122.26 KB/s,2022-02-13 오전 10:31:13,2022-02-13 오전 10:34:04,0:02:51,jh,ddd,ddd,-,1644715873
+1644715267,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,15750,4.3 MB,2.48 MB,14.09 MB,44.91 KB/s,2022-02-13 오전 10:21:07,2022-02-13 오전 10:22:47,0:01:40,jh,add,add,-,1644715267
+1644714661,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,21003,29.68 GB,5.28 GB,25.24 GB,53.23 MB/s,2022-02-13 오전 10:11:01,2022-02-13 오전 10:20:34,0:09:33,jh,dsk,dsk,-,1644714661
+1644714055,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,540,10.87 KB,5.53 KB,14.26 KB,1 KB/s,2022-02-13 오전 10:00:55,2022-02-13 오전 10:07:29,0:06:34,jh,add,add,-,1644714055
+1644713449,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,9565,29.68 GB,9.49 GB,10.04 GB,55.77 MB/s,2022-02-13 오전 9:50:49,2022-02-13 오전 9:59:56,0:09:07,jh,ddd,ddd,-,1644713449
+1644712843,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,26449,8.65 GB,674 MB,8.41 GB,20.55 MB/s,2022-02-13 오전 9:40:43,2022-02-13 오전 9:47:56,0:07:13,jh,add,add,-,1644712843
+1644712237,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,1853,8.14 GB,12.6 GB,9.5 GB,50.53 MB/s,2022-02-13 오전 9:30:37,2022-02-13 오전 9:33:24,0:02:47,jh,dsk,dsk,-,1644712237
+1644711631,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,12105,22.66 GB,13.43 GB,11.83 GB,58.6 MB/s,2022-02-13 오전 9:20:31,2022-02-13 오전 9:27:09,0:06:38,jh,add,add,-,1644711631
+1644711025,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,10757,23.56 GB,16.33 GB,911 MB,49.34 MB/s,2022-02-13 오전 9:10:25,2022-02-13 오전 9:18:36,0:08:11,jh,ddd,ddd,-,1644711025
+1644710419,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,9674,6.15 GB,16.98 GB,24.56 GB,108.6 MB/s,2022-02-13 오전 9:00:19,2022-02-13 오전 9:01:19,0:01:00,jh,add,add,-,1644710419
+1644709813,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,31069,22.79 GB,6.21 GB,23.35 GB,67.63 MB/s,2022-02-13 오전 8:50:13,2022-02-13 오전 8:56:00,0:05:47,jh,dsk,dsk,-,1644709813
+1644709207,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,80,2.99 GB,21.38 GB,17.23 GB,7.55 MB/s,2022-02-13 오전 8:40:07,2022-02-13 오전 8:46:55,0:06:48,jh,add,add,-,1644709207
+1644708601,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,8179,7.12 GB,7.42 GB,12.09 GB,12.47 MB/s,2022-02-13 오전 8:30:01,2022-02-13 오전 8:39:48,0:09:47,jh,ddd,ddd,-,1644708601
+1644707995,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,14755,14 GB,24.33 GB,22.29 GB,38.45 MB/s,2022-02-13 오전 8:19:55,2022-02-13 오전 8:26:10,0:06:15,jh,add,add,-,1644707995
+1644707389,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,17160,25.54 GB,28.28 GB,6.44 GB,118.89 MB/s,2022-02-13 오전 8:09:49,2022-02-13 오전 8:13:31,0:03:42,jh,dsk,dsk,-,1644707389
+1644706783,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,9943,10.47 KB,5.2 KB,16.01 KB,1 KB/s,2022-02-13 오전 7:59:43,2022-02-13 오전 8:01:43,0:02:00,jh,add,add,-,1644706783
+1644706177,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,1287,17.85 GB,22.89 GB,25.57 GB,119.44 MB/s,2022-02-13 오전 7:49:37,2022-02-13 오전 7:52:12,0:02:35,jh,ddd,ddd,-,1644706177
+1644705571,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,20715,8.02 GB,7.07 GB,9.29 GB,24.81 MB/s,2022-02-13 오전 7:39:31,2022-02-13 오전 7:45:04,0:05:33,jh,add,add,-,1644705571
+1644704965,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,4306,23.24 GB,30.53 GB,10.99 GB,39.8 MB/s,2022-02-13 오전 7:29:25,2022-02-13 오전 7:39:25,0:10:00,jh,dsk,dsk,-,1644704965
+1644704359,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,17756,10.13 MB,22.72 MB,24.06 MB,53.47 KB/s,2022-02-13 오전 7:19:19,2022-02-13 오전 7:22:35,0:03:16,jh,add,add,-,1644704359
+1644703753,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,20837,18.84 GB,18.24 GB,16.32 GB,49.35 MB/s,2022-02-13 오전 7:09:13,2022-02-13 오전 7:15:46,0:06:33,jh,ddd,ddd,-,1644703753
+1644703147,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,24923,5.71 GB,3.67 GB,29.07 GB,9.99 MB/s,2022-02-13 오전 6:59:07,2022-02-13 오전 7:08:54,0:09:47,jh,add,add,-,1644703147
+1644702541,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,7671,14.18 KB,20.49 KB,23.03 KB,1 KB/s,2022-02-13 오전 6:49:01,2022-02-13 오전 6:57:27,0:08:26,jh,dsk,dsk,-,1644702541
+1644701935,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,26269,22.04 GB,27.83 GB,25.28 GB,152.51 MB/s,2022-02-13 오전 6:38:55,2022-02-13 오전 6:41:25,0:02:30,jh,add,add,-,1644701935
+1644701329,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,6349,13.82 GB,19.41 GB,3.28 GB,38.67 MB/s,2022-02-13 오전 6:28:49,2022-02-13 오전 6:34:57,0:06:08,jh,ddd,ddd,-,1644701329
+1644700723,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,15826,26.69 MB,5.53 MB,4.65 MB,58.52 KB/s,2022-02-13 오전 6:18:43,2022-02-13 오전 6:26:32,0:07:49,jh,add,add,-,1644700723
+1644700117,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,22351,10.8 GB,13.59 GB,14.18 GB,24.63 MB/s,2022-02-13 오전 6:08:37,2022-02-13 오전 6:16:08,0:07:31,jh,dsk,dsk,-,1644700117
+1644699511,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,31294,25.79 GB,1.16 GB,15.56 GB,75.68 MB/s,2022-02-13 오전 5:58:31,2022-02-13 오전 6:04:22,0:05:51,jh,add,add,-,1644699511
+1644698905,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,13355,20.65 GB,30.13 GB,11.28 GB,82.94 MB/s,2022-02-13 오전 5:48:25,2022-02-13 오전 5:52:42,0:04:17,jh,ddd,ddd,-,1644698905
+1644698299,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,19229,27.43 GB,28.77 GB,23.07 GB,56.63 MB/s,2022-02-13 오전 5:38:19,2022-02-13 오전 5:46:37,0:08:18,jh,add,add,-,1644698299
+1644697693,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,30850,17.35 KB,24.01 KB,5.06 KB,1 KB/s,2022-02-13 오전 5:28:13,2022-02-13 오전 5:36:29,0:08:16,jh,dsk,dsk,-,1644697693
+1644697087,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,23207,13.71 GB,18.38 GB,10.04 GB,120.01 MB/s,2022-02-13 오전 5:18:07,2022-02-13 오전 5:20:06,0:01:59,jh,add,add,-,1644697087
+1644696481,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,26480,4.48 GB,28.57 GB,21.1 GB,8.21 MB/s,2022-02-13 오전 5:08:01,2022-02-13 오전 5:17:21,0:09:20,jh,ddd,ddd,-,1644696481
+1644695875,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,30714,19.26 KB,20.19 KB,29.7 KB,1 KB/s,2022-02-13 오전 4:57:55,2022-02-13 오전 4:58:57,0:01:02,jh,add,add,-,1644695875
+1644695269,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,14203,7.69 MB,23.37 MB,1.18 MB,15.17 KB/s,2022-02-13 오전 4:47:49,2022-02-13 오전 4:56:30,0:08:41,jh,dsk,dsk,-,1644695269
+1644694663,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,8237,25.95 GB,20.93 GB,14.71 GB,77.7 MB/s,2022-02-13 오전 4:37:43,2022-02-13 오전 4:43:27,0:05:44,jh,add,add,-,1644694663
+1644694057,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,14242,15.37 GB,22.29 GB,546 MB,141.79 MB/s,2022-02-13 오전 4:27:37,2022-02-13 오전 4:29:30,0:01:53,jh,ddd,ddd,-,1644694057
+1644693451,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,23645,18.72 GB,10.15 GB,29.38 GB,43.76 MB/s,2022-02-13 오전 4:17:31,2022-02-13 오전 4:24:51,0:07:20,jh,add,add,-,1644693451
+1644692845,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,21024,28.11 KB,4.25 KB,30.41 KB,1 KB/s,2022-02-13 오전 4:07:25,2022-02-13 오전 4:10:33,0:03:08,jh,dsk,dsk,-,1644692845
+1644692239,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,17780,16.35 MB,30.4 MB,11.33 MB,41.24 KB/s,2022-02-13 오전 3:57:19,2022-02-13 오전 4:04:07,0:06:48,jh,add,add,-,1644692239
+1644691633,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,25904,23.6 GB,18.58 GB,29.51 GB,249.19 MB/s,2022-02-13 오전 3:47:13,2022-02-13 오전 3:48:52,0:01:39,jh,ddd,ddd,-,1644691633
+1644691027,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,9203,7.24 MB,13.64 MB,19.34 MB,13.23 KB/s,2022-02-13 오전 3:37:07,2022-02-13 오전 3:46:29,0:09:22,jh,add,add,-,1644691027
+1644690421,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,4674,22.22 GB,13.51 GB,15.11 GB,83.67 MB/s,2022-02-13 오전 3:27:01,2022-02-13 오전 3:31:35,0:04:34,jh,dsk,dsk,-,1644690421
+1644689815,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,24850,22.15 GB,27.49 GB,20.68 GB,231.43 MB/s,2022-02-13 오전 3:16:55,2022-02-13 오전 3:18:35,0:01:40,jh,add,add,-,1644689815
+1644689209,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,16009,17.43 GB,7 GB,4.32 GB,34.13 MB/s,2022-02-13 오전 3:06:49,2022-02-13 오전 3:15:34,0:08:45,jh,ddd,ddd,-,1644689209
+1644688603,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,10215,29.09 GB,28.34 GB,14.98 GB,104.89 MB/s,2022-02-13 오전 2:56:43,2022-02-13 오전 3:01:29,0:04:46,jh,add,add,-,1644688603
+1644687997,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,7121,14.94 GB,4.4 GB,27.65 GB,135.38 MB/s,2022-02-13 오전 2:46:37,2022-02-13 오전 2:48:32,0:01:55,jh,dsk,dsk,-,1644687997
+1644687391,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,30839,6.47 GB,12.46 GB,5.02 GB,55.2 MB/s,2022-02-13 오전 2:36:31,2022-02-13 오전 2:38:33,0:02:02,jh,add,add,-,1644687391
+1644686785,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,16111,16.45 KB,3.34 KB,21.92 KB,1 KB/s,2022-02-13 오전 2:26:25,2022-02-13 오전 2:33:49,0:07:24,jh,ddd,ddd,-,1644686785
+1644686179,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,23522,28.69 MB,14.79 MB,1.42 MB,48.81 KB/s,2022-02-13 오전 2:16:19,2022-02-13 오전 2:26:23,0:10:04,jh,add,add,-,1644686179
+1644685573,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,6483,28.45 GB,12.52 GB,22.63 GB,61.34 MB/s,2022-02-13 오전 2:06:13,2022-02-13 오전 2:14:10,0:07:57,jh,dsk,dsk,-,1644685573
+1644684967,Failed,E6422013,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,12298,6.65 GB,12.2 GB,27.03 GB,40.51 MB/s,2022-02-13 오전 1:56:07,2022-02-13 오전 1:58:57,0:02:50,jh,add,add,-,1644684967
+1644684361,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,11655,21.54 GB,27.8 GB,1.17 GB,61.26 MB/s,2022-02-13 오전 1:46:01,2022-02-13 오전 1:52:03,0:06:02,jh,ddd,ddd,-,1644684361
+1644683755,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,29271,4.19 GB,15.56 GB,11.89 GB,15.55 MB/s,2022-02-13 오전 1:35:55,2022-02-13 오전 1:40:33,0:04:38,jh,add,add,-,1644683755
+1644683149,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,6806,15.36 GB,24.55 GB,10.64 GB,33.89 MB/s,2022-02-13 오전 1:25:49,2022-02-13 오전 1:33:35,0:07:46,jh,dsk,dsk,-,1644683149
+1644682543,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,23702,21.35 GB,6.85 GB,9.88 GB,43.72 MB/s,2022-02-13 오전 1:15:43,2022-02-13 오전 1:24:05,0:08:22,jh,add,add,-,1644682543
+1644681937,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,12467,2.33 KB,2.56 KB,26.35 KB,1 KB/s,2022-02-13 오전 1:05:37,2022-02-13 오전 1:07:45,0:02:08,jh,ddd,ddd,-,1644681937
+1644681331,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,23551,14.38 GB,10.54 GB,5.9 GB,63.73 MB/s,2022-02-13 오전 12:55:31,2022-02-13 오전 12:59:24,0:03:53,jh,add,add,-,1644681331
+1644680725,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,14754,13.77 MB,12.84 MB,22.5 MB,153.24 KB/s,2022-02-13 오전 12:45:25,2022-02-13 오전 12:46:59,0:01:34,jh,dsk,dsk,-,1644680725
+1644680119,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,14822,13.53 GB,20.94 GB,27.8 GB,27.82 MB/s,2022-02-13 오전 12:35:19,2022-02-13 오전 12:43:39,0:08:20,jh,add,add,-,1644680119
+1644679513,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,2467,7.26 GB,17.6 GB,1.52 GB,123.98 MB/s,2022-02-13 오전 12:25:13,2022-02-13 오전 12:26:15,0:01:02,jh,ddd,ddd,-,1644679513
+1644678907,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,1698,7.9 KB,17.29 KB,4.26 KB,1 KB/s,2022-02-13 오전 12:15:07,2022-02-13 오전 12:21:06,0:05:59,jh,add,add,-,1644678907
+1644678301,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,23027,9.54 GB,16.79 GB,29.2 GB,25.5 MB/s,2022-02-13 오전 12:05:01,2022-02-13 오전 12:11:26,0:06:25,jh,dsk,dsk,-,1644678301
+1644677695,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,19117,6.17 GB,168 MB,23.76 GB,17.54 MB/s,2022-02-12 오후 11:54:55,2022-02-13 오전 12:00:57,0:06:02,jh,add,add,-,1644677695
+1644677089,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,27688,17.23 MB,21.86 MB,5.06 MB,271.38 KB/s,2022-02-12 오후 11:44:49,2022-02-12 오후 11:45:56,0:01:07,jh,ddd,ddd,-,1644677089
+1644676483,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,32534,3.82 GB,1.39 GB,25.91 GB,12.76 MB/s,2022-02-12 오후 11:34:43,2022-02-12 오후 11:39:52,0:05:09,jh,add,add,-,1644676483
+1644675877,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,5607,30.53 GB,8.01 GB,30.26 GB,121.17 MB/s,2022-02-12 오후 11:24:37,2022-02-12 오후 11:28:57,0:04:20,jh,dsk,dsk,-,1644675877
+1644675271,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,9643,7.84 GB,6.68 GB,11.65 GB,31.74 MB/s,2022-02-12 오후 11:14:31,2022-02-12 오후 11:18:46,0:04:15,jh,add,add,-,1644675271
+1644674665,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,9930,11.69 GB,28.76 GB,29.32 GB,25.58 MB/s,2022-02-12 오후 11:04:25,2022-02-12 오후 11:12:15,0:07:50,jh,ddd,ddd,-,1644674665
+1644674059,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,23179,16.46 GB,9.93 GB,27.52 GB,74.56 MB/s,2022-02-12 오후 10:54:19,2022-02-12 오후 10:58:07,0:03:48,jh,add,add,-,1644674059
+1644673453,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,11892,21.94 GB,28.37 GB,27.74 GB,74.14 MB/s,2022-02-12 오후 10:44:13,2022-02-12 오후 10:49:18,0:05:05,jh,dsk,dsk,-,1644673453
+1644672847,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,13324,1.12 MB,1.94 MB,11.65 MB,2.43 KB/s,2022-02-12 오후 10:34:07,2022-02-12 오후 10:42:00,0:07:53,jh,add,add,-,1644672847
+1644672241,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,3868,28.47 GB,20.92 GB,14.15 GB,59.86 MB/s,2022-02-12 오후 10:24:01,2022-02-12 오후 10:32:10,0:08:09,jh,ddd,ddd,-,1644672241
+1644671635,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,2823,29.51 GB,29.04 GB,30.94 GB,311.52 MB/s,2022-02-12 오후 10:13:55,2022-02-12 오후 10:15:34,0:01:39,jh,add,add,-,1644671635
+1644671029,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,4381,27.7 GB,17.77 GB,2.8 GB,61.26 MB/s,2022-02-12 오후 10:03:49,2022-02-12 오후 10:11:34,0:07:45,jh,dsk,dsk,-,1644671029
+1644670423,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,9490,18.72 GB,6.17 GB,7.97 GB,64.53 MB/s,2022-02-12 오후 9:53:43,2022-02-12 오후 9:58:42,0:04:59,jh,add,add,-,1644670423
+1644669817,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,26189,14.02 GB,3.3 GB,11.7 GB,33.16 MB/s,2022-02-12 오후 9:43:37,2022-02-12 오후 9:50:52,0:07:15,jh,ddd,ddd,-,1644669817
+1644669211,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,814,20.59 GB,10.43 GB,31.47 GB,142.43 MB/s,2022-02-12 오후 9:33:31,2022-02-12 오후 9:36:01,0:02:30,jh,add,add,-,1644669211
+1644668605,Suspended,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,18469,2.93 MB,12.81 MB,27.81 MB,10.06 KB/s,2022-02-12 오후 9:23:25,2022-02-12 오후 9:28:25,0:05:00,jh,dsk,dsk,-,1644668605
+1644667999,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,6901,28.54 GB,31.29 GB,9.87 GB,50.83 MB/s,2022-02-12 오후 9:13:19,2022-02-12 오후 9:22:56,0:09:37,jh,add,add,-,1644667999
+1644667393,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,10753,13.31 GB,29.6 GB,15.16 GB,64 MB/s,2022-02-12 오후 9:03:13,2022-02-12 오후 9:06:48,0:03:35,jh,ddd,ddd,-,1644667393
+1644666787,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,19782,20.95 KB,16.07 KB,31.91 KB,1 KB/s,2022-02-12 오후 8:53:07,2022-02-12 오후 8:58:56,0:05:49,jh,add,add,-,1644666787
+1644666181,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,26884,6.46 GB,5.19 GB,23.03 GB,11.27 MB/s,2022-02-12 오후 8:43:01,2022-02-12 오후 8:52:50,0:09:49,jh,dsk,dsk,-,1644666181
+1644665575,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,21768,4.48 GB,546 MB,25.02 GB,40.26 MB/s,2022-02-12 오후 8:32:55,2022-02-12 오후 8:34:51,0:01:56,jh,add,add,-,1644665575
+1644664969,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,1377,16.23 GB,10.95 GB,24.59 GB,268 MB/s,2022-02-12 오후 8:22:49,2022-02-12 오후 8:23:53,0:01:04,jh,ddd,ddd,-,1644664969
+1644664363,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,31097,19.64 MB,29.88 MB,19.45 MB,76.17 KB/s,2022-02-12 오후 8:12:43,2022-02-12 오후 8:17:09,0:04:26,jh,add,add,-,1644664363
+1644663757,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,21785,2.42 GB,13.01 GB,26.82 GB,4.97 MB/s,2022-02-12 오후 8:02:37,2022-02-12 오후 8:10:57,0:08:20,jh,dsk,dsk,-,1644663757
+1644663151,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,23327,49 MB,11.51 GB,26.15 GB,368.94 KB/s,2022-02-12 오후 7:52:31,2022-02-12 오후 7:54:49,0:02:18,jh,add,add,-,1644663151
+1644662545,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,22127,9.58 GB,28.03 GB,10.78 GB,23.41 MB/s,2022-02-12 오후 7:42:25,2022-02-12 오후 7:49:26,0:07:01,jh,ddd,ddd,-,1644662545
+1644661939,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,1884,16.85 GB,25.51 GB,6.35 GB,98.03 MB/s,2022-02-12 오후 7:32:19,2022-02-12 오후 7:35:17,0:02:58,jh,add,add,-,1644661939
+1644661333,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,24735,19.85 GB,5.8 GB,8.49 GB,50.94 MB/s,2022-02-12 오후 7:22:13,2022-02-12 오후 7:28:54,0:06:41,jh,dsk,dsk,-,1644661333
+1644660727,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,28207,25.81 GB,3.9 GB,8.04 GB,296.92 MB/s,2022-02-12 오후 7:12:07,2022-02-12 오후 7:13:38,0:01:31,jh,add,add,-,1644660727
+1644660121,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,31645,31.64 GB,27.32 GB,30.29 GB,141.49 MB/s,2022-02-12 오후 7:02:01,2022-02-12 오후 7:05:52,0:03:51,jh,ddd,ddd,-,1644660121
+1644659515,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,11950,3.69 GB,31.16 GB,15.45 GB,11.11 MB/s,2022-02-12 오후 6:51:55,2022-02-12 오후 6:57:37,0:05:42,jh,add,add,-,1644659515
+1644658909,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,13284,27.46 KB,12.41 KB,28.61 KB,1 KB/s,2022-02-12 오후 6:41:49,2022-02-12 오후 6:47:37,0:05:48,jh,dsk,dsk,-,1644658909
+1644658303,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,16949,27.64 KB,20.7 KB,23.78 KB,1 KB/s,2022-02-12 오후 6:31:43,2022-02-12 오후 6:34:28,0:02:45,jh,add,add,-,1644658303
+1644657697,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,23967,10.28 GB,6.81 GB,24.39 GB,58.82 MB/s,2022-02-12 오후 6:21:37,2022-02-12 오후 6:24:38,0:03:01,jh,ddd,ddd,-,1644657697
+1644657091,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,11108,13.2 GB,12.48 GB,3.49 GB,61.98 MB/s,2022-02-12 오후 6:11:31,2022-02-12 오후 6:15:11,0:03:40,jh,add,add,-,1644657091
+1644656485,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,31414,16.37 GB,20.72 GB,31.97 GB,72.87 MB/s,2022-02-12 오후 6:01:25,2022-02-12 오후 6:05:17,0:03:52,jh,dsk,dsk,-,1644656485
+1644655879,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,17755,22.81 GB,28.02 GB,9.4 GB,58.55 MB/s,2022-02-12 오후 5:51:19,2022-02-12 오후 5:58:00,0:06:41,jh,add,add,-,1644655879
+1644655273,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,27007,13.62 GB,19.98 GB,3.18 GB,25.03 MB/s,2022-02-12 오후 5:41:13,2022-02-12 오후 5:50:32,0:09:19,jh,ddd,ddd,-,1644655273
+1644654667,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,28899,19.69 GB,18.55 GB,19.22 GB,57.43 MB/s,2022-02-12 오후 5:31:07,2022-02-12 오후 5:37:00,0:05:53,jh,add,add,-,1644654667
+1644654061,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,13856,31.92 GB,30.09 GB,14.06 GB,76.55 MB/s,2022-02-12 오후 5:21:01,2022-02-12 오후 5:28:10,0:07:09,jh,dsk,dsk,-,1644654061
+1644653455,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,30808,18.84 GB,2.42 GB,21.73 GB,34.71 MB/s,2022-02-12 오후 5:10:55,2022-02-12 오후 5:20:13,0:09:18,jh,add,add,-,1644653455
+1644652849,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,28401,22.26 GB,15.06 GB,19.72 GB,60.78 MB/s,2022-02-12 오후 5:00:49,2022-02-12 오후 5:07:06,0:06:17,jh,ddd,ddd,-,1644652849
+1644652243,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,26766,23.42 KB,27.86 KB,13.37 KB,1 KB/s,2022-02-12 오후 4:50:43,2022-02-12 오후 4:54:12,0:03:29,jh,add,add,-,1644652243
+1644651637,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,17494,7.62 GB,25.75 GB,6.13 GB,67.25 MB/s,2022-02-12 오후 4:40:37,2022-02-12 오후 4:42:35,0:01:58,jh,dsk,dsk,-,1644651637
+1644651031,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,7190,28.21 GB,18.9 GB,26.68 GB,52.9 MB/s,2022-02-12 오후 4:30:31,2022-02-12 오후 4:39:39,0:09:08,jh,add,add,-,1644651031
+1644650425,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,5863,12.12 GB,22.65 GB,27.26 GB,22.4 MB/s,2022-02-12 오후 4:20:25,2022-02-12 오후 4:29:41,0:09:16,jh,ddd,ddd,-,1644650425
+1644649819,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,8066,1.56 MB,3.4 MB,13.39 MB,5.11 KB/s,2022-02-12 오후 4:10:19,2022-02-12 오후 4:15:34,0:05:15,jh,add,add,-,1644649819
+1644649213,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,29420,6.05 GB,11.88 GB,11.79 GB,35.61 MB/s,2022-02-12 오후 4:00:13,2022-02-12 오후 4:03:09,0:02:56,jh,dsk,dsk,-,1644649213
+1644648607,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,14489,27.83 KB,24.3 KB,22.75 KB,1 KB/s,2022-02-12 오후 3:50:07,2022-02-12 오후 4:00:01,0:09:54,jh,add,add,-,1644648607
+1644648001,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,26215,794 MB,4.6 GB,16.48 GB,2.15 MB/s,2022-02-12 오후 3:40:01,2022-02-12 오후 3:46:13,0:06:12,jh,ddd,ddd,-,1644648001
+1644647395,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,1951,30.49 GB,9.83 GB,16.01 GB,113.93 MB/s,2022-02-12 오후 3:29:55,2022-02-12 오후 3:34:31,0:04:36,jh,add,add,-,1644647395
+1644646789,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,12108,15.92 GB,568 MB,12.17 GB,31.79 MB/s,2022-02-12 오후 3:19:49,2022-02-12 오후 3:28:24,0:08:35,jh,dsk,dsk,-,1644646789
+1644646183,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,16669,16.4 GB,21.43 GB,20.85 GB,29.15 MB/s,2022-02-12 오후 3:09:43,2022-02-12 오후 3:19:21,0:09:38,jh,add,add,-,1644646183
+1644645577,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,410,14.38 KB,5.26 KB,13.85 KB,1 KB/s,2022-02-12 오후 2:59:37,2022-02-12 오후 3:06:40,0:07:03,jh,ddd,ddd,-,1644645577
+1644644971,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,12233,4.36 GB,5.68 GB,22.64 GB,24.94 MB/s,2022-02-12 오후 2:49:31,2022-02-12 오후 2:52:32,0:03:01,jh,add,add,-,1644644971
+1644644365,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,10600,6.15 MB,29.52 MB,12.69 MB,33.3 KB/s,2022-02-12 오후 2:39:25,2022-02-12 오후 2:42:36,0:03:11,jh,dsk,dsk,-,1644644365
+1644643759,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,22912,18.52 MB,28.65 MB,25.53 MB,44.84 KB/s,2022-02-12 오후 2:29:19,2022-02-12 오후 2:36:24,0:07:05,jh,add,add,-,1644643759
+1644643153,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,8999,12.18 GB,14.01 GB,17.98 GB,25.04 MB/s,2022-02-12 오후 2:19:13,2022-02-12 오후 2:27:33,0:08:20,jh,ddd,ddd,-,1644643153
+1644642547,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,5999,23.05 GB,27.59 GB,18.52 GB,57.86 MB/s,2022-02-12 오후 2:09:07,2022-02-12 오후 2:15:57,0:06:50,jh,add,add,-,1644642547
+1644641941,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,31917,25.96 GB,9.74 GB,24.36 GB,214.39 MB/s,2022-02-12 오후 1:59:01,2022-02-12 오후 2:01:07,0:02:06,jh,dsk,dsk,-,1644641941
+1644641335,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,225,28.64 KB,28.02 KB,18.36 KB,1 KB/s,2022-02-12 오후 1:48:55,2022-02-12 오후 1:58:07,0:09:12,jh,add,add,-,1644641335
+1644640729,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,31681,13.51 GB,20.12 GB,31.15 GB,42.32 MB/s,2022-02-12 오후 1:38:49,2022-02-12 오후 1:44:18,0:05:29,jh,ddd,ddd,-,1644640729
+1644640123,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,331,10.37 MB,27.67 MB,784 KB,27.08 KB/s,2022-02-12 오후 1:28:43,2022-02-12 오후 1:35:17,0:06:34,jh,add,add,-,1644640123
+1644639517,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,13115,28.17 GB,19.78 GB,16.62 GB,55.25 MB/s,2022-02-12 오후 1:18:37,2022-02-12 오후 1:27:21,0:08:44,jh,dsk,dsk,-,1644639517
+1644638911,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,9608,31.77 GB,3.08 GB,24.81 GB,81.12 MB/s,2022-02-12 오후 1:08:31,2022-02-12 오후 1:15:14,0:06:43,jh,add,add,-,1644638911
+1644638305,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,28157,16.49 GB,20.85 GB,6.74 GB,130.92 MB/s,2022-02-12 오후 12:58:25,2022-02-12 오후 1:00:36,0:02:11,jh,ddd,ddd,-,1644638305
+1644637699,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,26986,19.57 GB,16.9 GB,16.18 GB,41.74 MB/s,2022-02-12 오후 12:48:19,2022-02-12 오후 12:56:21,0:08:02,jh,add,add,-,1644637699
+1644637093,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,14161,4.37 GB,15.99 GB,22.78 GB,22.96 MB/s,2022-02-12 오후 12:38:13,2022-02-12 오후 12:41:30,0:03:17,jh,dsk,dsk,-,1644637093
+1644636487,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,26119,30.12 GB,23.16 GB,9.27 GB,68.99 MB/s,2022-02-12 오후 12:28:07,2022-02-12 오후 12:35:36,0:07:29,jh,add,add,-,1644636487
+1644635881,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,23144,17.12 GB,16.01 GB,29.91 GB,162.35 MB/s,2022-02-12 오후 12:18:01,2022-02-12 오후 12:19:51,0:01:50,jh,ddd,ddd,-,1644635881
+1644635275,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,621,11.23 GB,31.55 GB,25.86 GB,22.59 MB/s,2022-02-12 오후 12:07:55,2022-02-12 오후 12:16:26,0:08:31,jh,add,add,-,1644635275
+1644634669,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,1805,13.35 GB,23.54 GB,19 GB,54.23 MB/s,2022-02-12 오전 11:57:49,2022-02-12 오후 12:02:03,0:04:14,jh,dsk,dsk,-,1644634669
+1644634063,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,928,20.41 GB,27.19 GB,31.51 GB,104 MB/s,2022-02-12 오전 11:47:43,2022-02-12 오전 11:51:06,0:03:23,jh,add,add,-,1644634063
+1644633457,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,28631,6.07 MB,5.69 MB,8.15 MB,62.78 KB/s,2022-02-12 오전 11:37:37,2022-02-12 오전 11:39:18,0:01:41,jh,ddd,ddd,-,1644633457
+1644632851,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,24079,16.4 KB,31.75 KB,5.64 KB,1 KB/s,2022-02-12 오전 11:27:31,2022-02-12 오전 11:29:21,0:01:50,jh,add,add,-,1644632851
+1644632245,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,15956,19.4 MB,1.21 MB,13.85 MB,41.3 KB/s,2022-02-12 오전 11:17:25,2022-02-12 오전 11:25:28,0:08:03,jh,dsk,dsk,-,1644632245
+1644631639,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,18920,11.13 MB,156 KB,25.38 MB,19.48 KB/s,2022-02-12 오전 11:07:19,2022-02-12 오전 11:17:06,0:09:47,jh,add,add,-,1644631639
+1644631033,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,13311,27.95 GB,24.36 GB,21.04 GB,66.71 MB/s,2022-02-12 오전 10:57:13,2022-02-12 오전 11:04:24,0:07:11,jh,ddd,ddd,-,1644631033
+1644630427,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,9450,14.08 GB,17.03 GB,3.38 GB,38.87 MB/s,2022-02-12 오전 10:47:07,2022-02-12 오전 10:53:20,0:06:13,jh,add,add,-,1644630427
+1644629821,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,19213,17.84 KB,29 KB,1.43 KB,1 KB/s,2022-02-12 오전 10:37:01,2022-02-12 오전 10:39:11,0:02:10,jh,dsk,dsk,-,1644629821
+1644629215,Partially Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,28587,24.46 GB,3.09 GB,16.85 GB,64.05 MB/s,2022-02-12 오전 10:26:55,2022-02-12 오전 10:33:28,0:06:33,jh,add,add,-,1644629215
+1644628609,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,14407,20.2 KB,4.29 KB,30.04 KB,1 KB/s,2022-02-12 오전 10:16:49,2022-02-12 오전 10:18:40,0:01:51,jh,ddd,ddd,-,1644628609
+1644628003,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,372,19.99 GB,20 GB,17.99 GB,189.56 MB/s,2022-02-12 오전 10:06:43,2022-02-12 오전 10:08:33,0:01:50,jh,add,add,-,1644628003
+1644627397,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,24468,12.51 GB,11.62 GB,23.02 GB,66.37 MB/s,2022-02-12 오전 9:56:37,2022-02-12 오전 9:59:52,0:03:15,jh,dsk,dsk,-,1644627397
+1644626791,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,13585,12.15 GB,13.64 GB,14.35 GB,78.77 MB/s,2022-02-12 오전 9:46:31,2022-02-12 오전 9:49:11,0:02:40,jh,add,add,-,1644626791
+1644626185,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,11996,28.49 GB,13.29 GB,1.24 GB,124.13 MB/s,2022-02-12 오전 9:36:25,2022-02-12 오전 9:40:22,0:03:57,jh,ddd,ddd,-,1644626185
+1644625579,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,8783,3.68 GB,7 GB,29.33 GB,9.81 MB/s,2022-02-12 오전 9:26:19,2022-02-12 오전 9:32:45,0:06:26,jh,add,add,-,1644625579
+1644624973,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,30572,2.34 GB,26.71 GB,22.34 GB,23.71 MB/s,2022-02-12 오전 9:16:13,2022-02-12 오전 9:17:56,0:01:43,jh,dsk,dsk,-,1644624973
+1644624367,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,17153,14.16 GB,30.12 GB,4.46 GB,88.94 MB/s,2022-02-12 오전 9:06:07,2022-02-12 오전 9:08:52,0:02:45,jh,add,add,-,1644624367
+1644623761,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,21509,3.73 GB,19.71 GB,6.36 GB,26.14 MB/s,2022-02-12 오전 8:56:01,2022-02-12 오전 8:58:29,0:02:28,jh,ddd,ddd,-,1644623761
+1644623155,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,30657,2.93 GB,18.95 GB,11.9 GB,20.44 MB/s,2022-02-12 오전 8:45:55,2022-02-12 오전 8:48:24,0:02:29,jh,add,add,-,1644623155
+1644622549,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,565,22.02 GB,30.91 GB,27.35 GB,80.81 MB/s,2022-02-12 오전 8:35:49,2022-02-12 오전 8:40:30,0:04:41,jh,dsk,dsk,-,1644622549
+1644621943,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,4036,9.02 GB,12.27 GB,21.84 GB,24.57 MB/s,2022-02-12 오전 8:25:43,2022-02-12 오전 8:32:01,0:06:18,jh,add,add,-,1644621943
+1644621337,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,24503,1.61 GB,17.81 GB,10.61 GB,3.46 MB/s,2022-02-12 오전 8:15:37,2022-02-12 오전 8:23:35,0:07:58,jh,ddd,ddd,-,1644621337
+1644620731,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,4223,20.5 GB,5.12 GB,5.34 GB,35.83 MB/s,2022-02-12 오전 8:05:31,2022-02-12 오전 8:15:19,0:09:48,jh,add,add,-,1644620731
+1644620125,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,2272,9.68 KB,20.75 KB,23.6 KB,1 KB/s,2022-02-12 오전 7:55:25,2022-02-12 오전 8:03:48,0:08:23,jh,dsk,dsk,-,1644620125
+1644619519,Partially Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,19692,9.18 GB,15.43 GB,22.54 GB,31.55 MB/s,2022-02-12 오전 7:45:19,2022-02-12 오전 7:50:19,0:05:00,jh,add,add,-,1644619519
+1644618913,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,29546,21.71 GB,18.43 GB,807 MB,100.14 MB/s,2022-02-12 오전 7:35:13,2022-02-12 오전 7:38:57,0:03:44,jh,ddd,ddd,-,1644618913
+1644618307,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,14769,8.13 GB,3.04 GB,10.75 GB,18.46 MB/s,2022-02-12 오전 7:25:07,2022-02-12 오전 7:32:40,0:07:33,jh,add,add,-,1644618307
+1644617701,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,24864,26.7 GB,1.34 GB,20.17 GB,72.34 MB/s,2022-02-12 오전 7:15:01,2022-02-12 오전 7:21:21,0:06:20,jh,dsk,dsk,-,1644617701
+1644617095,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,8822,10.01 GB,27.35 GB,9.6 GB,18.02 MB/s,2022-02-12 오전 7:04:55,2022-02-12 오전 7:14:26,0:09:31,jh,add,add,-,1644617095
+1644616489,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,14381,19.19 GB,1.93 GB,2.29 GB,338.81 MB/s,2022-02-12 오전 6:54:49,2022-02-12 오전 6:55:49,0:01:00,jh,ddd,ddd,-,1644616489
+1644615883,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,17968,2.91 GB,21.46 GB,9.82 GB,15.66 MB/s,2022-02-12 오전 6:44:43,2022-02-12 오전 6:47:55,0:03:12,jh,add,add,-,1644615883
+1644615277,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,17186,26.5 GB,27.87 GB,25.14 GB,387.71 MB/s,2022-02-12 오전 6:34:37,2022-02-12 오전 6:35:49,0:01:12,jh,dsk,dsk,-,1644615277
+1644614671,Suspended,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,15148,25.71 GB,24.59 GB,11.95 GB,101.64 MB/s,2022-02-12 오전 6:24:31,2022-02-12 오전 6:28:52,0:04:21,jh,add,add,-,1644614671
+1644614065,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,8438,30.01 GB,10.5 GB,30.33 GB,72.47 MB/s,2022-02-12 오전 6:14:25,2022-02-12 오전 6:21:31,0:07:06,jh,ddd,ddd,-,1644614065
+1644613459,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,8468,16.92 GB,23.38 GB,3.76 GB,101.3 MB/s,2022-02-12 오전 6:04:19,2022-02-12 오전 6:07:12,0:02:53,jh,add,add,-,1644613459
+1644612853,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,21887,17.46 GB,24.9 GB,15.67 GB,36.78 MB/s,2022-02-12 오전 5:54:13,2022-02-12 오전 6:02:21,0:08:08,jh,dsk,dsk,-,1644612853
+1644612247,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,26191,12.98 GB,13.41 GB,13.65 GB,37.87 MB/s,2022-02-12 오전 5:44:07,2022-02-12 오전 5:50:00,0:05:53,jh,add,add,-,1644612247
+1644611641,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,1341,14.74 GB,28.75 GB,4.08 GB,25.11 MB/s,2022-02-12 오전 5:34:01,2022-02-12 오전 5:44:04,0:10:03,jh,ddd,ddd,-,1644611641
+1644611035,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,3949,1.23 KB,6.12 KB,17.07 KB,1 KB/s,2022-02-12 오전 5:23:55,2022-02-12 오전 5:32:07,0:08:12,jh,add,add,-,1644611035
+1644610429,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,881,8.85 GB,566 MB,3.58 GB,15.33 MB/s,2022-02-12 오전 5:13:49,2022-02-12 오전 5:23:42,0:09:53,jh,dsk,dsk,-,1644610429
+1644609823,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,21108,11.56 GB,28.26 GB,10.37 GB,22.86 MB/s,2022-02-12 오전 5:03:43,2022-02-12 오전 5:12:23,0:08:40,jh,add,add,-,1644609823
+1644609217,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,1995,1.92 GB,21.62 GB,20.99 GB,10.11 MB/s,2022-02-12 오전 4:53:37,2022-02-12 오전 4:56:54,0:03:17,jh,ddd,ddd,-,1644609217
+1644608611,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,17743,29.17 GB,31.47 GB,27.09 GB,109.4 MB/s,2022-02-12 오전 4:43:31,2022-02-12 오전 4:48:06,0:04:35,jh,add,add,-,1644608611
+1644608005,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,12611,8.88 GB,8.39 GB,25.56 GB,67.36 MB/s,2022-02-12 오전 4:33:25,2022-02-12 오전 4:35:42,0:02:17,jh,dsk,dsk,-,1644608005
+1644607399,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,9645,14.5 GB,12.86 GB,2.34 GB,43.3 MB/s,2022-02-12 오전 4:23:19,2022-02-12 오전 4:29:04,0:05:45,jh,add,add,-,1644607399
+1644606793,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,32206,8.01 GB,2.61 GB,28.07 GB,28.49 MB/s,2022-02-12 오전 4:13:13,2022-02-12 오전 4:18:03,0:04:50,jh,ddd,ddd,-,1644606793
+1644606187,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,12818,27.92 GB,10.88 GB,20.41 GB,86.63 MB/s,2022-02-12 오전 4:03:07,2022-02-12 오전 4:08:39,0:05:32,jh,add,add,-,1644606187
+1644605581,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,8973,7.78 GB,26.2 GB,30.88 GB,84.79 MB/s,2022-02-12 오전 3:53:01,2022-02-12 오전 3:54:37,0:01:36,jh,dsk,dsk,-,1644605581
+1644604975,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,30443,25.33 GB,4.79 GB,4.39 GB,144.12 MB/s,2022-02-12 오전 3:42:55,2022-02-12 오전 3:45:57,0:03:02,jh,add,add,-,1644604975
+1644604369,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,18992,26.83 GB,21.31 GB,23.34 GB,230.88 MB/s,2022-02-12 오전 3:32:49,2022-02-12 오전 3:34:50,0:02:01,jh,ddd,ddd,-,1644604369
+1644603763,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,10202,3.44 GB,26.76 GB,9 GB,6.19 MB/s,2022-02-12 오전 3:22:43,2022-02-12 오전 3:32:14,0:09:31,jh,add,add,-,1644603763
+1644603157,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,10655,22.93 GB,581 MB,7.68 GB,232.47 MB/s,2022-02-12 오전 3:12:37,2022-02-12 오전 3:14:20,0:01:43,jh,dsk,dsk,-,1644603157
+1644602551,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,27809,6.98 GB,4.64 GB,10.53 GB,12.9 MB/s,2022-02-12 오전 3:02:31,2022-02-12 오전 3:11:47,0:09:16,jh,add,add,-,1644602551
+1644601945,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,24871,13.65 GB,7.23 GB,16.24 GB,90.76 MB/s,2022-02-12 오전 2:52:25,2022-02-12 오전 2:55:01,0:02:36,jh,ddd,ddd,-,1644601945
+1644601339,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,16979,23.67 KB,2.79 KB,15.3 KB,1 KB/s,2022-02-12 오전 2:42:19,2022-02-12 오전 2:47:19,0:05:00,jh,add,add,-,1644601339
+1644600733,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,27068,11.05 GB,2.23 GB,916 MB,31.44 MB/s,2022-02-12 오전 2:32:13,2022-02-12 오전 2:38:15,0:06:02,jh,dsk,dsk,-,1644600733
+1644600127,Suspended,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,1196,19.51 GB,14.83 GB,25.66 GB,243.7 MB/s,2022-02-12 오전 2:22:07,2022-02-12 오전 2:23:31,0:01:24,jh,add,add,-,1644600127
+1644599521,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,26639,28.79 KB,31 KB,16.19 KB,1 KB/s,2022-02-12 오전 2:12:01,2022-02-12 오전 2:13:37,0:01:36,jh,ddd,ddd,-,1644599521
+1644598915,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,12480,9.09 GB,16.32 GB,18.95 GB,48.46 MB/s,2022-02-12 오전 2:01:55,2022-02-12 오전 2:05:09,0:03:14,jh,add,add,-,1644598915
+1644598309,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,20874,12.53 GB,5.28 GB,10.61 GB,30.33 MB/s,2022-02-12 오전 1:51:49,2022-02-12 오전 1:58:54,0:07:05,jh,dsk,dsk,-,1644598309
+1644597703,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,18800,27.76 GB,12.8 GB,5.7 GB,65.49 MB/s,2022-02-12 오전 1:41:43,2022-02-12 오전 1:48:59,0:07:16,jh,add,add,-,1644597703
+1644597097,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,9590,17.79 GB,23.81 GB,14.13 GB,176.89 MB/s,2022-02-12 오전 1:31:37,2022-02-12 오전 1:33:22,0:01:45,jh,ddd,ddd,-,1644597097
+1644596491,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,18230,3.54 KB,1.82 KB,2.49 KB,1 KB/s,2022-02-12 오전 1:21:31,2022-02-12 오전 1:29:54,0:08:23,jh,add,add,-,1644596491
+1644595885,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,4168,12.68 MB,3.19 MB,93 KB,25.82 KB/s,2022-02-12 오전 1:11:25,2022-02-12 오전 1:19:50,0:08:25,jh,dsk,dsk,-,1644595885
+1644595279,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,30789,27.61 GB,23.98 GB,10.99 GB,127.94 MB/s,2022-02-12 오전 1:01:19,2022-02-12 오전 1:05:02,0:03:43,jh,add,add,-,1644595279
+1644594673,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,13686,1.18 GB,28.19 GB,2.2 GB,2.65 MB/s,2022-02-12 오전 12:51:13,2022-02-12 오전 12:58:49,0:07:36,jh,ddd,ddd,-,1644594673
+1644594067,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,31523,14.4 GB,10.41 GB,24.73 GB,30.97 MB/s,2022-02-12 오전 12:41:07,2022-02-12 오전 12:49:05,0:07:58,jh,add,add,-,1644594067
+1644593461,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,9281,13.2 GB,6.59 GB,2.32 GB,60.63 MB/s,2022-02-12 오전 12:31:01,2022-02-12 오전 12:34:46,0:03:45,jh,dsk,dsk,-,1644593461
+1644592855,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,23828,4.29 GB,27.14 GB,30.04 GB,7.62 MB/s,2022-02-12 오전 12:20:55,2022-02-12 오전 12:30:33,0:09:38,jh,add,add,-,1644592855
+1644592249,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,13898,22.71 GB,21.15 GB,28.43 GB,44.3 MB/s,2022-02-12 오전 12:10:49,2022-02-12 오전 12:19:36,0:08:47,jh,ddd,ddd,-,1644592249
+1644591643,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,12052,31.06 MB,30.45 MB,11.09 MB,54.84 KB/s,2022-02-12 오전 12:00:43,2022-02-12 오전 12:10:25,0:09:42,jh,add,add,-,1644591643
+1644591037,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,21247,22.6 GB,27.92 GB,10.11 GB,164.11 MB/s,2022-02-11 오후 11:50:37,2022-02-11 오후 11:53:00,0:02:23,jh,dsk,dsk,-,1644591037
+1644590431,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,26427,19.28 GB,17.41 GB,2.52 GB,195.45 MB/s,2022-02-11 오후 11:40:31,2022-02-11 오후 11:42:14,0:01:43,jh,add,add,-,1644590431
+1644589825,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,24858,21.31 GB,30.54 GB,11.5 GB,94.48 MB/s,2022-02-11 오후 11:30:25,2022-02-11 오후 11:34:18,0:03:53,jh,ddd,ddd,-,1644589825
+1644589219,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,29110,14.7 GB,22.17 GB,21.59 GB,36.02 MB/s,2022-02-11 오후 11:20:19,2022-02-11 오후 11:27:19,0:07:00,jh,add,add,-,1644589219
+1644588613,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,8130,10.7 GB,13.87 GB,22.78 GB,66.41 MB/s,2022-02-11 오후 11:10:13,2022-02-11 오후 11:13:00,0:02:47,jh,dsk,dsk,-,1644588613
+1644588007,Suspended,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,15288,3.21 GB,23.84 GB,10.63 GB,41.58 MB/s,2022-02-11 오후 11:00:07,2022-02-11 오후 11:01:28,0:01:21,jh,add,add,-,1644588007
+1644587401,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,17176,31.44 GB,1.8 GB,16.61 GB,141.19 MB/s,2022-02-11 오후 10:50:01,2022-02-11 오후 10:53:51,0:03:50,jh,ddd,ddd,-,1644587401
+1644586795,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,5148,20.39 GB,3.36 GB,13.76 GB,68.7 MB/s,2022-02-11 오후 10:39:55,2022-02-11 오후 10:45:01,0:05:06,jh,add,add,-,1644586795
+1644586189,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,5170,16.27 GB,22.64 GB,30.4 GB,29.38 MB/s,2022-02-11 오후 10:29:49,2022-02-11 오후 10:39:18,0:09:29,jh,dsk,dsk,-,1644586189
+1644585583,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,18565,31.43 GB,22.49 GB,15.78 GB,193.91 MB/s,2022-02-11 오후 10:19:43,2022-02-11 오후 10:22:31,0:02:48,jh,add,add,-,1644585583
+1644584977,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,2768,13.09 GB,8.01 GB,13.32 GB,24.15 MB/s,2022-02-11 오후 10:09:37,2022-02-11 오후 10:18:54,0:09:17,jh,ddd,ddd,-,1644584977
+1644584371,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,15169,20.51 GB,7.18 GB,21.35 GB,177.97 MB/s,2022-02-11 오후 9:59:31,2022-02-11 오후 10:01:31,0:02:00,jh,add,add,-,1644584371
+1644583765,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,28498,4.61 MB,30.97 MB,20.58 MB,14.19 KB/s,2022-02-11 오후 9:49:25,2022-02-11 오후 9:55:00,0:05:35,jh,dsk,dsk,-,1644583765
+1644583159,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,7487,19.5 GB,22.1 GB,5.52 GB,54.57 MB/s,2022-02-11 오후 9:39:19,2022-02-11 오후 9:45:27,0:06:08,jh,add,add,-,1644583159
+1644582553,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,7610,4.37 GB,4.19 GB,8.56 GB,13.5 MB/s,2022-02-11 오후 9:29:13,2022-02-11 오후 9:34:46,0:05:33,jh,ddd,ddd,-,1644582553
+1644581947,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,20687,6.44 MB,4.98 MB,21.79 MB,11.56 KB/s,2022-02-11 오후 9:19:07,2022-02-11 오후 9:28:39,0:09:32,jh,add,add,-,1644581947
+1644581341,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,3767,16.32 GB,20.09 GB,12.86 GB,245.76 MB/s,2022-02-11 오후 9:09:01,2022-02-11 오후 9:10:11,0:01:10,jh,dsk,dsk,-,1644581341
+1644580735,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,3341,31.4 GB,7.38 GB,23.87 GB,89.31 MB/s,2022-02-11 오후 8:58:55,2022-02-11 오후 9:04:57,0:06:02,jh,add,add,-,1644580735
+1644580129,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,27154,25.58 KB,7 KB,23.61 KB,1 KB/s,2022-02-11 오후 8:48:49,2022-02-11 오후 8:54:46,0:05:57,jh,ddd,ddd,-,1644580129
+1644579523,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,30497,1.63 MB,31.16 MB,29.55 MB,3.96 KB/s,2022-02-11 오후 8:38:43,2022-02-11 오후 8:45:46,0:07:03,jh,add,add,-,1644579523
+1644578917,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,9720,12.01 GB,13.32 GB,13.59 GB,24.89 MB/s,2022-02-11 오후 8:28:37,2022-02-11 오후 8:36:53,0:08:16,jh,dsk,dsk,-,1644578917
+1644578311,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,23998,9.61 GB,16.74 GB,21.89 GB,24.48 MB/s,2022-02-11 오후 8:18:31,2022-02-11 오후 8:25:15,0:06:44,jh,add,add,-,1644578311
+1644577705,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,10475,11.91 GB,28.7 GB,8.2 GB,27.65 MB/s,2022-02-11 오후 8:08:25,2022-02-11 오후 8:15:48,0:07:23,jh,ddd,ddd,-,1644577705
+1644577099,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,25733,18.94 MB,27.17 MB,8.24 MB,74.88 KB/s,2022-02-11 오후 7:58:19,2022-02-11 오후 8:02:40,0:04:21,jh,add,add,-,1644577099
+1644576493,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,6247,18.17 GB,10.65 GB,24.46 GB,31.91 MB/s,2022-02-11 오후 7:48:13,2022-02-11 오후 7:57:58,0:09:45,jh,dsk,dsk,-,1644576493
+1644575887,Canceled,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,2099,24.01 GB,7.71 GB,25.58 GB,84.18 MB/s,2022-02-11 오후 7:38:07,2022-02-11 오후 7:43:01,0:04:54,jh,add,add,-,1644575887
+1644575281,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,1152,3.67 GB,6.45 GB,24.66 GB,11.79 MB/s,2022-02-11 오후 7:28:01,2022-02-11 오후 7:33:22,0:05:21,jh,ddd,ddd,-,1644575281
+1644574675,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,18885,11.29 GB,25.51 GB,10.57 GB,35.26 MB/s,2022-02-11 오후 7:17:55,2022-02-11 오후 7:23:25,0:05:30,jh,add,add,-,1644574675
+1644574069,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,2304,11.05 GB,5.03 GB,29.53 GB,56.6 MB/s,2022-02-11 오후 7:07:49,2022-02-11 오후 7:11:11,0:03:22,jh,dsk,dsk,-,1644574069
+1644573463,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,19965,8.54 GB,10.82 GB,14.14 GB,17.53 MB/s,2022-02-11 오후 6:57:43,2022-02-11 오후 7:06:04,0:08:21,jh,add,add,-,1644573463
+1644572857,Partially Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,22220,7.1 KB,15.87 KB,27.11 KB,1 KB/s,2022-02-11 오후 6:47:37,2022-02-11 오후 6:49:28,0:01:51,jh,ddd,ddd,-,1644572857
+1644572251,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,10215,8.65 MB,30.82 MB,11.08 MB,30.55 KB/s,2022-02-11 오후 6:37:31,2022-02-11 오후 6:42:23,0:04:52,jh,add,add,-,1644572251
+1644571645,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,29856,15.64 GB,25.49 GB,29.85 GB,186.19 MB/s,2022-02-11 오후 6:27:25,2022-02-11 오후 6:28:53,0:01:28,jh,dsk,dsk,-,1644571645
+1644571039,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,10313,18.74 GB,1.15 GB,5.47 GB,33.37 MB/s,2022-02-11 오후 6:17:19,2022-02-11 오후 6:26:56,0:09:37,jh,add,add,-,1644571039
+1644570433,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,29788,10.71 GB,17.98 GB,16.74 GB,27.5 MB/s,2022-02-11 오후 6:07:13,2022-02-11 오후 6:13:54,0:06:41,jh,ddd,ddd,-,1644570433
+1644569827,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,14642,10.3 GB,27 GB,744 MB,35.74 MB/s,2022-02-11 오후 5:57:07,2022-02-11 오후 6:02:04,0:04:57,jh,add,add,-,1644569827
+1644569221,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,27257,16.63 GB,8.08 GB,18.63 GB,93.58 MB/s,2022-02-11 오후 5:47:01,2022-02-11 오후 5:50:05,0:03:04,jh,dsk,dsk,-,1644569221
+1644568615,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,21499,11.02 MB,20.3 MB,30.04 MB,56.44 KB/s,2022-02-11 오후 5:36:55,2022-02-11 오후 5:40:17,0:03:22,jh,add,add,-,1644568615
+1644568009,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,14178,18.24 GB,4.43 GB,26.15 GB,60.44 MB/s,2022-02-11 오후 5:26:49,2022-02-11 오후 5:32:00,0:05:11,jh,ddd,ddd,-,1644568009
+1644567403,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,20851,17.43 GB,11.47 GB,273 MB,100.28 MB/s,2022-02-11 오후 5:16:43,2022-02-11 오후 5:19:43,0:03:00,jh,add,add,-,1644567403
+1644566797,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,14020,30.58 GB,15.65 GB,30 GB,96.35 MB/s,2022-02-11 오후 5:06:37,2022-02-11 오후 5:12:04,0:05:27,jh,dsk,dsk,-,1644566797
+1644566191,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,32535,16.84 MB,10.08 MB,10.05 MB,70.68 KB/s,2022-02-11 오후 4:56:31,2022-02-11 오후 5:00:37,0:04:06,jh,add,add,-,1644566191
+1644565585,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,16140,7.1 GB,14 GB,9.73 GB,17.03 MB/s,2022-02-11 오후 4:46:25,2022-02-11 오후 4:53:34,0:07:09,jh,ddd,ddd,-,1644565585
+1644564979,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,22911,31.09 GB,5.38 GB,17.43 GB,94.48 MB/s,2022-02-11 오후 4:36:19,2022-02-11 오후 4:41:58,0:05:39,jh,add,add,-,1644564979
+1644564373,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,5047,31.98 GB,31.39 GB,26.28 GB,334.18 MB/s,2022-02-11 오후 4:26:13,2022-02-11 오후 4:27:53,0:01:40,jh,dsk,dsk,-,1644564373
+1644563767,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,23399,628 MB,18.63 GB,24.87 GB,6.41 MB/s,2022-02-11 오후 4:16:07,2022-02-11 오후 4:17:47,0:01:40,jh,add,add,-,1644563767
+1644563161,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,5910,25.48 GB,21.5 GB,21.11 GB,89.06 MB/s,2022-02-11 오후 4:06:01,2022-02-11 오후 4:10:56,0:04:55,jh,ddd,ddd,-,1644563161
+1644562555,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,18939,16.37 GB,4.97 GB,20.94 GB,30.71 MB/s,2022-02-11 오후 3:55:55,2022-02-11 오후 4:05:03,0:09:08,jh,add,add,-,1644562555
+1644561949,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,13496,18.52 GB,7.21 GB,12.84 GB,32.75 MB/s,2022-02-11 오후 3:45:49,2022-02-11 오후 3:55:30,0:09:41,jh,dsk,dsk,-,1644561949
+1644561343,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,6745,18.47 GB,16.2 GB,19.87 GB,87.14 MB/s,2022-02-11 오후 3:35:43,2022-02-11 오후 3:39:22,0:03:39,jh,add,add,-,1644561343
+1644560737,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,15260,16.93 KB,3.87 KB,18.71 KB,1 KB/s,2022-02-11 오후 3:25:37,2022-02-11 오후 3:27:30,0:01:53,jh,ddd,ddd,-,1644560737
+1644560131,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,18778,9.95 GB,14.97 GB,20.3 GB,21.49 MB/s,2022-02-11 오후 3:15:31,2022-02-11 오후 3:23:27,0:07:56,jh,add,add,-,1644560131
+1644559525,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,16337,4.31 GB,31.95 GB,17.57 GB,7.83 MB/s,2022-02-11 오후 3:05:25,2022-02-11 오후 3:14:51,0:09:26,jh,dsk,dsk,-,1644559525
+1644558919,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,5671,30.83 GB,13.4 GB,15.48 GB,220.73 MB/s,2022-02-11 오후 2:55:19,2022-02-11 오후 2:57:44,0:02:25,jh,add,add,-,1644558919
+1644558313,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,11572,1.51 GB,24.7 GB,299 MB,19.61 MB/s,2022-02-11 오후 2:45:13,2022-02-11 오후 2:46:34,0:01:21,jh,ddd,ddd,-,1644558313
+1644557707,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,20774,19.94 GB,1.05 GB,4.47 GB,46.09 MB/s,2022-02-11 오후 2:35:07,2022-02-11 오후 2:42:32,0:07:25,jh,add,add,-,1644557707
+1644557101,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,2406,2.25 GB,20.38 GB,3.83 GB,5.39 MB/s,2022-02-11 오후 2:25:01,2022-02-11 오후 2:32:11,0:07:10,jh,dsk,dsk,-,1644557101
+1644556495,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,11324,17.77 GB,7.13 GB,1.65 GB,59.87 MB/s,2022-02-11 오후 2:14:55,2022-02-11 오후 2:20:01,0:05:06,jh,add,add,-,1644556495
+1644555889,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,2362,10.6 GB,1.98 GB,31.62 GB,139.18 MB/s,2022-02-11 오후 2:04:49,2022-02-11 오후 2:06:09,0:01:20,jh,ddd,ddd,-,1644555889
+1644555283,Failed,E6422013,File Backup,Archive Backup,jh,TGHCV,testsc_2,32386,23.05 GB,30.34 GB,20.28 GB,188.85 MB/s,2022-02-11 오후 1:54:43,2022-02-11 오후 1:56:50,0:02:07,jh,add,add,-,1644555283
+1644554677,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,9764,8.42 KB,3.98 KB,26.02 KB,1 KB/s,2022-02-11 오후 1:44:37,2022-02-11 오후 1:48:39,0:04:02,jh,dsk,dsk,-,1644554677
+1644554071,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,3284,6.25 GB,30.94 GB,30.5 GB,42.42 MB/s,2022-02-11 오후 1:34:31,2022-02-11 오후 1:37:04,0:02:33,jh,add,add,-,1644554071
+1644553465,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,23148,20.13 KB,24.23 KB,6.17 KB,1 KB/s,2022-02-11 오후 1:24:25,2022-02-11 오후 1:27:52,0:03:27,jh,ddd,ddd,-,1644553465
+1644552859,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,29165,28.08 GB,21 GB,15.66 GB,73.34 MB/s,2022-02-11 오후 1:14:19,2022-02-11 오후 1:20:53,0:06:34,jh,add,add,-,1644552859
+1644552253,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,10043,17.5 GB,8.64 GB,24.66 GB,203.67 MB/s,2022-02-11 오후 1:04:13,2022-02-11 오후 1:05:43,0:01:30,jh,dsk,dsk,-,1644552253
+1644551647,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,997,18.07 GB,27.07 GB,12.43 GB,50.29 MB/s,2022-02-11 오후 12:54:07,2022-02-11 오후 1:00:17,0:06:10,jh,add,add,-,1644551647
+1644551041,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,5561,15.48 GB,15.9 GB,12.87 GB,273.24 MB/s,2022-02-11 오후 12:44:01,2022-02-11 오후 12:45:01,0:01:00,jh,ddd,ddd,-,1644551041
+1644550435,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,25163,30.64 GB,9.89 GB,16.77 GB,67.33 MB/s,2022-02-11 오후 12:33:55,2022-02-11 오후 12:41:43,0:07:48,jh,add,add,-,1644550435
+1644549829,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,5327,18.34 MB,24.02 MB,18.11 MB,42.21 KB/s,2022-02-11 오후 12:23:49,2022-02-11 오후 12:31:16,0:07:27,jh,dsk,dsk,-,1644549829
+1644549223,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,32572,27.71 GB,8.97 GB,16.4 GB,187.89 MB/s,2022-02-11 오후 12:13:43,2022-02-11 오후 12:16:16,0:02:33,jh,add,add,-,1644549223
+1644548617,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,30548,16.89 GB,1.06 GB,28.99 GB,32.51 MB/s,2022-02-11 오후 12:03:37,2022-02-11 오후 12:12:31,0:08:54,jh,ddd,ddd,-,1644548617
+1644548011,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,18208,20.35 GB,7.26 GB,7.81 GB,341.54 MB/s,2022-02-11 오전 11:53:31,2022-02-11 오전 11:54:34,0:01:03,jh,add,add,-,1644548011
+1644547405,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,31402,30.51 GB,9.87 GB,23.8 GB,315.6 MB/s,2022-02-11 오전 11:43:25,2022-02-11 오전 11:45:06,0:01:41,jh,dsk,dsk,-,1644547405
+1644546799,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,21994,2.94 GB,7.42 GB,3.66 GB,4.99 MB/s,2022-02-11 오전 11:33:19,2022-02-11 오전 11:43:25,0:10:06,jh,add,add,-,1644546799
+1644546193,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,13326,6.47 GB,22.49 GB,6.98 GB,23.58 MB/s,2022-02-11 오전 11:23:13,2022-02-11 오전 11:27:56,0:04:43,jh,ddd,ddd,-,1644546193
+1644545587,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,15901,25.14 GB,27.51 GB,18.76 GB,133.36 MB/s,2022-02-11 오전 11:13:07,2022-02-11 오전 11:16:22,0:03:15,jh,add,add,-,1644545587
+1644544981,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,6965,2.95 MB,28.06 MB,17.99 MB,23.43 KB/s,2022-02-11 오전 11:03:01,2022-02-11 오전 11:05:12,0:02:11,jh,dsk,dsk,-,1644544981
+1644544375,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,5344,21.31 GB,13.2 GB,19.65 GB,170.49 MB/s,2022-02-11 오전 10:52:55,2022-02-11 오전 10:55:05,0:02:10,jh,add,add,-,1644544375
+1644543769,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,13028,1.73 GB,5 GB,447 MB,3.68 MB/s,2022-02-11 오전 10:42:49,2022-02-11 오전 10:50:52,0:08:03,jh,ddd,ddd,-,1644543769
+1644543163,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,4063,2.05 GB,5.04 GB,13.87 GB,21.2 MB/s,2022-02-11 오전 10:32:43,2022-02-11 오전 10:34:24,0:01:41,jh,add,add,-,1644543163
+1644542557,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,7335,19.69 GB,29.48 GB,3.19 GB,95.55 MB/s,2022-02-11 오전 10:22:37,2022-02-11 오전 10:26:10,0:03:33,jh,dsk,dsk,-,1644542557
+1644541951,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,21719,23.35 GB,17.37 GB,29.34 GB,225.59 MB/s,2022-02-11 오전 10:12:31,2022-02-11 오전 10:14:19,0:01:48,jh,add,add,-,1644541951
+1644541345,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,17110,24.69 KB,28.07 KB,22.16 KB,1 KB/s,2022-02-11 오전 10:02:25,2022-02-11 오전 10:07:52,0:05:27,jh,ddd,ddd,-,1644541345
+1644540739,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,30708,7.25 MB,24.16 MB,21.95 MB,13.49 KB/s,2022-02-11 오전 9:52:19,2022-02-11 오전 10:01:31,0:09:12,jh,add,add,-,1644540739
+1644540133,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,17534,25.6 GB,24.69 GB,12.04 GB,45.27 MB/s,2022-02-11 오전 9:42:13,2022-02-11 오전 9:51:54,0:09:41,jh,dsk,dsk,-,1644540133
+1644539527,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,23923,27.67 GB,10 GB,4.81 GB,68.59 MB/s,2022-02-11 오전 9:32:07,2022-02-11 오전 9:39:02,0:06:55,jh,add,add,-,1644539527
+1644538921,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,249,19.58 GB,16.86 GB,15.2 GB,90.32 MB/s,2022-02-11 오전 9:22:01,2022-02-11 오전 9:25:45,0:03:44,jh,ddd,ddd,-,1644538921
+1644538315,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,5153,6.35 GB,28 GB,5.55 GB,34.96 MB/s,2022-02-11 오전 9:11:55,2022-02-11 오전 9:15:03,0:03:08,jh,add,add,-,1644538315
+1644537709,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,5421,29.23 GB,7.5 GB,20.83 GB,68.18 MB/s,2022-02-11 오전 9:01:49,2022-02-11 오전 9:09:10,0:07:21,jh,dsk,dsk,-,1644537709
+1644537103,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,6570,16.8 GB,6.59 GB,26.16 GB,55.49 MB/s,2022-02-11 오전 8:51:43,2022-02-11 오전 8:56:55,0:05:12,jh,add,add,-,1644537103
+1644536497,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,25294,12.06 GB,20.47 GB,14 GB,76.25 MB/s,2022-02-11 오전 8:41:37,2022-02-11 오전 8:44:21,0:02:44,jh,ddd,ddd,-,1644536497
+1644535891,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,7905,14.12 GB,11.56 GB,5.86 GB,170.06 MB/s,2022-02-11 오전 8:31:31,2022-02-11 오전 8:32:58,0:01:27,jh,add,add,-,1644535891
+1644535285,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,25110,27.72 GB,8.2 GB,17.52 GB,118.77 MB/s,2022-02-11 오전 8:21:25,2022-02-11 오전 8:25:26,0:04:01,jh,dsk,dsk,-,1644535285
+1644534679,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,8545,30.94 MB,26.96 MB,12.71 MB,122.8 KB/s,2022-02-11 오전 8:11:19,2022-02-11 오전 8:15:39,0:04:20,jh,add,add,-,1644534679
+1644534073,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,6355,19.02 MB,22.56 MB,12.64 MB,141.15 KB/s,2022-02-11 오전 8:01:13,2022-02-11 오전 8:03:33,0:02:20,jh,ddd,ddd,-,1644534073
+1644533467,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,22832,20.4 KB,23.79 KB,28.48 KB,1 KB/s,2022-02-11 오전 7:51:07,2022-02-11 오전 7:57:06,0:05:59,jh,add,add,-,1644533467
+1644532861,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,11705,2.74 GB,29.75 GB,5.39 GB,14.37 MB/s,2022-02-11 오전 7:41:01,2022-02-11 오전 7:44:18,0:03:17,jh,dsk,dsk,-,1644532861
+1644532255,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,23639,30.42 GB,31.78 GB,29.59 GB,145.55 MB/s,2022-02-11 오전 7:30:55,2022-02-11 오전 7:34:31,0:03:36,jh,add,add,-,1644532255
+1644531649,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,15705,1.95 GB,5.23 GB,1.06 GB,5.05 MB/s,2022-02-11 오전 7:20:49,2022-02-11 오전 7:27:27,0:06:38,jh,ddd,ddd,-,1644531649
+1644531043,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,18312,7.44 GB,23.75 GB,14.98 GB,120.9 MB/s,2022-02-11 오전 7:10:43,2022-02-11 오전 7:11:48,0:01:05,jh,add,add,-,1644531043
+1644530437,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,26156,507 MB,19.7 GB,27.19 GB,977.72 KB/s,2022-02-11 오전 7:00:37,2022-02-11 오전 7:09:30,0:08:53,jh,dsk,dsk,-,1644530437
+1644529831,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,581,17 MB,29.56 GB,18.53 GB,34.07 KB/s,2022-02-11 오전 6:50:31,2022-02-11 오전 6:59:04,0:08:33,jh,add,add,-,1644529831
+1644529225,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,918,12.87 GB,11.27 GB,6.42 GB,36.61 MB/s,2022-02-11 오전 6:40:25,2022-02-11 오전 6:46:27,0:06:02,jh,ddd,ddd,-,1644529225
+1644528619,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,9770,27.46 GB,3.76 GB,5.28 GB,115.24 MB/s,2022-02-11 오전 6:30:19,2022-02-11 오전 6:34:25,0:04:06,jh,add,add,-,1644528619
+1644528013,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,21453,4.85 GB,14.93 GB,22.89 GB,76.42 MB/s,2022-02-11 오전 6:20:13,2022-02-11 오전 6:21:20,0:01:07,jh,dsk,dsk,-,1644528013
+1644527407,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,31813,16.11 GB,7.34 GB,26.05 GB,235.7 MB/s,2022-02-11 오전 6:10:07,2022-02-11 오전 6:11:19,0:01:12,jh,add,add,-,1644527407
+1644526801,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,23293,25.8 KB,29.67 KB,24.48 KB,1 KB/s,2022-02-11 오전 6:00:01,2022-02-11 오전 6:09:54,0:09:53,jh,ddd,ddd,-,1644526801
+1644526195,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,14497,5.58 GB,8.74 GB,3.86 GB,12.62 MB/s,2022-02-11 오전 5:49:55,2022-02-11 오전 5:57:30,0:07:35,jh,add,add,-,1644526195
+1644525589,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,20020,446 MB,4.26 GB,21.96 GB,1.05 MB/s,2022-02-11 오전 5:39:49,2022-02-11 오전 5:46:56,0:07:07,jh,dsk,dsk,-,1644525589
+1644524983,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,27506,13.61 MB,25.8 MB,1.93 MB,28.61 KB/s,2022-02-11 오전 5:29:43,2022-02-11 오전 5:37:52,0:08:09,jh,add,add,-,1644524983
+1644524377,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,15053,18.83 GB,25.5 GB,30.07 GB,32.78 MB/s,2022-02-11 오전 5:19:37,2022-02-11 오전 5:29:27,0:09:50,jh,ddd,ddd,-,1644524377
+1644523771,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,22658,5.04 GB,16.5 GB,6.73 GB,11.91 MB/s,2022-02-11 오전 5:09:31,2022-02-11 오전 5:16:46,0:07:15,jh,add,add,-,1644523771
+1644523165,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,2926,30.87 GB,29.78 GB,3.27 GB,127.98 MB/s,2022-02-11 오전 4:59:25,2022-02-11 오전 5:03:34,0:04:09,jh,dsk,dsk,-,1644523165
+1644522559,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,22735,29.69 GB,4.01 GB,16.99 GB,284.11 MB/s,2022-02-11 오전 4:49:19,2022-02-11 오전 4:51:08,0:01:49,jh,add,add,-,1644522559
+1644521953,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,2534,23.72 GB,3.03 GB,15.62 GB,59.68 MB/s,2022-02-11 오전 4:39:13,2022-02-11 오전 4:46:02,0:06:49,jh,ddd,ddd,-,1644521953
+1644521347,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,26487,11.71 GB,12.16 GB,22.28 GB,33.98 MB/s,2022-02-11 오전 4:29:07,2022-02-11 오전 4:35:02,0:05:55,jh,add,add,-,1644521347
+1644520741,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,7526,9.03 GB,8.05 GB,19.47 GB,18.38 MB/s,2022-02-11 오전 4:19:01,2022-02-11 오전 4:27:26,0:08:25,jh,dsk,dsk,-,1644520741
+1644520135,Canceled,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,21099,21.39 MB,14.77 MB,5.19 MB,169.76 KB/s,2022-02-11 오전 4:08:55,2022-02-11 오전 4:11:06,0:02:11,jh,add,add,-,1644520135
+1644519529,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,22242,4.09 GB,7.26 GB,22.71 GB,18.07 MB/s,2022-02-11 오전 3:58:49,2022-02-11 오전 4:02:43,0:03:54,jh,ddd,ddd,-,1644519529
+1644518923,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,2173,7 GB,29.56 GB,30.88 GB,16.14 MB/s,2022-02-11 오전 3:48:43,2022-02-11 오전 3:56:09,0:07:26,jh,add,add,-,1644518923
+1644518317,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,29093,12.38 GB,16.16 GB,15.03 GB,22.28 MB/s,2022-02-11 오전 3:38:37,2022-02-11 오전 3:48:08,0:09:31,jh,dsk,dsk,-,1644518317
+1644517711,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,31172,1.96 GB,7.44 GB,7.05 GB,3.41 MB/s,2022-02-11 오전 3:28:31,2022-02-11 오전 3:38:22,0:09:51,jh,add,add,-,1644517711
+1644517105,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,21602,15.16 GB,16.63 GB,19.72 GB,28.64 MB/s,2022-02-11 오전 3:18:25,2022-02-11 오전 3:27:29,0:09:04,jh,ddd,ddd,-,1644517105
+1644516499,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,17516,25.93 GB,12.84 GB,4.34 GB,55.21 MB/s,2022-02-11 오전 3:08:19,2022-02-11 오전 3:16:22,0:08:03,jh,add,add,-,1644516499
+1644515893,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,26429,20.37 GB,11.44 GB,30.75 GB,51.62 MB/s,2022-02-11 오전 2:58:13,2022-02-11 오전 3:04:59,0:06:46,jh,dsk,dsk,-,1644515893
+1644515287,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,18283,9.1 GB,3.37 GB,19.34 GB,45.46 MB/s,2022-02-11 오전 2:48:07,2022-02-11 오전 2:51:34,0:03:27,jh,add,add,-,1644515287
+1644514681,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,19879,26.01 GB,16.18 GB,6.58 GB,364.82 MB/s,2022-02-11 오전 2:38:01,2022-02-11 오전 2:39:16,0:01:15,jh,ddd,ddd,-,1644514681
+1644514075,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,32182,9.69 GB,6.99 GB,26.16 GB,25.58 MB/s,2022-02-11 오전 2:27:55,2022-02-11 오전 2:34:25,0:06:30,jh,add,add,-,1644514075
+1644513469,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,20226,18.88 GB,18.21 GB,31.89 GB,48.56 MB/s,2022-02-11 오전 2:17:49,2022-02-11 오전 2:24:29,0:06:40,jh,dsk,dsk,-,1644513469
+1644512863,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,2023,9.9 GB,891 MB,12.15 GB,75.67 MB/s,2022-02-11 오전 2:07:43,2022-02-11 오전 2:09:59,0:02:16,jh,add,add,-,1644512863
+1644512257,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,1892,17.5 GB,11.93 GB,7.47 GB,210.79 MB/s,2022-02-11 오전 1:57:37,2022-02-11 오전 1:59:04,0:01:27,jh,ddd,ddd,-,1644512257
+1644511651,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,22386,13.38 GB,18.48 GB,25.6 GB,204.48 MB/s,2022-02-11 오전 1:47:31,2022-02-11 오전 1:48:40,0:01:09,jh,add,add,-,1644511651
+1644511045,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,27129,4.75 GB,6.12 GB,20.84 GB,34.27 MB/s,2022-02-11 오전 1:37:25,2022-02-11 오전 1:39:49,0:02:24,jh,dsk,dsk,-,1644511045
+1644510439,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,21982,23.71 KB,26.82 KB,18.24 KB,1 KB/s,2022-02-11 오전 1:27:19,2022-02-11 오전 1:36:52,0:09:33,jh,add,add,-,1644510439
+1644509833,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,16593,24.66 GB,19.62 GB,12.71 GB,61.43 MB/s,2022-02-11 오전 1:17:13,2022-02-11 오전 1:24:06,0:06:53,jh,ddd,ddd,-,1644509833
+1644509227,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,29595,2.09 GB,23.01 GB,30.55 GB,19.5 MB/s,2022-02-11 오전 1:07:07,2022-02-11 오전 1:08:59,0:01:52,jh,add,add,-,1644509227
+1644508621,Suspended,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,14868,15.38 KB,13.47 KB,23.37 KB,1 KB/s,2022-02-11 오전 12:57:01,2022-02-11 오전 1:04:30,0:07:29,jh,dsk,dsk,-,1644508621
+1644508015,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,5488,23.74 GB,19.71 GB,23.67 GB,76.21 MB/s,2022-02-11 오전 12:46:55,2022-02-11 오전 12:52:16,0:05:21,jh,add,add,-,1644508015
+1644507409,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,18689,702 MB,12.73 GB,10.64 GB,3.11 MB/s,2022-02-11 오전 12:36:49,2022-02-11 오전 12:40:37,0:03:48,jh,ddd,ddd,-,1644507409
+1644506803,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,11411,20.38 GB,5.24 GB,4.21 GB,41.57 MB/s,2022-02-11 오전 12:26:43,2022-02-11 오전 12:35:07,0:08:24,jh,add,add,-,1644506803
+1644506197,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,14622,4.35 GB,28.24 GB,1.4 GB,10.91 MB/s,2022-02-11 오전 12:16:37,2022-02-11 오전 12:23:27,0:06:50,jh,dsk,dsk,-,1644506197
+1644505591,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,13541,26.51 GB,13.38 GB,12.79 GB,76.04 MB/s,2022-02-11 오전 12:06:31,2022-02-11 오전 12:12:30,0:05:59,jh,add,add,-,1644505591
+1644504985,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,23671,3.5 GB,22.81 GB,10.56 GB,13.69 MB/s,2022-02-10 오후 11:56:25,2022-02-11 오전 12:00:49,0:04:24,jh,ddd,ddd,-,1644504985
+1644504379,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,11757,31.91 GB,27.63 GB,10.64 GB,336.84 MB/s,2022-02-10 오후 11:46:19,2022-02-10 오후 11:47:58,0:01:39,jh,add,add,-,1644504379
+1644503773,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,18930,8.1 GB,19.99 GB,17.41 GB,17.25 MB/s,2022-02-10 오후 11:36:13,2022-02-10 오후 11:44:16,0:08:03,jh,dsk,dsk,-,1644503773
+1644503167,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,13961,26.11 GB,18.21 GB,24.51 GB,57.24 MB/s,2022-02-10 오후 11:26:07,2022-02-10 오후 11:33:56,0:07:49,jh,add,add,-,1644503167
+1644502561,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,16118,5.86 MB,25.21 MB,5.76 MB,24.81 KB/s,2022-02-10 오후 11:16:01,2022-02-10 오후 11:20:05,0:04:04,jh,ddd,ddd,-,1644502561
+1644501955,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,4203,22.55 GB,21.36 GB,30.02 GB,58.16 MB/s,2022-02-10 오후 11:05:55,2022-02-10 오후 11:12:34,0:06:39,jh,add,add,-,1644501955
+1644501349,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,30706,8.78 KB,19.54 KB,31.34 KB,1 KB/s,2022-02-10 오후 10:55:49,2022-02-10 오후 10:58:37,0:02:48,jh,dsk,dsk,-,1644501349
+1644500743,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,18390,22.24 MB,4.94 MB,28.94 MB,41.87 KB/s,2022-02-10 오후 10:45:43,2022-02-10 오후 10:54:49,0:09:06,jh,add,add,-,1644500743
+1644500137,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,17815,22.02 GB,26.96 GB,1.61 GB,39.22 MB/s,2022-02-10 오후 10:35:37,2022-02-10 오후 10:45:14,0:09:37,jh,ddd,ddd,-,1644500137
+1644499531,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,23876,15.7 GB,273 MB,8.81 GB,58.67 MB/s,2022-02-10 오후 10:25:31,2022-02-10 오후 10:30:07,0:04:36,jh,add,add,-,1644499531
+1644498925,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,22710,2 GB,31.48 GB,7.06 GB,17.77 MB/s,2022-02-10 오후 10:15:25,2022-02-10 오후 10:17:22,0:01:57,jh,dsk,dsk,-,1644498925
+1644498319,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,27090,23.15 GB,28.04 GB,25.26 GB,43.5 MB/s,2022-02-10 오후 10:05:19,2022-02-10 오후 10:14:26,0:09:07,jh,add,add,-,1644498319
+1644497713,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,17696,11.99 MB,22.14 MB,25.69 MB,23.52 KB/s,2022-02-10 오후 9:55:13,2022-02-10 오후 10:03:57,0:08:44,jh,ddd,ddd,-,1644497713
+1644497107,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,7337,16.94 GB,6.85 GB,9.71 GB,48.06 MB/s,2022-02-10 오후 9:45:07,2022-02-10 오후 9:51:10,0:06:03,jh,add,add,-,1644497107
+1644496501,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,9219,26.77 KB,28.47 KB,29.46 KB,1 KB/s,2022-02-10 오후 9:35:01,2022-02-10 오후 9:43:40,0:08:39,jh,dsk,dsk,-,1644496501
+1644495895,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,28346,16.25 GB,29.63 GB,9.94 GB,244.63 MB/s,2022-02-10 오후 9:24:55,2022-02-10 오후 9:26:05,0:01:10,jh,add,add,-,1644495895
+1644495289,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,6290,320 KB,7.4 MB,21 MB,1.73 KB/s,2022-02-10 오후 9:14:49,2022-02-10 오후 9:17:56,0:03:07,jh,ddd,ddd,-,1644495289
+1644494683,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,21384,17.03 KB,11.37 KB,22.34 KB,1 KB/s,2022-02-10 오후 9:04:43,2022-02-10 오후 9:09:16,0:04:33,jh,add,add,-,1644494683
+1644494077,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,22013,26.46 KB,4.39 KB,21.02 KB,1 KB/s,2022-02-10 오후 8:54:37,2022-02-10 오후 8:56:55,0:02:18,jh,dsk,dsk,-,1644494077
+1644493471,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,20702,11.66 GB,978 MB,24.31 GB,107.58 MB/s,2022-02-10 오후 8:44:31,2022-02-10 오후 8:46:24,0:01:53,jh,add,add,-,1644493471
+1644492865,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,13314,30.46 KB,10.94 KB,19.25 KB,1 KB/s,2022-02-10 오후 8:34:25,2022-02-10 오후 8:36:29,0:02:04,jh,ddd,ddd,-,1644492865
+1644492259,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,5266,6.16 GB,1.01 GB,3.91 GB,13.36 MB/s,2022-02-10 오후 8:24:19,2022-02-10 오후 8:32:13,0:07:54,jh,add,add,-,1644492259
+1644491653,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,28574,1.78 KB,15.29 KB,7.05 KB,1 KB/s,2022-02-10 오후 8:14:13,2022-02-10 오후 8:19:46,0:05:33,jh,dsk,dsk,-,1644491653
+1644491047,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,9933,23.55 MB,10.46 MB,26.36 MB,66.07 KB/s,2022-02-10 오후 8:04:07,2022-02-10 오후 8:10:14,0:06:07,jh,add,add,-,1644491047
+1644490441,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,30635,7.72 GB,7.7 GB,15.17 GB,19.82 MB/s,2022-02-10 오후 7:54:01,2022-02-10 오후 8:00:42,0:06:41,jh,ddd,ddd,-,1644490441
+1644489835,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,2169,583 MB,57 MB,30.5 GB,1.38 MB/s,2022-02-10 오후 7:43:55,2022-02-10 오후 7:50:58,0:07:03,jh,add,add,-,1644489835
+1644489229,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,10600,4.91 GB,25.11 GB,6.34 GB,31.01 MB/s,2022-02-10 오후 7:33:49,2022-02-10 오후 7:36:33,0:02:44,jh,dsk,dsk,-,1644489229
+1644488623,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,14516,30.21 MB,7.38 MB,19.96 MB,412.41 KB/s,2022-02-10 오후 7:23:43,2022-02-10 오후 7:25:00,0:01:17,jh,add,add,-,1644488623
+1644488017,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,14146,11.74 KB,25.86 KB,2.89 KB,1 KB/s,2022-02-10 오후 7:13:37,2022-02-10 오후 7:22:09,0:08:32,jh,ddd,ddd,-,1644488017
+1644487411,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,4477,2.47 GB,2.16 GB,8.34 GB,5.19 MB/s,2022-02-10 오후 7:03:31,2022-02-10 오후 7:11:40,0:08:09,jh,add,add,-,1644487411
+1644486805,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,11353,19.6 GB,29.25 GB,16.54 GB,308.75 MB/s,2022-02-10 오후 6:53:25,2022-02-10 오후 6:54:32,0:01:07,jh,dsk,dsk,-,1644486805
+1644486199,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,31490,2.02 GB,29.95 GB,26.28 GB,12.8 MB/s,2022-02-10 오후 6:43:19,2022-02-10 오후 6:46:03,0:02:44,jh,add,add,-,1644486199
+1644485593,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,10636,11.49 GB,29.77 GB,11.44 GB,57.96 MB/s,2022-02-10 오후 6:33:13,2022-02-10 오후 6:36:38,0:03:25,jh,ddd,ddd,-,1644485593
+1644484987,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,28200,22.23 GB,3.72 GB,9.74 GB,102.99 MB/s,2022-02-10 오후 6:23:07,2022-02-10 오후 6:26:50,0:03:43,jh,add,add,-,1644484987
+1644484381,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,9502,12.42 GB,17 GB,2.99 GB,23.42 MB/s,2022-02-10 오후 6:13:01,2022-02-10 오후 6:22:06,0:09:05,jh,dsk,dsk,-,1644484381
+1644483775,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,29262,6.24 KB,23.08 KB,10.6 KB,1 KB/s,2022-02-10 오후 6:02:55,2022-02-10 오후 6:04:06,0:01:11,jh,add,add,-,1644483775
+1644483169,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,13356,11.98 GB,12.04 GB,24.24 GB,86.37 MB/s,2022-02-10 오후 5:52:49,2022-02-10 오후 5:55:13,0:02:24,jh,ddd,ddd,-,1644483169
+1644482563,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,32599,19.95 MB,23.2 MB,10.95 MB,65.26 KB/s,2022-02-10 오후 5:42:43,2022-02-10 오후 5:47:58,0:05:15,jh,add,add,-,1644482563
+1644481957,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,17802,8 GB,21.66 GB,8.12 GB,20.08 MB/s,2022-02-10 오후 5:32:37,2022-02-10 오후 5:39:27,0:06:50,jh,dsk,dsk,-,1644481957
+1644481351,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,17532,29.5 GB,22.74 GB,21.39 GB,71.25 MB/s,2022-02-10 오후 5:22:31,2022-02-10 오후 5:29:37,0:07:06,jh,add,add,-,1644481351
+1644480745,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,18369,13.35 GB,8.05 GB,3.69 GB,164.69 MB/s,2022-02-10 오후 5:12:25,2022-02-10 오후 5:13:50,0:01:25,jh,ddd,ddd,-,1644480745
+1644480139,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,5500,23.28 GB,7.66 GB,776 MB,68.1 MB/s,2022-02-10 오후 5:02:19,2022-02-10 오후 5:08:11,0:05:52,jh,add,add,-,1644480139
+1644479533,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,2119,25.37 GB,11.59 GB,2.51 GB,57.34 MB/s,2022-02-10 오후 4:52:13,2022-02-10 오후 4:59:48,0:07:35,jh,dsk,dsk,-,1644479533
+1644478927,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,31517,7.24 MB,7.74 MB,14.74 MB,29.54 KB/s,2022-02-10 오후 4:42:07,2022-02-10 오후 4:46:20,0:04:13,jh,add,add,-,1644478927
+1644478321,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,16430,11.66 GB,17.7 GB,1.82 GB,28.09 MB/s,2022-02-10 오후 4:32:01,2022-02-10 오후 4:39:08,0:07:07,jh,ddd,ddd,-,1644478321
+1644477715,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,26913,22.6 GB,23.24 GB,4.97 GB,55.49 MB/s,2022-02-10 오후 4:21:55,2022-02-10 오후 4:28:54,0:06:59,jh,add,add,-,1644477715
+1644477109,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,19149,16.35 GB,31.03 GB,10.35 GB,137.23 MB/s,2022-02-10 오후 4:11:49,2022-02-10 오후 4:13:53,0:02:04,jh,dsk,dsk,-,1644477109
+1644476503,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,15126,20.88 GB,16.23 GB,5.1 GB,122.89 MB/s,2022-02-10 오후 4:01:43,2022-02-10 오후 4:04:39,0:02:56,jh,add,add,-,1644476503
+1644475897,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,32058,30.16 GB,27.55 GB,1.96 GB,51.14 MB/s,2022-02-10 오후 3:51:37,2022-02-10 오후 4:01:43,0:10:06,jh,ddd,ddd,-,1644475897
+1644475291,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,8878,28.48 GB,22.73 GB,3.65 GB,355.62 MB/s,2022-02-10 오후 3:41:31,2022-02-10 오후 3:42:55,0:01:24,jh,add,add,-,1644475291
+1644474685,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,4498,27.02 GB,23.69 GB,2.63 GB,72.63 MB/s,2022-02-10 오후 3:31:25,2022-02-10 오후 3:37:48,0:06:23,jh,dsk,dsk,-,1644474685
+1644474079,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,30083,31.83 GB,19.63 GB,15.25 GB,58.3 MB/s,2022-02-10 오후 3:21:19,2022-02-10 오후 3:30:40,0:09:21,jh,add,add,-,1644474079
+1644473473,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,10075,26.19 MB,22.21 MB,16.59 MB,114.11 KB/s,2022-02-10 오후 3:11:13,2022-02-10 오후 3:15:10,0:03:57,jh,ddd,ddd,-,1644473473
+1644472867,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,5486,20.47 GB,3.25 GB,22.14 GB,38.46 MB/s,2022-02-10 오후 3:01:07,2022-02-10 오후 3:10:14,0:09:07,jh,add,add,-,1644472867
+1644472261,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,2690,19.24 GB,4.23 GB,26.78 GB,143.81 MB/s,2022-02-10 오후 2:51:01,2022-02-10 오후 2:53:20,0:02:19,jh,dsk,dsk,-,1644472261
+1644471655,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,21980,9.29 GB,23.21 GB,18.71 GB,16.68 MB/s,2022-02-10 오후 2:40:55,2022-02-10 오후 2:50:27,0:09:32,jh,add,add,-,1644471655
+1644471049,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,21709,14.55 GB,18.05 GB,22.07 GB,58.89 MB/s,2022-02-10 오후 2:30:49,2022-02-10 오후 2:35:04,0:04:15,jh,ddd,ddd,-,1644471049
+1644470443,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,4557,12.2 MB,6.93 MB,21.03 MB,28.79 KB/s,2022-02-10 오후 2:20:43,2022-02-10 오후 2:27:59,0:07:16,jh,add,add,-,1644470443
+1644469837,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,8625,21.2 GB,10.49 GB,1.91 GB,70.03 MB/s,2022-02-10 오후 2:10:37,2022-02-10 오후 2:15:49,0:05:12,jh,dsk,dsk,-,1644469837
+1644469231,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,29016,12.89 GB,14.2 GB,19.38 GB,35.88 MB/s,2022-02-10 오후 2:00:31,2022-02-10 오후 2:06:41,0:06:10,jh,add,add,-,1644469231
+1644468625,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,745,28.55 GB,8.27 GB,31.63 GB,169.96 MB/s,2022-02-10 오후 1:50:25,2022-02-10 오후 1:53:19,0:02:54,jh,ddd,ddd,-,1644468625
+1644468019,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,29414,25.8 GB,9.68 GB,25.75 GB,165.09 MB/s,2022-02-10 오후 1:40:19,2022-02-10 오후 1:43:01,0:02:42,jh,add,add,-,1644468019
+1644467413,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,15437,12.11 GB,21.56 GB,630 MB,42.31 MB/s,2022-02-10 오후 1:30:13,2022-02-10 오후 1:35:08,0:04:55,jh,dsk,dsk,-,1644467413
+1644466807,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,31632,31.16 GB,2.46 GB,13.49 GB,55.59 MB/s,2022-02-10 오후 1:20:07,2022-02-10 오후 1:29:43,0:09:36,jh,add,add,-,1644466807
+1644466201,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,6066,3.51 GB,12.19 GB,15.24 GB,8.66 MB/s,2022-02-10 오후 1:10:01,2022-02-10 오후 1:16:58,0:06:57,jh,ddd,ddd,-,1644466201
+1644465595,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,19259,8.57 GB,15.05 GB,25.17 GB,23.59 MB/s,2022-02-10 오후 12:59:55,2022-02-10 오후 1:06:09,0:06:14,jh,add,add,-,1644465595
+1644464989,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,28120,17.87 GB,10.68 GB,30.34 GB,36.3 MB/s,2022-02-10 오후 12:49:49,2022-02-10 오후 12:58:15,0:08:26,jh,dsk,dsk,-,1644464989
+1644464383,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,1126,740 MB,30.72 GB,10.94 GB,7.05 MB/s,2022-02-10 오후 12:39:43,2022-02-10 오후 12:41:30,0:01:47,jh,add,add,-,1644464383
+1644463777,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,24498,3.91 GB,21.98 GB,31.72 GB,11.54 MB/s,2022-02-10 오후 12:29:37,2022-02-10 오후 12:35:26,0:05:49,jh,ddd,ddd,-,1644463777
+1644463171,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,21701,29.1 GB,14.07 GB,15.81 GB,55.39 MB/s,2022-02-10 오후 12:19:31,2022-02-10 오후 12:28:31,0:09:00,jh,add,add,-,1644463171
+1644462565,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,15253,14.86 MB,29.92 MB,7.3 MB,38.05 KB/s,2022-02-10 오후 12:09:25,2022-02-10 오후 12:16:07,0:06:42,jh,dsk,dsk,-,1644462565
+1644461959,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,806,31.41 GB,15.38 GB,20.84 GB,119.57 MB/s,2022-02-10 오전 11:59:19,2022-02-10 오후 12:03:50,0:04:31,jh,add,add,-,1644461959
+1644461353,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,15366,15.04 GB,7.58 GB,25.75 GB,126.28 MB/s,2022-02-10 오전 11:49:13,2022-02-10 오전 11:51:17,0:02:04,jh,ddd,ddd,-,1644461353
+1644460747,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,2094,17.55 GB,287 MB,9.09 GB,119.81 MB/s,2022-02-10 오전 11:39:07,2022-02-10 오전 11:41:39,0:02:32,jh,add,add,-,1644460747
+1644460141,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,16961,22.78 GB,15.64 GB,23.97 GB,202.87 MB/s,2022-02-10 오전 11:29:01,2022-02-10 오전 11:30:58,0:01:57,jh,dsk,dsk,-,1644460141
+1644459535,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,13036,14.12 GB,30.89 GB,18.45 GB,26.34 MB/s,2022-02-10 오전 11:18:55,2022-02-10 오전 11:28:06,0:09:11,jh,add,add,-,1644459535
+1644458929,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,29878,8.26 MB,29 MB,7.02 MB,18.48 KB/s,2022-02-10 오전 11:08:49,2022-02-10 오전 11:16:29,0:07:40,jh,ddd,ddd,-,1644458929
+1644458323,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,32604,27.34 GB,20.68 GB,26.15 GB,49.81 MB/s,2022-02-10 오전 10:58:43,2022-02-10 오전 11:08:07,0:09:24,jh,add,add,-,1644458323
+1644457717,Canceled,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,20997,15.52 GB,11.9 GB,3.16 GB,42.71 MB/s,2022-02-10 오전 10:48:37,2022-02-10 오전 10:54:51,0:06:14,jh,dsk,dsk,-,1644457717
+1644457111,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,1096,12.52 GB,2.65 GB,22.38 GB,37.26 MB/s,2022-02-10 오전 10:38:31,2022-02-10 오전 10:44:17,0:05:46,jh,add,add,-,1644457111
+1644456505,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,25417,12.78 GB,8.95 GB,511 MB,48.67 MB/s,2022-02-10 오전 10:28:25,2022-02-10 오전 10:32:56,0:04:31,jh,ddd,ddd,-,1644456505
+1644455899,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,1840,27.11 GB,3.86 GB,25.72 GB,213.52 MB/s,2022-02-10 오전 10:18:19,2022-02-10 오전 10:20:31,0:02:12,jh,add,add,-,1644455899
+1644455293,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,21675,31.11 GB,20.49 GB,23.56 GB,90.51 MB/s,2022-02-10 오전 10:08:13,2022-02-10 오전 10:14:07,0:05:54,jh,dsk,dsk,-,1644455293
+1644454687,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,10271,7.54 GB,29.5 GB,11.17 GB,24.34 MB/s,2022-02-10 오전 9:58:07,2022-02-10 오전 10:03:26,0:05:19,jh,add,add,-,1644454687
+1644454081,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,27031,7.04 GB,14.68 GB,4.63 GB,85.8 MB/s,2022-02-10 오전 9:48:01,2022-02-10 오전 9:49:27,0:01:26,jh,ddd,ddd,-,1644454081
+1644453475,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,1166,8.01 GB,18.12 GB,13.58 GB,40.23 MB/s,2022-02-10 오전 9:37:55,2022-02-10 오전 9:41:21,0:03:26,jh,add,add,-,1644453475
+1644452869,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,4622,13.8 GB,14.94 GB,26.02 GB,28.31 MB/s,2022-02-10 오전 9:27:49,2022-02-10 오전 9:36:10,0:08:21,jh,dsk,dsk,-,1644452869
+1644452263,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,30674,11.68 MB,12.8 MB,106 KB,20.95 KB/s,2022-02-10 오전 9:17:43,2022-02-10 오전 9:27:16,0:09:33,jh,add,add,-,1644452263
+1644451657,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,26848,2.61 KB,26.27 KB,18.72 KB,1 KB/s,2022-02-10 오전 9:07:37,2022-02-10 오전 9:11:50,0:04:13,jh,ddd,ddd,-,1644451657
+1644451051,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,4255,23.32 GB,28.68 GB,23.01 GB,176.89 MB/s,2022-02-10 오전 8:57:31,2022-02-10 오전 8:59:48,0:02:17,jh,add,add,-,1644451051
+1644450445,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,9942,25.06 MB,31.24 MB,25.18 MB,87.58 KB/s,2022-02-10 오전 8:47:25,2022-02-10 오전 8:52:20,0:04:55,jh,dsk,dsk,-,1644450445
+1644449839,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,16036,18.19 GB,5.02 GB,7.35 GB,88.26 MB/s,2022-02-10 오전 8:37:19,2022-02-10 오전 8:40:52,0:03:33,jh,add,add,-,1644449839
+1644449233,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,11548,5.73 MB,8.14 MB,24.27 MB,11.7 KB/s,2022-02-10 오전 8:27:13,2022-02-10 오전 8:35:36,0:08:23,jh,ddd,ddd,-,1644449233
+1644448627,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,28757,17.31 GB,30.96 GB,22.96 GB,203.74 MB/s,2022-02-10 오전 8:17:07,2022-02-10 오전 8:18:36,0:01:29,jh,add,add,-,1644448627
+1644448021,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,16739,4.79 GB,8.42 GB,15.84 GB,13.28 MB/s,2022-02-10 오전 8:07:01,2022-02-10 오전 8:13:12,0:06:11,jh,dsk,dsk,-,1644448021
+1644447415,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,10327,1.92 GB,18.89 GB,6.49 GB,6.06 MB/s,2022-02-10 오전 7:56:55,2022-02-10 오전 8:02:22,0:05:27,jh,add,add,-,1644447415
+1644446809,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,147,5.29 KB,28.89 KB,13.52 KB,1 KB/s,2022-02-10 오전 7:46:49,2022-02-10 오전 7:54:36,0:07:47,jh,ddd,ddd,-,1644446809
+1644446203,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,19246,20.5 GB,12.92 GB,19.04 GB,59.15 MB/s,2022-02-10 오전 7:36:43,2022-02-10 오전 7:42:40,0:05:57,jh,add,add,-,1644446203
+1644445597,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,30984,7.48 KB,27.93 KB,26.82 KB,1 KB/s,2022-02-10 오전 7:26:37,2022-02-10 오전 7:33:49,0:07:12,jh,dsk,dsk,-,1644445597
+1644444991,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,22807,13.19 GB,6.22 GB,10.25 GB,30.01 MB/s,2022-02-10 오전 7:16:31,2022-02-10 오전 7:24:03,0:07:32,jh,add,add,-,1644444991
+1644444385,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,23471,24.52 GB,30.46 GB,13.87 GB,42.84 MB/s,2022-02-10 오전 7:06:25,2022-02-10 오전 7:16:13,0:09:48,jh,ddd,ddd,-,1644444385
+1644443779,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,17723,24.21 GB,15.4 GB,20.38 GB,52.4 MB/s,2022-02-10 오전 6:56:19,2022-02-10 오전 7:04:14,0:07:55,jh,add,add,-,1644443779
+1644443173,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,21372,30.53 GB,16.82 GB,23.34 GB,116.23 MB/s,2022-02-10 오전 6:46:13,2022-02-10 오전 6:50:44,0:04:31,jh,dsk,dsk,-,1644443173
+1644442567,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,29339,5.23 KB,27.1 KB,30.63 KB,1 KB/s,2022-02-10 오전 6:36:07,2022-02-10 오전 6:43:26,0:07:19,jh,add,add,-,1644442567
+1644441961,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,25871,1.09 GB,15.62 GB,9.56 GB,2.98 MB/s,2022-02-10 오전 6:26:01,2022-02-10 오전 6:32:17,0:06:16,jh,ddd,ddd,-,1644441961
+1644441355,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,24674,15.34 GB,31.66 GB,9.18 GB,57.74 MB/s,2022-02-10 오전 6:15:55,2022-02-10 오전 6:20:29,0:04:34,jh,add,add,-,1644441355
+1644440749,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,19596,7.53 GB,11.75 GB,15.06 GB,16.52 MB/s,2022-02-10 오전 6:05:49,2022-02-10 오전 6:13:38,0:07:49,jh,dsk,dsk,-,1644440749
+1644440143,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,2696,12.67 GB,6.84 GB,28.31 GB,27.49 MB/s,2022-02-10 오전 5:55:43,2022-02-10 오전 6:03:37,0:07:54,jh,add,add,-,1644440143
+1644439537,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,13791,12.91 GB,30.75 GB,29.22 GB,42.65 MB/s,2022-02-10 오전 5:45:37,2022-02-10 오전 5:50:49,0:05:12,jh,ddd,ddd,-,1644439537
+1644438931,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,18657,28.61 GB,14.84 GB,2.25 GB,92.13 MB/s,2022-02-10 오전 5:35:31,2022-02-10 오전 5:40:51,0:05:20,jh,add,add,-,1644438931
+1644438325,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,29715,11.69 KB,16.82 KB,6.61 KB,1 KB/s,2022-02-10 오전 5:25:25,2022-02-10 오전 5:30:35,0:05:10,jh,dsk,dsk,-,1644438325
+1644437719,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,22039,1.66 GB,29.35 GB,12.36 GB,5.57 MB/s,2022-02-10 오전 5:15:19,2022-02-10 오전 5:20:27,0:05:08,jh,add,add,-,1644437719
+1644437113,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,5734,6.4 GB,8.91 GB,12.65 GB,30.79 MB/s,2022-02-10 오전 5:05:13,2022-02-10 오전 5:08:48,0:03:35,jh,ddd,ddd,-,1644437113
+1644436507,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,28950,24.99 KB,22.54 KB,21.18 KB,1 KB/s,2022-02-10 오전 4:55:07,2022-02-10 오전 4:58:38,0:03:31,jh,add,add,-,1644436507
+1644435901,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,30253,26.26 GB,8.16 GB,19.68 GB,74.5 MB/s,2022-02-10 오전 4:45:01,2022-02-10 오전 4:51:04,0:06:03,jh,dsk,dsk,-,1644435901
+1644435295,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,3832,8.91 GB,20.17 GB,19.28 GB,63.83 MB/s,2022-02-10 오전 4:34:55,2022-02-10 오전 4:37:20,0:02:25,jh,add,add,-,1644435295
+1644434689,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,9950,24.36 GB,2.29 GB,13.55 GB,54.82 MB/s,2022-02-10 오전 4:24:49,2022-02-10 오전 4:32:26,0:07:37,jh,ddd,ddd,-,1644434689
+1644434083,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,8316,29.48 GB,31.52 GB,28.46 GB,241.51 MB/s,2022-02-10 오전 4:14:43,2022-02-10 오전 4:16:50,0:02:07,jh,add,add,-,1644434083
+1644433477,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,8618,31.12 MB,14.42 MB,15.73 MB,168.6 KB/s,2022-02-10 오전 4:04:37,2022-02-10 오전 4:07:48,0:03:11,jh,dsk,dsk,-,1644433477
+1644432871,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,21880,18.49 GB,23.96 GB,4.36 GB,42.27 MB/s,2022-02-10 오전 3:54:31,2022-02-10 오전 4:02:01,0:07:30,jh,add,add,-,1644432871
+1644432265,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,10378,26.38 GB,4.92 GB,31.39 GB,47.15 MB/s,2022-02-10 오전 3:44:25,2022-02-10 오전 3:54:00,0:09:35,jh,ddd,ddd,-,1644432265
+1644431659,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,23031,17.24 GB,27.33 GB,30.32 GB,44.69 MB/s,2022-02-10 오전 3:34:19,2022-02-10 오전 3:40:56,0:06:37,jh,add,add,-,1644431659
+1644431053,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,16575,18.27 GB,25.99 GB,12.24 GB,41.95 MB/s,2022-02-10 오전 3:24:13,2022-02-10 오전 3:31:41,0:07:28,jh,dsk,dsk,-,1644431053
+1644430447,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,5088,1.46 GB,25.68 GB,14.34 GB,2.56 MB/s,2022-02-10 오전 3:14:07,2022-02-10 오전 3:23:54,0:09:47,jh,add,add,-,1644430447
+1644429841,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,23300,10.87 GB,22.68 GB,29.24 GB,21.12 MB/s,2022-02-10 오전 3:04:01,2022-02-10 오전 3:12:50,0:08:49,jh,ddd,ddd,-,1644429841
+1644429235,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,15699,12.95 GB,30.17 GB,19.45 GB,30.01 MB/s,2022-02-10 오전 2:53:55,2022-02-10 오전 3:01:19,0:07:24,jh,add,add,-,1644429235
+1644428629,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,22531,13.55 GB,14.09 GB,29.45 GB,26.38 MB/s,2022-02-10 오전 2:43:49,2022-02-10 오전 2:52:37,0:08:48,jh,dsk,dsk,-,1644428629
+1644428023,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,10016,15.33 GB,8.23 GB,2.34 GB,32.49 MB/s,2022-02-10 오전 2:33:43,2022-02-10 오전 2:41:48,0:08:05,jh,add,add,-,1644428023
+1644427417,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,8662,11.56 GB,7.69 GB,6.8 GB,70.45 MB/s,2022-02-10 오전 2:23:37,2022-02-10 오전 2:26:27,0:02:50,jh,ddd,ddd,-,1644427417
+1644426811,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,18440,20.6 GB,21.61 GB,22.5 GB,101.42 MB/s,2022-02-10 오전 2:13:31,2022-02-10 오전 2:17:01,0:03:30,jh,add,add,-,1644426811
+1644426205,Failed,E1F641BC,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,8087,5.3 MB,4.62 MB,796 KB,16.61 KB/s,2022-02-10 오전 2:03:25,2022-02-10 오전 2:08:54,0:05:29,jh,dsk,dsk,-,1644426205
+1644425599,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,20651,20.26 GB,27.69 GB,6.2 GB,46.42 MB/s,2022-02-10 오전 1:53:19,2022-02-10 오전 2:00:48,0:07:29,jh,add,add,-,1644425599
+1644424993,Suspended,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,26187,5.64 GB,25.94 GB,13.36 GB,14 MB/s,2022-02-10 오전 1:43:13,2022-02-10 오전 1:50:08,0:06:55,jh,ddd,ddd,-,1644424993
+1644424387,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,6466,24.46 GB,9.6 GB,21.39 GB,58.25 MB/s,2022-02-10 오전 1:33:07,2022-02-10 오전 1:40:19,0:07:12,jh,add,add,-,1644424387
+1644423781,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,19110,17.17 GB,7.89 GB,19.73 GB,81.4 MB/s,2022-02-10 오전 1:23:01,2022-02-10 오전 1:26:39,0:03:38,jh,dsk,dsk,-,1644423781
+1644423175,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,13731,13.22 GB,7.12 GB,19.07 GB,75.22 MB/s,2022-02-10 오전 1:12:55,2022-02-10 오전 1:15:57,0:03:02,jh,add,add,-,1644423175
+1644422569,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,27013,10.46 KB,19.26 KB,1.91 KB,1 KB/s,2022-02-10 오전 1:02:49,2022-02-10 오전 1:11:41,0:08:52,jh,ddd,ddd,-,1644422569
+1644421963,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,7456,30.46 GB,4.35 GB,13.43 GB,472.65 MB/s,2022-02-10 오전 12:52:43,2022-02-10 오전 12:53:51,0:01:08,jh,add,add,-,1644421963
+1644421357,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,28943,1.9 GB,5.06 GB,386 MB,4.11 MB/s,2022-02-10 오전 12:42:37,2022-02-10 오전 12:50:33,0:07:56,jh,dsk,dsk,-,1644421357
+1644420751,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,28471,8.77 GB,21.94 GB,17.28 GB,82.42 MB/s,2022-02-10 오전 12:32:31,2022-02-10 오전 12:34:22,0:01:51,jh,add,add,-,1644420751
+1644420145,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,31441,21.7 GB,10.63 GB,17.31 GB,37.54 MB/s,2022-02-10 오전 12:22:25,2022-02-10 오전 12:32:19,0:09:54,jh,ddd,ddd,-,1644420145
+1644419539,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,17210,4.86 KB,14.37 KB,11.28 KB,1 KB/s,2022-02-10 오전 12:12:19,2022-02-10 오전 12:21:45,0:09:26,jh,add,add,-,1644419539
+1644418933,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,12127,17.27 KB,16.55 KB,20.43 KB,1 KB/s,2022-02-10 오전 12:02:13,2022-02-10 오전 12:07:33,0:05:20,jh,dsk,dsk,-,1644418933
+1644418327,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,28747,19.82 KB,9.82 KB,18.59 KB,1 KB/s,2022-02-09 오후 11:52:07,2022-02-09 오후 11:58:27,0:06:20,jh,add,add,-,1644418327
+1644417721,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,17976,6.25 GB,17.76 GB,11.45 GB,16.8 MB/s,2022-02-09 오후 11:42:01,2022-02-09 오후 11:48:24,0:06:23,jh,ddd,ddd,-,1644417721
+1644417115,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,9319,31.19 KB,27.57 KB,23.68 KB,1 KB/s,2022-02-09 오후 11:31:55,2022-02-09 오후 11:41:12,0:09:17,jh,add,add,-,1644417115
+1644416509,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,20739,9.01 GB,5.09 GB,7.82 GB,82.42 MB/s,2022-02-09 오후 11:21:49,2022-02-09 오후 11:23:43,0:01:54,jh,dsk,dsk,-,1644416509
+1644415903,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,17496,15.1 GB,30.22 GB,27.76 GB,49.71 MB/s,2022-02-09 오후 11:11:43,2022-02-09 오후 11:16:56,0:05:13,jh,add,add,-,1644415903
+1644415297,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,12121,18.51 GB,11.99 GB,2.51 GB,70.45 MB/s,2022-02-09 오후 11:01:37,2022-02-09 오후 11:06:08,0:04:31,jh,ddd,ddd,-,1644415297
+1644414691,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,15294,30.57 KB,22.37 KB,10.05 KB,1 KB/s,2022-02-09 오후 10:51:31,2022-02-09 오후 10:53:14,0:01:43,jh,add,add,-,1644414691
+1644414085,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,6333,13.86 GB,22.69 GB,7.91 GB,76.74 MB/s,2022-02-09 오후 10:41:25,2022-02-09 오후 10:44:32,0:03:07,jh,dsk,dsk,-,1644414085
+1644413479,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,27541,6.48 GB,6.41 GB,30.31 GB,17.83 MB/s,2022-02-09 오후 10:31:19,2022-02-09 오후 10:37:33,0:06:14,jh,add,add,-,1644413479
+1644412873,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,27765,13.34 GB,19.56 GB,31.38 GB,43.38 MB/s,2022-02-09 오후 10:21:13,2022-02-09 오후 10:26:30,0:05:17,jh,ddd,ddd,-,1644412873
+1644412267,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,5853,6.28 GB,5.94 GB,9.85 GB,12.17 MB/s,2022-02-09 오후 10:11:07,2022-02-09 오후 10:19:57,0:08:50,jh,add,add,-,1644412267
+1644411661,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,31574,11.62 KB,2.39 KB,12.2 KB,1 KB/s,2022-02-09 오후 10:01:01,2022-02-09 오후 10:02:53,0:01:52,jh,dsk,dsk,-,1644411661
+1644411055,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,22613,19.11 GB,11.05 GB,19.78 GB,48.81 MB/s,2022-02-09 오후 9:50:55,2022-02-09 오후 9:57:38,0:06:43,jh,add,add,-,1644411055
+1644410449,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,21961,596 KB,30.08 MB,23.95 MB,1.45 KB/s,2022-02-09 오후 9:40:49,2022-02-09 오후 9:47:41,0:06:52,jh,ddd,ddd,-,1644410449
+1644409843,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,8552,29.67 MB,28.45 MB,23.75 MB,58.89 KB/s,2022-02-09 오후 9:30:43,2022-02-09 오후 9:39:21,0:08:38,jh,add,add,-,1644409843
+1644409237,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,24724,15.31 GB,19.83 GB,9.66 GB,37.06 MB/s,2022-02-09 오후 9:20:37,2022-02-09 오후 9:27:42,0:07:05,jh,dsk,dsk,-,1644409237
+1644408631,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,20914,1.37 GB,28.45 GB,27.11 GB,20.35 MB/s,2022-02-09 오후 9:10:31,2022-02-09 오후 9:11:42,0:01:11,jh,add,add,-,1644408631
+1644408025,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,7458,18.04 GB,1.42 GB,4.63 GB,31.2 MB/s,2022-02-09 오후 9:00:25,2022-02-09 오후 9:10:19,0:09:54,jh,ddd,ddd,-,1644408025
+1644407419,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,28627,441 MB,10.42 GB,7.69 GB,2.79 MB/s,2022-02-09 오후 8:50:19,2022-02-09 오후 8:52:59,0:02:40,jh,add,add,-,1644407419
+1644406813,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,15981,12.37 GB,9.64 GB,9.57 GB,131.95 MB/s,2022-02-09 오후 8:40:13,2022-02-09 오후 8:41:51,0:01:38,jh,dsk,dsk,-,1644406813
+1644406207,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,16233,3.59 GB,30.24 GB,9.5 GB,7.8 MB/s,2022-02-09 오후 8:30:07,2022-02-09 오후 8:38:00,0:07:53,jh,add,add,-,1644406207
+1644405601,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,25005,24.15 GB,9.85 GB,1.83 GB,70.05 MB/s,2022-02-09 오후 8:20:01,2022-02-09 오후 8:25:56,0:05:55,jh,ddd,ddd,-,1644405601
+1644404995,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,11618,30.06 GB,4.08 GB,4.62 GB,110.32 MB/s,2022-02-09 오후 8:09:55,2022-02-09 오후 8:14:36,0:04:41,jh,add,add,-,1644404995
+1644404389,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,8827,25.94 GB,17.61 GB,24.93 GB,130.85 MB/s,2022-02-09 오후 7:59:49,2022-02-09 오후 8:03:14,0:03:25,jh,dsk,dsk,-,1644404389
+1644403783,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,8966,10.64 GB,1.68 GB,15.48 GB,54.75 MB/s,2022-02-09 오후 7:49:43,2022-02-09 오후 7:53:04,0:03:21,jh,add,add,-,1644403783
+1644403177,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,21518,19.13 GB,2.55 GB,26.61 GB,106.47 MB/s,2022-02-09 오후 7:39:37,2022-02-09 오후 7:42:43,0:03:06,jh,ddd,ddd,-,1644403177
+1644402571,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,4463,9.75 MB,21.88 MB,7.21 MB,18.08 KB/s,2022-02-09 오후 7:29:31,2022-02-09 오후 7:38:45,0:09:14,jh,add,add,-,1644402571
+1644401965,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,32178,5.18 KB,5.7 KB,21.52 KB,1 KB/s,2022-02-09 오후 7:19:25,2022-02-09 오후 7:21:45,0:02:20,jh,dsk,dsk,-,1644401965
+1644401359,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,16963,13.31 GB,19.54 GB,3.3 GB,32.08 MB/s,2022-02-09 오후 7:09:19,2022-02-09 오후 7:16:26,0:07:07,jh,add,add,-,1644401359
+1644400753,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,24243,15.74 GB,1.34 GB,9.23 GB,62.7 MB/s,2022-02-09 오후 6:59:13,2022-02-09 오후 7:03:32,0:04:19,jh,ddd,ddd,-,1644400753
+1644400147,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,32749,11.54 GB,20.95 GB,24.23 GB,120.54 MB/s,2022-02-09 오후 6:49:07,2022-02-09 오후 6:50:47,0:01:40,jh,add,add,-,1644400147
+1644399541,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,17999,5.69 KB,2.86 KB,13.34 KB,1 KB/s,2022-02-09 오후 6:39:01,2022-02-09 오후 6:45:13,0:06:12,jh,dsk,dsk,-,1644399541
+1644398935,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,18092,23.51 GB,18.54 GB,17.67 GB,41.36 MB/s,2022-02-09 오후 6:28:55,2022-02-09 오후 6:38:39,0:09:44,jh,add,add,-,1644398935
+1644398329,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,1641,8.55 GB,22.81 GB,10.93 GB,15.3 MB/s,2022-02-09 오후 6:18:49,2022-02-09 오후 6:28:23,0:09:34,jh,ddd,ddd,-,1644398329
+1644397723,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,14636,19.79 GB,8.73 GB,7.83 GB,71.11 MB/s,2022-02-09 오후 6:08:43,2022-02-09 오후 6:13:30,0:04:47,jh,add,add,-,1644397723
+1644397117,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,17427,16.91 GB,2.67 GB,21.85 GB,58.09 MB/s,2022-02-09 오후 5:58:37,2022-02-09 오후 6:03:37,0:05:00,jh,dsk,dsk,-,1644397117
+1644396511,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,22151,10.22 MB,19.28 MB,5.81 MB,24.06 KB/s,2022-02-09 오후 5:48:31,2022-02-09 오후 5:55:48,0:07:17,jh,add,add,-,1644396511
+1644395905,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,30510,10.83 GB,19.73 GB,19.68 GB,92.41 MB/s,2022-02-09 오후 5:38:25,2022-02-09 오후 5:40:27,0:02:02,jh,ddd,ddd,-,1644395905
+1644395299,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,15582,1.97 MB,26.59 MB,18.61 MB,15.2 KB/s,2022-02-09 오후 5:28:19,2022-02-09 오후 5:30:34,0:02:15,jh,add,add,-,1644395299
+1644394693,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,6831,25.7 GB,16.75 GB,15.52 GB,193.51 MB/s,2022-02-09 오후 5:18:13,2022-02-09 오후 5:20:31,0:02:18,jh,dsk,dsk,-,1644394693
+1644394087,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,27377,5.4 GB,6.87 GB,9.77 GB,14.73 MB/s,2022-02-09 오후 5:08:07,2022-02-09 오후 5:14:24,0:06:17,jh,add,add,-,1644394087
+1644393481,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,28999,19.97 GB,4.77 GB,30.98 GB,174.78 MB/s,2022-02-09 오후 4:58:01,2022-02-09 오후 5:00:00,0:01:59,jh,ddd,ddd,-,1644393481
+1644392875,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,17496,31.76 MB,8.53 MB,29.48 MB,56.36 KB/s,2022-02-09 오후 4:47:55,2022-02-09 오후 4:57:34,0:09:39,jh,add,add,-,1644392875
+1644392269,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,26241,24.91 GB,5.05 GB,27.17 GB,42.65 MB/s,2022-02-09 오후 4:37:49,2022-02-09 오후 4:47:49,0:10:00,jh,dsk,dsk,-,1644392269
+1644391663,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,26442,4.52 GB,8.98 GB,16.11 GB,10.61 MB/s,2022-02-09 오후 4:27:43,2022-02-09 오후 4:35:01,0:07:18,jh,add,add,-,1644391663
+1644391057,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,2708,12.46 GB,21.53 GB,10.81 GB,22.12 MB/s,2022-02-09 오후 4:17:37,2022-02-09 오후 4:27:16,0:09:39,jh,ddd,ddd,-,1644391057
+1644390451,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,30747,1.41 GB,7.99 GB,1.37 GB,3.53 MB/s,2022-02-09 오후 4:07:31,2022-02-09 오후 4:14:23,0:06:52,jh,add,add,-,1644390451
+1644389845,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,32638,11.98 GB,27.9 GB,21.71 GB,95.86 MB/s,2022-02-09 오후 3:57:25,2022-02-09 오후 3:59:35,0:02:10,jh,dsk,dsk,-,1644389845
+1644389239,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,13781,7.07 GB,10.53 GB,7.88 GB,71.67 MB/s,2022-02-09 오후 3:47:19,2022-02-09 오후 3:49:02,0:01:43,jh,add,add,-,1644389239
+1644388633,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,30753,21.46 GB,27.88 GB,25.54 GB,59.71 MB/s,2022-02-09 오후 3:37:13,2022-02-09 오후 3:43:23,0:06:10,jh,ddd,ddd,-,1644388633
+1644388027,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,17557,12.56 GB,21.63 GB,15.72 GB,23.06 MB/s,2022-02-09 오후 3:27:07,2022-02-09 오후 3:36:27,0:09:20,jh,add,add,-,1644388027
+1644387421,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,13937,6.72 MB,20.87 MB,31.54 MB,55.49 KB/s,2022-02-09 오후 3:17:01,2022-02-09 오후 3:19:07,0:02:06,jh,dsk,dsk,-,1644387421
+1644386815,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,28058,13.79 GB,29.96 GB,11.85 GB,54.32 MB/s,2022-02-09 오후 3:06:55,2022-02-09 오후 3:11:17,0:04:22,jh,add,add,-,1644386815
+1644386209,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,21503,13.88 GB,28.65 GB,7.97 GB,27.12 MB/s,2022-02-09 오후 2:56:49,2022-02-09 오후 3:05:35,0:08:46,jh,ddd,ddd,-,1644386209
+1644385603,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,29219,22.19 GB,31.27 GB,8.82 GB,148.53 MB/s,2022-02-09 오후 2:46:43,2022-02-09 오후 2:49:18,0:02:35,jh,add,add,-,1644385603
+1644384997,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,8293,5.01 GB,17.51 GB,4.44 GB,23.96 MB/s,2022-02-09 오후 2:36:37,2022-02-09 오후 2:40:13,0:03:36,jh,dsk,dsk,-,1644384997
+1644384391,Suspended,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,17805,5.74 GB,25.99 GB,14.19 GB,24.01 MB/s,2022-02-09 오후 2:26:31,2022-02-09 오후 2:30:38,0:04:07,jh,add,add,-,1644384391
+1644383785,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,4948,4.08 GB,10.58 GB,20.43 GB,9.9 MB/s,2022-02-09 오후 2:16:25,2022-02-09 오후 2:23:29,0:07:04,jh,ddd,ddd,-,1644383785
+1644383179,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,25688,25 GB,4.79 GB,12.91 GB,103.24 MB/s,2022-02-09 오후 2:06:19,2022-02-09 오후 2:10:29,0:04:10,jh,add,add,-,1644383179
+1644382573,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,17502,25.67 GB,28.8 GB,9.08 GB,47.7 MB/s,2022-02-09 오후 1:56:13,2022-02-09 오후 2:05:26,0:09:13,jh,dsk,dsk,-,1644382573
+1644381967,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,22772,10.17 MB,24 MB,17.32 MB,24.8 KB/s,2022-02-09 오후 1:46:07,2022-02-09 오후 1:53:09,0:07:02,jh,add,add,-,1644381967
+1644381361,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,8367,25.12 GB,16.58 GB,3.88 GB,60.38 MB/s,2022-02-09 오후 1:36:01,2022-02-09 오후 1:43:09,0:07:08,jh,ddd,ddd,-,1644381361
+1644380755,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,9347,21.08 GB,29.24 GB,1.13 GB,99.01 MB/s,2022-02-09 오후 1:25:55,2022-02-09 오후 1:29:35,0:03:40,jh,add,add,-,1644380755
+1644380149,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,16206,7.35 GB,20.5 GB,19.08 GB,31.08 MB/s,2022-02-09 오후 1:15:49,2022-02-09 오후 1:19:53,0:04:04,jh,dsk,dsk,-,1644380149
+1644379543,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,259,22.22 GB,2.97 GB,15.15 GB,38.83 MB/s,2022-02-09 오후 1:05:43,2022-02-09 오후 1:15:31,0:09:48,jh,add,add,-,1644379543
+1644378937,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,20128,10.52 GB,8.39 GB,2.15 GB,19.95 MB/s,2022-02-09 오후 12:55:37,2022-02-09 오후 1:04:39,0:09:02,jh,ddd,ddd,-,1644378937
+1644378331,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,7021,25.85 KB,28.82 KB,17.28 KB,1 KB/s,2022-02-09 오후 12:45:31,2022-02-09 오후 12:54:43,0:09:12,jh,add,add,-,1644378331
+1644377725,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,12869,486 MB,29.27 GB,16.61 GB,1.2 MB/s,2022-02-09 오후 12:35:25,2022-02-09 오후 12:42:12,0:06:47,jh,dsk,dsk,-,1644377725
+1644377119,Canceled,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,18379,15.42 GB,27.94 GB,31.62 GB,80.95 MB/s,2022-02-09 오후 12:25:19,2022-02-09 오후 12:28:36,0:03:17,jh,add,add,-,1644377119
+1644376513,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,5767,7.68 MB,14.46 MB,10.21 MB,14.72 KB/s,2022-02-09 오후 12:15:13,2022-02-09 오후 12:24:09,0:08:56,jh,ddd,ddd,-,1644376513
+1644375907,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,7778,11.39 MB,9.08 MB,7.39 MB,26.94 KB/s,2022-02-09 오후 12:05:07,2022-02-09 오후 12:12:22,0:07:15,jh,add,add,-,1644375907
+1644375301,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,3817,27.29 GB,26.61 GB,20.54 GB,90.73 MB/s,2022-02-09 오전 11:55:01,2022-02-09 오후 12:00:11,0:05:10,jh,dsk,dsk,-,1644375301
+1644374695,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,14420,2 GB,9.08 GB,31.56 GB,3.54 MB/s,2022-02-09 오전 11:44:55,2022-02-09 오전 11:54:35,0:09:40,jh,add,add,-,1644374695
+1644374089,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,22442,7.74 GB,20.13 GB,19.47 GB,15.18 MB/s,2022-02-09 오전 11:34:49,2022-02-09 오전 11:43:33,0:08:44,jh,ddd,ddd,-,1644374089
+1644373483,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,13169,4 GB,24.15 GB,2.09 GB,12.64 MB/s,2022-02-09 오전 11:24:43,2022-02-09 오전 11:30:09,0:05:26,jh,add,add,-,1644373483
+1644372877,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,5672,22.91 MB,19.62 MB,12.24 MB,48.27 KB/s,2022-02-09 오전 11:14:37,2022-02-09 오전 11:22:45,0:08:08,jh,dsk,dsk,-,1644372877
+1644372271,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,4104,24.05 GB,20.31 GB,8.8 GB,41.39 MB/s,2022-02-09 오전 11:04:31,2022-02-09 오전 11:14:28,0:09:57,jh,add,add,-,1644372271
+1644371665,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,2699,5.12 GB,1.23 GB,17.23 GB,10.46 MB/s,2022-02-09 오전 10:54:25,2022-02-09 오전 11:02:48,0:08:23,jh,ddd,ddd,-,1644371665
+1644371059,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,12534,3.12 GB,7.94 GB,2.8 GB,9.71 MB/s,2022-02-09 오전 10:44:19,2022-02-09 오전 10:49:50,0:05:31,jh,add,add,-,1644371059
+1644370453,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,7467,30.48 GB,29.55 GB,3.83 GB,94.87 MB/s,2022-02-09 오전 10:34:13,2022-02-09 오전 10:39:44,0:05:31,jh,dsk,dsk,-,1644370453
+1644369847,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,5457,4.43 GB,14.44 GB,28.71 GB,7.62 MB/s,2022-02-09 오전 10:24:07,2022-02-09 오전 10:34:04,0:09:57,jh,add,add,-,1644369847
+1644369241,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,7290,19.55 GB,5.91 GB,1.07 GB,62.36 MB/s,2022-02-09 오전 10:14:01,2022-02-09 오전 10:19:24,0:05:23,jh,ddd,ddd,-,1644369241
+1644368635,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,7255,10.57 GB,10.54 GB,28.74 GB,26.21 MB/s,2022-02-09 오전 10:03:55,2022-02-09 오전 10:10:50,0:06:55,jh,add,add,-,1644368635
+1644368029,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,27788,7.39 GB,21.19 GB,30.05 GB,38.24 MB/s,2022-02-09 오전 9:53:49,2022-02-09 오전 9:57:09,0:03:20,jh,dsk,dsk,-,1644368029
+1644367423,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,6020,10.51 GB,27.95 GB,17.93 GB,22.52 MB/s,2022-02-09 오전 9:43:43,2022-02-09 오전 9:51:43,0:08:00,jh,add,add,-,1644367423
+1644366817,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,26472,21.68 GB,13.78 GB,21.44 GB,102.32 MB/s,2022-02-09 오전 9:33:37,2022-02-09 오전 9:37:16,0:03:39,jh,ddd,ddd,-,1644366817
+1644366211,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,27660,27.06 GB,20.56 GB,29.75 GB,95.23 MB/s,2022-02-09 오전 9:23:31,2022-02-09 오전 9:28:24,0:04:53,jh,add,add,-,1644366211
+1644365605,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,19914,23.54 GB,90 MB,20.72 GB,163.95 MB/s,2022-02-09 오전 9:13:25,2022-02-09 오전 9:15:54,0:02:29,jh,dsk,dsk,-,1644365605
+1644364999,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,23551,27.79 GB,286 MB,6.51 GB,106.98 MB/s,2022-02-09 오전 9:03:19,2022-02-09 오전 9:07:47,0:04:28,jh,add,add,-,1644364999
+1644364393,Suspended,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,31230,7.28 GB,21.4 GB,25.17 GB,49.06 MB/s,2022-02-09 오전 8:53:13,2022-02-09 오전 8:55:47,0:02:34,jh,ddd,ddd,-,1644364393
+1644363787,Failed,E1F6400F,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,4324,17.06 MB,10.63 MB,25.91 MB,85.21 KB/s,2022-02-09 오전 8:43:07,2022-02-09 오전 8:46:34,0:03:27,jh,add,add,-,1644363787
+1644363181,Suspended,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,6907,16.64 GB,30.49 GB,6.68 GB,37.61 MB/s,2022-02-09 오전 8:33:01,2022-02-09 오전 8:40:36,0:07:35,jh,dsk,dsk,-,1644363181
+1644362575,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,31888,20.23 GB,12.66 GB,7.28 GB,68.16 MB/s,2022-02-09 오전 8:22:55,2022-02-09 오전 8:28:01,0:05:06,jh,add,add,-,1644362575
+1644361969,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,9196,966 MB,19.04 GB,25.18 GB,2.71 MB/s,2022-02-09 오전 8:12:49,2022-02-09 오전 8:18:47,0:05:58,jh,ddd,ddd,-,1644361969
+1644361363,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,27268,18.94 GB,26.9 GB,18.98 GB,100.47 MB/s,2022-02-09 오전 8:02:43,2022-02-09 오전 8:05:58,0:03:15,jh,add,add,-,1644361363
+1644360757,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,25794,13.66 GB,7.23 GB,8.37 GB,60.57 MB/s,2022-02-09 오전 7:52:37,2022-02-09 오전 7:56:30,0:03:53,jh,dsk,dsk,-,1644360757
+1644360151,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,31512,14.47 GB,7.6 GB,13.6 GB,57.22 MB/s,2022-02-09 오전 7:42:31,2022-02-09 오전 7:46:52,0:04:21,jh,add,add,-,1644360151
+1644359545,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,31365,10.4 GB,19.83 GB,17.14 GB,17.96 MB/s,2022-02-09 오전 7:32:25,2022-02-09 오전 7:42:20,0:09:55,jh,ddd,ddd,-,1644359545
+1644358939,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,2866,17.45 GB,31.61 GB,4.66 GB,45.46 MB/s,2022-02-09 오전 7:22:19,2022-02-09 오전 7:28:54,0:06:35,jh,add,add,-,1644358939
+1644358333,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,642,15.26 GB,22.28 GB,27.95 GB,33.61 MB/s,2022-02-09 오전 7:12:13,2022-02-09 오전 7:20:00,0:07:47,jh,dsk,dsk,-,1644358333
+1644357727,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,3694,24.81 GB,17.8 GB,4.4 GB,43.21 MB/s,2022-02-09 오전 7:02:07,2022-02-09 오전 7:11:57,0:09:50,jh,add,add,-,1644357727
+1644357121,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,18826,415 MB,30.1 GB,8.27 GB,1.52 MB/s,2022-02-09 오전 6:52:01,2022-02-09 오전 6:56:36,0:04:35,jh,ddd,ddd,-,1644357121
+1644356515,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,28371,11.51 GB,23.77 GB,14.66 GB,42.4 MB/s,2022-02-09 오전 6:41:55,2022-02-09 오전 6:46:35,0:04:40,jh,add,add,-,1644356515
+1644355909,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,8403,4.3 MB,7.28 MB,5.95 MB,15.44 KB/s,2022-02-09 오전 6:31:49,2022-02-09 오전 6:36:36,0:04:47,jh,dsk,dsk,-,1644355909
+1644355303,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,27783,4.05 MB,29.76 MB,21.49 MB,26.44 KB/s,2022-02-09 오전 6:21:43,2022-02-09 오전 6:24:22,0:02:39,jh,add,add,-,1644355303
+1644354697,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,9285,3.12 MB,26.19 MB,27.15 MB,8.19 KB/s,2022-02-09 오전 6:11:37,2022-02-09 오전 6:18:09,0:06:32,jh,ddd,ddd,-,1644354697
+1644354091,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,2352,22.32 MB,18.83 MB,5.57 MB,67.63 KB/s,2022-02-09 오전 6:01:31,2022-02-09 오전 6:07:11,0:05:40,jh,add,add,-,1644354091
+1644353485,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,8756,11.42 GB,4.72 GB,3.51 GB,24.31 MB/s,2022-02-09 오전 5:51:25,2022-02-09 오전 5:59:28,0:08:03,jh,dsk,dsk,-,1644353485
+1644352879,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,5590,21.11 GB,30.89 GB,16.27 GB,60.89 MB/s,2022-02-09 오전 5:41:19,2022-02-09 오전 5:47:16,0:05:57,jh,add,add,-,1644352879
+1644352273,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,2776,18.14 GB,18.38 GB,31.63 GB,238.17 MB/s,2022-02-09 오전 5:31:13,2022-02-09 오전 5:32:33,0:01:20,jh,ddd,ddd,-,1644352273
+1644351667,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,20351,26.74 GB,28.47 GB,3.56 GB,140.41 MB/s,2022-02-09 오전 5:21:07,2022-02-09 오전 5:24:24,0:03:17,jh,add,add,-,1644351667
+1644351061,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,26113,26.72 GB,5.04 GB,23.22 GB,62.76 MB/s,2022-02-09 오전 5:11:01,2022-02-09 오전 5:18:19,0:07:18,jh,dsk,dsk,-,1644351061
+1644350455,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,26095,18.45 GB,5.16 GB,10.67 GB,108.59 MB/s,2022-02-09 오전 5:00:55,2022-02-09 오전 5:03:51,0:02:56,jh,add,add,-,1644350455
+1644349849,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,22485,11.03 MB,11.33 MB,31.77 MB,58.81 KB/s,2022-02-09 오전 4:50:49,2022-02-09 오전 4:54:03,0:03:14,jh,ddd,ddd,-,1644349849
+1644349243,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,8480,9.02 GB,5.42 GB,1.88 GB,15.37 MB/s,2022-02-09 오전 4:40:43,2022-02-09 오전 4:50:46,0:10:03,jh,add,add,-,1644349243
+1644348637,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,18853,10.43 GB,30.49 GB,17.45 GB,19.81 MB/s,2022-02-09 오전 4:30:37,2022-02-09 오전 4:39:38,0:09:01,jh,dsk,dsk,-,1644348637
+1644348031,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,28017,22.37 GB,10.32 GB,13.45 GB,72.04 MB/s,2022-02-09 오전 4:20:31,2022-02-09 오전 4:25:51,0:05:20,jh,add,add,-,1644348031
+1644347425,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,27152,15.42 GB,5.69 GB,24.89 GB,39.47 MB/s,2022-02-09 오전 4:10:25,2022-02-09 오전 4:17:07,0:06:42,jh,ddd,ddd,-,1644347425
+1644346819,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,13222,19.86 GB,22.37 GB,20.17 GB,99.2 MB/s,2022-02-09 오전 4:00:19,2022-02-09 오전 4:03:46,0:03:27,jh,add,add,-,1644346819
+1644346213,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,30738,15.69 GB,10.85 GB,9.25 GB,38.34 MB/s,2022-02-09 오전 3:50:13,2022-02-09 오전 3:57:14,0:07:01,jh,dsk,dsk,-,1644346213
+1644345607,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,22821,31.04 GB,5.78 GB,12.76 GB,78.29 MB/s,2022-02-09 오전 3:40:07,2022-02-09 오전 3:46:55,0:06:48,jh,add,add,-,1644345607
+1644345001,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,16051,7.72 GB,10.09 GB,27.61 GB,21.18 MB/s,2022-02-09 오전 3:30:01,2022-02-09 오전 3:36:16,0:06:15,jh,ddd,ddd,-,1644345001
+1644344395,Suspended,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,26136,19.73 GB,9.92 GB,14.59 GB,44.51 MB/s,2022-02-09 오전 3:19:55,2022-02-09 오전 3:27:31,0:07:36,jh,add,add,-,1644344395
+1644343789,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,23408,4.39 KB,3.91 KB,10.91 KB,1 KB/s,2022-02-09 오전 3:09:49,2022-02-09 오전 3:15:19,0:05:30,jh,dsk,dsk,-,1644343789
+1644343183,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,27233,5.38 GB,11.89 GB,30.13 GB,9.77 MB/s,2022-02-09 오전 2:59:43,2022-02-09 오전 3:09:09,0:09:26,jh,add,add,-,1644343183
+1644342577,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,28563,7.32 KB,16.42 KB,26.04 KB,1 KB/s,2022-02-09 오전 2:49:37,2022-02-09 오전 2:58:30,0:08:53,jh,ddd,ddd,-,1644342577
+1644341971,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,8056,3.55 GB,26.59 GB,15.78 GB,6.68 MB/s,2022-02-09 오전 2:39:31,2022-02-09 오전 2:48:37,0:09:06,jh,add,add,-,1644341971
+1644341365,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,17683,9.05 MB,17.8 MB,16.94 MB,16.85 KB/s,2022-02-09 오전 2:29:25,2022-02-09 오전 2:38:37,0:09:12,jh,dsk,dsk,-,1644341365
+1644340759,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,17585,19.77 GB,13.9 GB,12.6 GB,77.27 MB/s,2022-02-09 오전 2:19:19,2022-02-09 오전 2:23:43,0:04:24,jh,add,add,-,1644340759
+1644340153,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,18880,7.42 GB,3.43 GB,958 MB,31.51 MB/s,2022-02-09 오전 2:09:13,2022-02-09 오전 2:13:16,0:04:03,jh,ddd,ddd,-,1644340153
+1644339547,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,7299,23.64 GB,1.91 GB,23.59 GB,101.3 MB/s,2022-02-09 오전 1:59:07,2022-02-09 오전 2:03:08,0:04:01,jh,add,add,-,1644339547
+1644338941,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,8114,29.81 MB,20.09 MB,12.73 MB,67.83 KB/s,2022-02-09 오전 1:49:01,2022-02-09 오전 1:56:33,0:07:32,jh,dsk,dsk,-,1644338941
+1644338335,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,5303,5.55 KB,31.46 KB,28.33 KB,1 KB/s,2022-02-09 오전 1:38:55,2022-02-09 오전 1:48:50,0:09:55,jh,add,add,-,1644338335
+1644337729,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,28769,29.36 GB,17.63 GB,9.03 GB,93.96 MB/s,2022-02-09 오전 1:28:49,2022-02-09 오전 1:34:11,0:05:22,jh,ddd,ddd,-,1644337729
+1644337123,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,20664,36 MB,21.57 GB,3.66 GB,91.47 KB/s,2022-02-09 오전 1:18:43,2022-02-09 오전 1:25:28,0:06:45,jh,add,add,-,1644337123
+1644336517,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,16340,31.39 GB,30.77 GB,19.72 GB,272.38 MB/s,2022-02-09 오전 1:08:37,2022-02-09 오전 1:10:37,0:02:00,jh,dsk,dsk,-,1644336517
+1644335911,Partially Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,21585,8.31 GB,22.64 GB,30.39 GB,25.79 MB/s,2022-02-09 오전 12:58:31,2022-02-09 오전 1:04:03,0:05:32,jh,add,add,-,1644335911
+1644335305,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,16319,1.6 KB,12.53 KB,29.3 KB,1 KB/s,2022-02-09 오전 12:48:25,2022-02-09 오전 12:51:23,0:02:58,jh,ddd,ddd,-,1644335305
+1644334699,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,16029,23.05 MB,31.62 MB,26.8 MB,138.02 KB/s,2022-02-09 오전 12:38:19,2022-02-09 오전 12:41:12,0:02:53,jh,add,add,-,1644334699
+1644334093,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,9868,5.23 GB,19.99 GB,22.09 GB,9.25 MB/s,2022-02-09 오전 12:28:13,2022-02-09 오전 12:37:54,0:09:41,jh,dsk,dsk,-,1644334093
+1644333487,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,12284,8.07 KB,11.59 KB,5.98 KB,1 KB/s,2022-02-09 오전 12:18:07,2022-02-09 오전 12:20:08,0:02:01,jh,add,add,-,1644333487
+1644332881,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,25761,12.14 MB,7.16 MB,3.42 MB,98.67 KB/s,2022-02-09 오전 12:08:01,2022-02-09 오전 12:10:09,0:02:08,jh,ddd,ddd,-,1644332881
+1644332275,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,27455,13.21 GB,30.74 GB,164 MB,71.59 MB/s,2022-02-08 오후 11:57:55,2022-02-09 오전 12:01:06,0:03:11,jh,add,add,-,1644332275
+1644331669,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,19048,13.62 GB,19.63 GB,20.14 GB,37.48 MB/s,2022-02-08 오후 11:47:49,2022-02-08 오후 11:54:03,0:06:14,jh,dsk,dsk,-,1644331669
+1644331063,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,20854,31.15 GB,12.66 GB,31.85 GB,80.56 MB/s,2022-02-08 오후 11:37:43,2022-02-08 오후 11:44:21,0:06:38,jh,add,add,-,1644331063
+1644330457,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,23514,27.63 GB,20.94 GB,3.17 GB,50.34 MB/s,2022-02-08 오후 11:27:37,2022-02-08 오후 11:37:01,0:09:24,jh,ddd,ddd,-,1644330457
+1644329851,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,20730,19.48 GB,11.58 GB,23.27 GB,36.41 MB/s,2022-02-08 오후 11:17:31,2022-02-08 오후 11:26:41,0:09:10,jh,add,add,-,1644329851
+1644329245,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,15013,20.87 GB,9.65 GB,23.08 GB,78.27 MB/s,2022-02-08 오후 11:07:25,2022-02-08 오후 11:12:00,0:04:35,jh,dsk,dsk,-,1644329245
+1644328639,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,5033,19.01 GB,12.17 GB,29.09 GB,66.45 MB/s,2022-02-08 오후 10:57:19,2022-02-08 오후 11:02:14,0:04:55,jh,add,add,-,1644328639
+1644328033,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,20000,11.94 GB,25.81 GB,25.99 GB,37.26 MB/s,2022-02-08 오후 10:47:13,2022-02-08 오후 10:52:43,0:05:30,jh,ddd,ddd,-,1644328033
+1644327427,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,30073,20.78 MB,16.13 MB,17.83 MB,38.48 KB/s,2022-02-08 오후 10:37:07,2022-02-08 오후 10:46:22,0:09:15,jh,add,add,-,1644327427
+1644326821,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,12454,4.63 GB,20.31 GB,2.5 GB,21.86 MB/s,2022-02-08 오후 10:27:01,2022-02-08 오후 10:30:40,0:03:39,jh,dsk,dsk,-,1644326821
+1644326215,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,25542,22.75 GB,28.72 GB,18.27 GB,41.15 MB/s,2022-02-08 오후 10:16:55,2022-02-08 오후 10:26:23,0:09:28,jh,add,add,-,1644326215
+1644325609,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,31773,17.36 GB,12.72 GB,23.54 GB,39.5 MB/s,2022-02-08 오후 10:06:49,2022-02-08 오후 10:14:21,0:07:32,jh,ddd,ddd,-,1644325609
+1644325003,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,1791,31.84 MB,14.21 MB,16.34 MB,269.49 KB/s,2022-02-08 오후 9:56:43,2022-02-08 오후 9:58:46,0:02:03,jh,add,add,-,1644325003
+1644324397,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,25510,24.21 GB,11.2 GB,3.36 GB,55.95 MB/s,2022-02-08 오후 9:46:37,2022-02-08 오후 9:54:02,0:07:25,jh,dsk,dsk,-,1644324397
+1644323791,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,21422,28.49 KB,1.02 KB,27.81 KB,1 KB/s,2022-02-08 오후 9:36:31,2022-02-08 오후 9:41:56,0:05:25,jh,add,add,-,1644323791
+1644323185,Partially Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,11978,29.34 GB,29.41 GB,16.37 GB,173.68 MB/s,2022-02-08 오후 9:26:25,2022-02-08 오후 9:29:20,0:02:55,jh,ddd,ddd,-,1644323185
+1644322579,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,9446,18.37 GB,1.98 GB,14.55 GB,40.37 MB/s,2022-02-08 오후 9:16:19,2022-02-08 오후 9:24:07,0:07:48,jh,add,add,-,1644322579
+1644321973,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,12971,2.93 GB,31.97 GB,17.51 GB,8.82 MB/s,2022-02-08 오후 9:06:13,2022-02-08 오후 9:11:55,0:05:42,jh,dsk,dsk,-,1644321973
+1644321367,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,8600,14.63 GB,4.35 GB,8.71 GB,41.37 MB/s,2022-02-08 오후 8:56:07,2022-02-08 오후 9:02:11,0:06:04,jh,add,add,-,1644321367
+1644320761,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,CVNVX,testsc_3,24569,1.79 GB,30.51 GB,3.58 GB,7.23 MB/s,2022-02-08 오후 8:46:01,2022-02-08 오후 8:50:16,0:04:15,jh,ddd,ddd,-,1644320761
+1644320155,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_2,14183,6.52 GB,29.5 GB,4.72 GB,67.39 MB/s,2022-02-08 오후 8:35:55,2022-02-08 오후 8:37:36,0:01:41,jh,add,add,-,1644320155
+1644319549,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_1,30908,21.65 GB,2.06 GB,8.8 GB,99.4 MB/s,2022-02-08 오후 8:25:49,2022-02-08 오후 8:29:34,0:03:45,jh,dsk,dsk,-,1644319549
+1644318943,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_4,14575,25.75 KB,1 KB,28.61 KB,1 KB/s,2022-02-08 오후 8:15:43,2022-02-08 오후 8:24:13,0:08:30,jh,add,add,-,1644318943
+1644318337,Completed,-,Informix Onbar Backup,Full Backup,jh,FASDF,testsc_3,3890,23.9 GB,4.96 GB,660 MB,62.6 MB/s,2022-02-08 오후 8:05:37,2022-02-08 오후 8:12:10,0:06:33,jh,ddd,ddd,-,1644318337
+1644317731,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_2,31387,19.66 GB,10.39 GB,22.67 GB,44.53 MB/s,2022-02-08 오후 7:55:31,2022-02-08 오후 8:03:05,0:07:34,jh,add,add,-,1644317731
+1644317125,Completed,-,Mysql Backup,Incremental Backup,jh,SGFDG,testsc_1,8021,16.22 GB,30.08 GB,14.83 GB,44.78 MB/s,2022-02-08 오후 7:45:25,2022-02-08 오후 7:51:38,0:06:13,jh,dsk,dsk,-,1644317125
+1644316519,Completed,-,Mysql Backup,Enterprise Incremental Backup,jh,SGFDG,testsc_4,28795,545 MB,6.45 GB,10.08 GB,8.26 MB/s,2022-02-08 오후 7:35:19,2022-02-08 오후 7:36:27,0:01:08,jh,add,add,-,1644316519
+1644315913,Completed,-,Mysql Backup,Enterprise Differential Backup,jh,SGFDG,testsc_3,30402,31.65 KB,29.72 KB,10.22 KB,1 KB/s,2022-02-08 오후 7:25:13,2022-02-08 오후 7:28:24,0:03:11,jh,ddd,ddd,-,1644315913
+1644315307,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_2,8384,3.5 GB,14.55 GB,25.66 GB,16.9 MB/s,2022-02-08 오후 7:15:07,2022-02-08 오후 7:18:41,0:03:34,jh,add,add,-,1644315307
+1644314701,Completed,-,Informix Onbar Backup,Full Backup,jh,HGFAW,testsc_1,17177,28.13 GB,2.07 GB,10.08 GB,102.87 MB/s,2022-02-08 오후 7:05:01,2022-02-08 오후 7:09:43,0:04:42,jh,dsk,dsk,-,1644314701
+1644314095,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_4,2498,2.31 GB,14.25 GB,22.37 GB,7.77 MB/s,2022-02-08 오후 6:54:55,2022-02-08 오후 7:00:01,0:05:06,jh,add,add,-,1644314095
+1644313489,Completed,-,Informix Onbar Backup,Incremental Backup,jh,HGFAW,testsc_3,5392,28.72 GB,10.78 GB,3.02 GB,64.77 MB/s,2022-02-08 오후 6:44:49,2022-02-08 오후 6:52:25,0:07:36,jh,ddd,ddd,-,1644313489
+1644312883,Completed,-,File Backup,Archive Backup,jh,TGHCV,testsc_2,12222,12.49 GB,942 MB,10.1 GB,21.24 MB/s,2022-02-08 오후 6:34:43,2022-02-08 오후 6:44:47,0:10:04,jh,add,add,-,1644312883
+1644312277,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_1,32457,29.08 MB,31.58 MB,31.79 MB,51.6 KB/s,2022-02-08 오후 6:24:37,2022-02-08 오후 6:34:16,0:09:39,jh,dsk,dsk,-,1644312277
+1644311671,Completed,-,File Backup,Differential Backup,jh,TGHCV,testsc_4,13743,13.54 GB,3.93 GB,7.29 GB,50.04 MB/s,2022-02-08 오후 6:14:31,2022-02-08 오후 6:19:10,0:04:39,jh,add,add,-,1644311671
+1644311065,Completed,-,File Backup,Full Backup,jh,TGHCV,testsc_3,15921,6.07 GB,8.58 GB,1.81 GB,14.36 MB/s,2022-02-08 오후 6:04:25,2022-02-08 오후 6:11:40,0:07:15,jh,ddd,ddd,-,1644311065
+1644310459,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_2,32235,18.53 GB,11.29 GB,26.04 GB,63.04 MB/s,2022-02-08 오후 5:54:19,2022-02-08 오후 5:59:22,0:05:03,jh,add,add,-,1644310459
+1644309853,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_1,12403,20.75 KB,20.54 KB,29.3 KB,1 KB/s,2022-02-08 오후 5:44:13,2022-02-08 오후 5:54:17,0:10:04,jh,dsk,dsk,-,1644309853
+1644309247,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_4,8819,7.06 GB,21.6 GB,12.56 GB,14.95 MB/s,2022-02-08 오후 5:34:07,2022-02-08 오후 5:42:13,0:08:06,jh,add,add,-,1644309247
+1644308641,Completed,-,Informix Onbar Backup,Incremental Backup,jh,UIYKH,testsc_3,10686,13.08 GB,12.6 GB,25.41 GB,47.51 MB/s,2022-02-08 오후 5:24:01,2022-02-08 오후 5:28:45,0:04:44,jh,ddd,ddd,-,1644308641
+1644308035,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_2,29197,31.02 KB,6.24 KB,17.49 KB,1 KB/s,2022-02-08 오후 5:13:55,2022-02-08 오후 5:15:57,0:02:02,jh,add,add,-,1644308035
+1644307429,Completed,-,Oracle RMAN Backup,Cumulative Backup,jh,GHJDD,testsc_1,19694,6.53 GB,19.98 GB,1.97 GB,19.72 MB/s,2022-02-08 오후 5:03:49,2022-02-08 오후 5:09:30,0:05:41,jh,dsk,dsk,-,1644307429
+1644306823,Completed,-,Oracle RMAN Backup,Full Backup,jh,GHJDD,testsc_4,22186,31.17 GB,24.32 GB,5.35 GB,168.88 MB/s,2022-02-08 오후 4:53:43,2022-02-08 오후 4:56:54,0:03:11,jh,add,add,-,1644306823
+1644306217,Completed,-,Oracle RMAN Backup,Incremental Backup,jh,GHJDD,testsc_3,12515,17.18 GB,30.36 GB,17.76 GB,183.3 MB/s,2022-02-08 오후 4:43:37,2022-02-08 오후 4:45:15,0:01:38,jh,ddd,ddd,-,1644306217
+1644305611,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_2,27296,17.21 KB,12.04 KB,9.53 KB,1 KB/s,2022-02-08 오후 4:33:31,2022-02-08 오후 4:37:51,0:04:20,jh,add,add,-,1644305611
+1644305005,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_1,5508,24.38 GB,23.47 GB,14.66 GB,60.45 MB/s,2022-02-08 오후 4:23:25,2022-02-08 오후 4:30:20,0:06:55,jh,dsk,dsk,-,1644305005
+1644304399,Completed,-,Vmware Backup,Dump Backup,jh,KJHFA,testsc_4,24000,29.46 GB,8.41 GB,19.27 GB,99.22 MB/s,2022-02-08 오후 4:13:19,2022-02-08 오후 4:18:25,0:05:06,jh,add,add,-,1644304399
+1644303793,Completed,-,Vmware Backup,Synthetic,jh,KJHFA,testsc_3,12474,5.12 GB,27.71 GB,31.09 GB,9.29 MB/s,2022-02-08 오후 4:03:13,2022-02-08 오후 4:12:39,0:09:26,jh,ddd,ddd,-,1644303793
+1644303187,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_2,28760,23.84 GB,15.74 GB,27.29 GB,60.43 MB/s,2022-02-08 오후 3:53:07,2022-02-08 오후 3:59:53,0:06:46,jh,add,add,-,1644303187
+1644302581,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_1,17391,29.71 GB,18.51 GB,15.8 GB,215.74 MB/s,2022-02-08 오후 3:43:01,2022-02-08 오후 3:45:24,0:02:23,jh,dsk,dsk,-,1644302581
+1644301975,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_4,2452,28.54 GB,26.42 GB,27.51 GB,70.09 MB/s,2022-02-08 오후 3:32:55,2022-02-08 오후 3:39:54,0:06:59,jh,add,add,-,1644301975
+1644301369,Completed,-,Physical Backup,Full Backup,jh,JKLJKL,testsc_3,17624,26.74 GB,9.41 GB,20.11 GB,50.15 MB/s,2022-02-08 오후 3:22:49,2022-02-08 오후 3:31:57,0:09:08,jh,ddd,ddd,-,1644301369
+1644300763,Completed,-,Informix Onbar Backup,Full Backup,jh,BNMBV,testsc_2,6119,21.13 GB,21.16 GB,11.67 GB,79.85 MB/s,2022-02-08 오후 3:12:43,2022-02-08 오후 3:17:16,0:04:33,jh,add,add,-,1644300763
+1644300157,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_1,137,9.32 GB,16.6 GB,7.02 GB,68.19 MB/s,2022-02-08 오후 3:02:37,2022-02-08 오후 3:04:59,0:02:22,jh,dsk,dsk,-,1644300157
+1644299551,Suspended,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_4,19805,30.56 GB,1.59 GB,7.43 GB,76.32 MB/s,2022-02-08 오후 2:52:31,2022-02-08 오후 2:59:23,0:06:52,jh,add,add,-,1644299551
+1644298945,Completed,-,Informix Onbar Backup,Incremental Backup,jh,BNMBV,testsc_3,20007,26.37 GB,1.07 GB,28.28 GB,203.05 MB/s,2022-02-08 오후 2:42:25,2022-02-08 오후 2:44:40,0:02:15,jh,ddd,ddd,-,1644298945
+1644298339,Completed,-,Mysql Backup,Incremental Backup,jh,CVNVX,testsc_2,14082,30.07 GB,23.14 GB,12.92 GB,93.02 MB/s,2022-02-08 오후 2:32:19,2022-02-08 오후 2:37:52,0:05:33,jh,add,add,-,1644298339
+1644297733,Completed,-,Mysql Backup,Enterprise Full Backup,jh,CVNVX,testsc_1,14013,19.47 GB,23.22 GB,9.26 GB,46.15 MB/s,2022-02-08 오후 2:22:13,2022-02-08 오후 2:29:27,0:07:14,jh,dsk,dsk,-,1644297733
+1644297127,Completed,-,Mysql Backup,Differential Backup,jh,CVNVX,testsc_4,30155,19.47 GB,923 MB,5.39 GB,45.94 MB/s,2022-02-08 오후 2:12:07,2022-02-08 오후 2:19:23,0:07:16,jh,add,add,-,1644297127
