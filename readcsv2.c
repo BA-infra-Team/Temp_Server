@@ -43,14 +43,14 @@ int main()
 	// 파일통계화면 UI, 평균 경과시간을 보여주는 데이터 구조체 선언 
 	typedef struct Avg_Elapsed_Time_LineChart{
 		int Avg_Elapsed_Times;
-		double _2022_02_08_Avg_Elapsed_Times;
-		double _2022_02_09_Avg_Elapsed_Times;
-		double _2022_02_10_Avg_Elapsed_Times;
-		double _2022_02_11_Avg_Elapsed_Times;
-		double _2022_02_12_Avg_Elapsed_Times;
-		double _2022_02_13_Avg_Elapsed_Times;
-		double _2022_02_14_Avg_Elapsed_Times;
-		double _2022_02_15_Avg_Elapsed_Times;
+		int _2022_02_08_Avg_Elapsed_Times;
+		int _2022_02_09_Avg_Elapsed_Times;
+		int _2022_02_10_Avg_Elapsed_Times;
+		int _2022_02_11_Avg_Elapsed_Times;
+		int _2022_02_12_Avg_Elapsed_Times;
+		int _2022_02_13_Avg_Elapsed_Times;
+		int _2022_02_14_Avg_Elapsed_Times;
+		int _2022_02_15_Avg_Elapsed_Times;
 	} Avg_Elapsed_Time_LineChart;
 	Avg_Elapsed_Time_LineChart Avg_Elapsed_Time_LineCharts;
 	// 에러 UI, 에러 비율을 보여주는 데이터 구조체 선언  
@@ -350,11 +350,17 @@ int main()
 		Sum_02_14_s += _02_14_s_array[i];
 		Sum_02_15_m += _02_15_m_array[i];
 		Sum_02_15_s += _02_15_s_array[i];
-		
 	}
 	
-	Avg_Elapsed_Time_LineCharts._2022_02_08_Avg_Elapsed_Times = (Sum_02_08_m+(Sum_02_08_s/60))/_02_08_count;
-	printf("_02_08_count=%d, Sum = %f\n",_02_08_count,Sum_02_08_m+(Sum_02_08_s/60));
+	Avg_Elapsed_Time_LineCharts._2022_02_08_Avg_Elapsed_Times = ((Sum_02_08_m+(Sum_02_08_s/60))/_02_08_count)*60;
+	Avg_Elapsed_Time_LineCharts._2022_02_09_Avg_Elapsed_Times = ((Sum_02_09_m+(Sum_02_09_s/60))/_02_09_count)*60;
+	Avg_Elapsed_Time_LineCharts._2022_02_10_Avg_Elapsed_Times = ((Sum_02_10_m+(Sum_02_10_s/60))/_02_10_count)*60;
+	Avg_Elapsed_Time_LineCharts._2022_02_11_Avg_Elapsed_Times = ((Sum_02_11_m+(Sum_02_11_s/60))/_02_11_count)*60;
+	Avg_Elapsed_Time_LineCharts._2022_02_12_Avg_Elapsed_Times = ((Sum_02_12_m+(Sum_02_12_s/60))/_02_12_count)*60;
+	Avg_Elapsed_Time_LineCharts._2022_02_13_Avg_Elapsed_Times = ((Sum_02_13_m+(Sum_02_13_s/60))/_02_13_count)*60;
+	Avg_Elapsed_Time_LineCharts._2022_02_14_Avg_Elapsed_Times = ((Sum_02_14_m+(Sum_02_14_s/60))/_02_14_count)*60;
+	Avg_Elapsed_Time_LineCharts._2022_02_15_Avg_Elapsed_Times = ((Sum_02_15_m+(Sum_02_15_s/60))/_02_15_count)*60;
+
 	printf("_02_09_count=%d\n",_02_09_count);
 	printf("_02_10_count=%d\n",_02_10_count);
 	printf("_02_11_count=%d\n",_02_11_count);
@@ -362,7 +368,15 @@ int main()
 	printf("_02_13_count=%d\n",_02_13_count);
 	printf("_02_14_count=%d\n",_02_14_count);
 	printf("_02_15_count=%d\n",_02_15_count);
-	printf("02-08 avg=%f\n", Avg_Elapsed_Time_LineCharts._2022_02_08_Avg_Elapsed_Times);
+
+	printf("02-08 avg=%d\n", Avg_Elapsed_Time_LineCharts._2022_02_08_Avg_Elapsed_Times);
+	printf("02-09 avg=%d\n", Avg_Elapsed_Time_LineCharts._2022_02_09_Avg_Elapsed_Times);
+	printf("02-10 avg=%d\n", Avg_Elapsed_Time_LineCharts._2022_02_10_Avg_Elapsed_Times);
+	printf("02-11 avg=%d\n", Avg_Elapsed_Time_LineCharts._2022_02_11_Avg_Elapsed_Times);
+	printf("02-12 avg=%d\n", Avg_Elapsed_Time_LineCharts._2022_02_12_Avg_Elapsed_Times);
+	printf("02-13 avg=%d\n", Avg_Elapsed_Time_LineCharts._2022_02_13_Avg_Elapsed_Times);
+	printf("02-14 avg=%d\n", Avg_Elapsed_Time_LineCharts._2022_02_14_Avg_Elapsed_Times);
+	printf("02-15 avg=%d\n", Avg_Elapsed_Time_LineCharts._2022_02_15_Avg_Elapsed_Times);
 	
 	printf("f_S = %f, w_s = %f\n",File_Statistics_PieCharts.Total_File_Size,File_Statistics_PieCharts.Total_Write_Size);
 	printf("%d,%d\n",t_f_c,t_w_c);

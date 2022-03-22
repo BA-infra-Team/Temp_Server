@@ -9,9 +9,23 @@
 #include <stdlib.h>    // for exit
 #include <string.h>    // for bzero
 #include <time.h>        //for time_t and time
+#include <sys/stat.h>	// for get the file size
 #define HELLO_WORLD_SERVER_PORT 7754
 #define LENGTH_OF_LISTEN_QUEUE 20
 #define BUFFER_SIZE 1024
+
+// get the file size 
+struct stat st;
+// File_Information
+#pragma pack(push, 1)    // 1바이트 크기로 정렬
+typedef struct File_Info
+{
+	int FileNameLen;
+	char File_Name[15]; 
+	//int File_Size;
+}File_Info;
+File_Info File_Infos;
+#pragma pack(pop)        // 정렬 설정을 이전 상태(기본값)로 되돌림
 
 // csv 파일을 읽기 위한 구조체 선언 
 typedef struct LogData
@@ -69,85 +83,64 @@ typedef struct Filtering_Data
 Filtering_Data Filtering_Datas;
 
 // 홈 UI, 백업-메소드 비율을 보여주기 위한 데이터 구조체 선언 
-typedef struct Backup_Method_Ratio_Pie_Chart
+typedef struct ChartData
 {
-	int Total_Count;
-	int Archive_Backup_Count;
-	int Differential_Backup_Count;
-	int Dump_Backup_Count;
-	int Full_Backup_Count;
-	int Incremental_Backup_Count;
-	int Synthetic_Count;
-} Backup_Method_Ratio_Pie_Chart;
-Backup_Method_Ratio_Pie_Chart Backup_Method_Ratio_Pie_Charts;
+	// 홈 UI, 백업-메소드 비율을 보여주기 위한 데이터 구조체 선언 
+	int Backup_Method_Ratio_Pie_Chart_Total_Count;
+	int Backup_Method_Ratio_Pie_Chart_Archive_Backup_Count;
+	int Backup_Method_Ratio_Pie_Chart_Differential_Backup_Count;
+	int Backup_Method_Ratio_Pie_Chart_Dump_Backup_Count;
+	int Backup_Method_Ratio_Pie_Chart_Full_Backup_Count;
+	int Backup_Method_Ratio_Pie_Chart_Incremental_Backup_Count;
+	int Backup_Method_Ratio_Pie_Chart_Synthetic_Count;
 
-// 홈 UI, 일별 총 백업 수를 보여주 데이터 구조체 선언
-typedef struct Total_Backup_Count_LineChart
-{
-	// int Job_Status_Completed_Count;	// Total, Do not Need
-	int _2022_02_08_Completed_Count;
-	int _2022_02_09_Completed_Count;
-	int _2022_02_10_Completed_Count;
-	int _2022_02_11_Completed_Count;
-	int _2022_02_12_Completed_Count;
-	int _2022_02_13_Completed_Count;
-	int _2022_02_14_Completed_Count;
-	int _2022_02_15_Completed_Count;
-} Total_Backup_Count_LineChart;
-Total_Backup_Count_LineChart Total_Backup_Count_LineCharts;
+	// 홈 UI, 일별 총 백업 수를 보여주 데이터 구조체 선언
+	int Total_Backup_Count_LineChart_2022_02_08_Completed_Count;
+	int Total_Backup_Count_LineChart_2022_02_09_Completed_Count;
+	int Total_Backup_Count_LineChart_2022_02_10_Completed_Count;
+	int Total_Backup_Count_LineChart_2022_02_11_Completed_Count;
+	int Total_Backup_Count_LineChart_2022_02_12_Completed_Count;
+	int Total_Backup_Count_LineChart_2022_02_13_Completed_Count;
+	int Total_Backup_Count_LineChart_2022_02_14_Completed_Count;
+	int Total_Backup_Count_LineChart_2022_02_15_Completed_Count;
 
-// 파일통계화면 UI, 파일 관련 통계를 보여줄 데이터 구조체 선언 
-typedef struct File_Statistics_PieChart
-{
-	int Total_Size;
-	int Total_File_Size;
-	int Total_Write_Size;
-} File_Statistics_PieChart;
-File_Statistics_PieChart File_Statistics_PieCharts;
+	// 파일통계화면 UI, 파일 관련 통계를 보여줄 데이터 구조체 선언 
+	int File_Statistics_PieChart_Total_Size;
+	int File_Statistics_PieChart_Total_File_Size;
+	int File_Statistics_PieChart_Total_Write_Size;
 
-// 파일통계화면 UI, 평균 경과시간을 보여주는 데이터 구조체 선언 
-typedef struct Avg_Elapsed_Time_LineChart{
-	int Avg_Elapsed_Times;
-	int _2022_02_08_Avg_Elapsed_Times;
-	int _2022_02_09_Avg_Elapsed_Times;
-	int _2022_02_10_Avg_Elapsed_Times;
-	int _2022_02_11_Avg_Elapsed_Times;
-	int _2022_02_12_Avg_Elapsed_Times;
-	int _2022_02_13_Avg_Elapsed_Times;
-	int _2022_02_14_Avg_Elapsed_Times;
-	int _2022_02_15_Avg_Elapsed_Times;
-} Avg_Elapsed_Time_LineChart;
-Avg_Elapsed_Time_LineChart Avg_Elapsed_Time_LineCharts;
+	// 파일통계화면 UI, 평균 경과시간을 보여주는 데이터 구조체 선언 
+	int Avg_Elapsed_Time_LineChart_2022_02_08_Avg_Elapsed_Times;
+	int Avg_Elapsed_Time_LineChart_2022_02_09_Avg_Elapsed_Times;
+	int Avg_Elapsed_Time_LineChart_2022_02_10_Avg_Elapsed_Times;
+	int Avg_Elapsed_Time_LineChart_2022_02_11_Avg_Elapsed_Times;
+	int Avg_Elapsed_Time_LineChart_2022_02_12_Avg_Elapsed_Times;
+	int Avg_Elapsed_Time_LineChart_2022_02_13_Avg_Elapsed_Times;
+	int Avg_Elapsed_Time_LineChart_2022_02_14_Avg_Elapsed_Times;
+	int Avg_Elapsed_Time_LineChart_2022_02_15_Avg_Elapsed_Times;
 
-// 파일통계화면 UI, 작업 종류를 보여주는 데이터 구조체 선언
-typedef struct JobType_PieChart{
-	int Total_Count;
-	int File_Backup_Count;
-	int Informix_Onbar_Backup_Count;
-	int Mysql_Backup_Count;
-	int Oracle_RMAN_Backup_Count;
-	int Physical_Backup_Count;
-	int Vm_Ware_Backup_Count;
-} JobType_PieChart;
-JobType_PieChart JobType_PieCharts;
+	// 파일통계화면 UI, 작업 종류를 보여주는 데이터 구조체 선언
+	int JobType_PieChart_Total_Count;
+	int JobType_PieChart_File_Backup_Count;
+	int JobType_PieChart_Informix_Onbar_Backup_Count;
+	int JobType_PieChart_Mysql_Backup_Count;
+	int JobType_PieChart_Oracle_RMAN_Backup_Count;
+	int JobType_PieChart_Physical_Backup_Count;
+	int JobType_PieChart_Vm_Ware_Backup_Count;
 
-// 에러 UI, 에러 비율을 보여주는 데이터 구조체 선언  
-typedef struct Total_Error_Ratio_PieChart{
-	int Total_Count;
-	int Total_Completed_Count;
-	int Total_Error_Count;
-} Total_Error_Ratio_PieChart;
-Total_Error_Ratio_PieChart Total_Error_Ratio_PieCharts;
+	// 에러 UI, 에러 비율을 보여주는 데이터 구조체 선언
+	int Total_Error_Ratio_PieChart_Total_Count;
+	int Total_Error_Ratio_PieChart_Total_Completed_Count;
+	int Total_Error_Ratio_PieChart_Total_Error_Count;
 
-// 에러 UI, 작업 종류별 에러타입을 위한 데이터 구조체 선언 
-typedef struct Error_Ratio_By_Job_Status_PieChart{
-	int Total_Error_Count;
-	int Partially_Completed_Count;
-	int Suspended_Error_Count;
-	int Failed_Error_Count;
-	int Canceled_Error_Count;
-} Error_Ratio_By_Job_Status_PieChart;
-Error_Ratio_By_Job_Status_PieChart Error_Ratio_By_Job_Status_PieCharts;
+	// 에러 UI, 작업 종류별 에러타입을 위한 데이터 구조체 선언 
+	int Error_Ratio_By_Job_Status_PieChart_Total_Error_Count;
+	int Error_Ratio_By_Job_Status_PieChart_Partially_Completed_Count;
+	int Error_Ratio_By_Job_Status_PieChart_Suspended_Error_Count;
+	int Error_Ratio_By_Job_Status_PieChart_Failed_Error_Count;
+	int Error_Ratio_By_Job_Status_PieChart_Canceled_Error_Count;
+} ChartData;
+ChartData ChartDatas;
 
 int main(int argc, char **argv)
 {
@@ -231,7 +224,7 @@ int main(int argc, char **argv)
 	}
 	fclose(the_file);
 	
-	// 데이터 가공 (추후 쓰레드 추가 고려 예정) 
+	// 데이터 가공 
 	// 백업 메소드 통계 데이터 가공을 위한 변수 선언 (Home UI)
 	char Backup_Method[300];
 	// 작업 완료 수 통계, 에러 통계 데이터 가공을 위한 변수 선언 (Home UI, Error UI)
@@ -240,37 +233,37 @@ int main(int argc, char **argv)
 	// 작업 종류 통계 데이터 가공을 위한 변수 선언 (Statistics UI)
 	char Job_Type[300];
 	// 평균 처리시간 위한 변수 선언 
-	int _02_08_h_array[991];
-	int _02_08_m_array[991];
-	int _02_08_s_array[991];
+	int _02_08_h_array[991] = { 0, };
+	int _02_08_m_array[991] = { 0, };
+	int _02_08_s_array[991] = { 0, };
 	
-	int _02_09_h_array[991];
-	int _02_09_m_array[991];
-	int _02_09_s_array[991];
+	int _02_09_h_array[991] = { 0, };
+	int _02_09_m_array[991] = { 0, };
+	int _02_09_s_array[991] = { 0, };
 	
-	int _02_10_h_array[991];
-	int _02_10_m_array[991];
-	int _02_10_s_array[991];
+	int _02_10_h_array[991] = { 0, };
+	int _02_10_m_array[991] = { 0, };
+	int _02_10_s_array[991] = { 0, };
 	
-	int _02_11_h_array[991];
-	int _02_11_m_array[991];
-	int _02_11_s_array[991];
+	int _02_11_h_array[991] = { 0, };
+	int _02_11_m_array[991] = { 0, };
+	int _02_11_s_array[991] = { 0, };
 	
-	int _02_12_h_array[991];
-	int _02_12_m_array[991];
-	int _02_12_s_array[991];
+	int _02_12_h_array[991] = { 0, };
+	int _02_12_m_array[991] = { 0, };
+	int _02_12_s_array[991] = { 0, };
 	
-	int _02_13_h_array[991];
-	int _02_13_m_array[991];
-	int _02_13_s_array[991];
+	int _02_13_h_array[991] = { 0, };
+	int _02_13_m_array[991] = { 0, };
+	int _02_13_s_array[991] = { 0, };
 	
-	int _02_14_h_array[991];
-	int _02_14_m_array[991];
-	int _02_14_s_array[991];
+	int _02_14_h_array[991] = { 0, };
+	int _02_14_m_array[991] = { 0, };
+	int _02_14_s_array[991] = { 0, };
 	
-	int _02_15_h_array[991];
-	int _02_15_m_array[991];
-	int _02_15_s_array[991];
+	int _02_15_h_array[991] = { 0, };
+	int _02_15_m_array[991] = { 0, };
+	int _02_15_s_array[991] = { 0, };
 	
 	int _02_08_count = 0;
 	int _02_09_count = 0;
@@ -285,6 +278,24 @@ int main(int argc, char **argv)
 	// File_Size 와 Write_Size 위한 변수 
 	int t_f_c =0;
 	int t_w_c =0;
+
+	// h m s 총 더한 변수
+	double Sum_02_08_m = 0;
+	double Sum_02_08_s = 0;
+	double Sum_02_09_m = 0;
+	double Sum_02_09_s = 0;
+	double Sum_02_10_m = 0;
+	double Sum_02_10_s = 0;
+	double Sum_02_11_m = 0;
+	double Sum_02_11_s = 0;
+	double Sum_02_12_m = 0;
+	double Sum_02_12_s = 0;
+	double Sum_02_13_m = 0;
+	double Sum_02_13_s = 0;
+	double Sum_02_14_m = 0;
+	double Sum_02_14_s = 0;
+	double Sum_02_15_m = 0;
+	double Sum_02_15_s = 0;
 	
 	for(int i=0;i<Total_row_count;i++)						
 	{
@@ -297,97 +308,97 @@ int main(int argc, char **argv)
 		// 백업 메소드 통계 (Home UI)
 		if (strcmp(Backup_Method,"Archive Backup")==0)
 		{
-			Backup_Method_Ratio_Pie_Charts.Archive_Backup_Count++;
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Archive_Backup_Count++;
 		}
 		if (strcmp(Backup_Method,"Differential Backup")==0)
 		{
-			Backup_Method_Ratio_Pie_Charts.Differential_Backup_Count++;
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Differential_Backup_Count++;
 		}
 		if (strcmp(Backup_Method,"Dump Backup")==0)
 		{
-			Backup_Method_Ratio_Pie_Charts.Dump_Backup_Count++;
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Dump_Backup_Count++;
 		}
 		if (strcmp(Backup_Method,"Full Backup")==0)
 		{
-			Backup_Method_Ratio_Pie_Charts.Full_Backup_Count++;
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Full_Backup_Count++;
 		}
 		if (strcmp(Backup_Method,"Incremental Backup")==0)
 		{
-			Backup_Method_Ratio_Pie_Charts.Incremental_Backup_Count++;
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Incremental_Backup_Count++;
 		}
 		if (strcmp(Backup_Method,"Synthetic")==0)
 		{
-			Backup_Method_Ratio_Pie_Charts.Synthetic_Count++;
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Synthetic_Count++;
 		}
 
 		// 작업 완료 수, 에러 통계 데이터 가공 (Home UI, Error UI)
 		if (strcmp(Job_Status,"Canceled")==0)
 		{
-			Total_Error_Ratio_PieCharts.Total_Error_Count++;	// Error UI
-			Error_Ratio_By_Job_Status_PieCharts.Canceled_Error_Count++; // Error UI
+			ChartDatas.Total_Error_Ratio_PieChart_Total_Error_Count++;	// Error UI
+			ChartDatas.Error_Ratio_By_Job_Status_PieChart_Canceled_Error_Count++; // Error UI
 			
 		}
 		if (strcmp(Job_Status,"Completed")==0)
 		{
-			// Total_Backup_Count_LineCharts.Job_Status_Completed_Count++;	// Home UI
-			Total_Error_Ratio_PieCharts.Total_Completed_Count++;	// Error UI
+			// ChartDatas.Total_Backup_Count_LineChart_Job_Status_Completed_Count++;	// Home UI
+			ChartDatas.Total_Error_Ratio_PieChart_Total_Completed_Count++;	// Error UI
 			if (strcmp(End_Time,"2022-02-08")==0)
-				Total_Backup_Count_LineCharts._2022_02_08_Completed_Count++;
+				ChartDatas.Total_Backup_Count_LineChart_2022_02_08_Completed_Count++;
 			if (strcmp(End_Time,"2022-02-09")==0)
-				Total_Backup_Count_LineCharts._2022_02_09_Completed_Count++;
+				ChartDatas.Total_Backup_Count_LineChart_2022_02_09_Completed_Count++;
 			if (strcmp(End_Time,"2022-02-10")==0)
-				Total_Backup_Count_LineCharts._2022_02_10_Completed_Count++;
+				ChartDatas.Total_Backup_Count_LineChart_2022_02_10_Completed_Count++;
 			if (strcmp(End_Time,"2022-02-11")==0)
-				Total_Backup_Count_LineCharts._2022_02_11_Completed_Count++;
+				ChartDatas.Total_Backup_Count_LineChart_2022_02_11_Completed_Count++;
 			if (strcmp(End_Time,"2022-02-12")==0)
-				Total_Backup_Count_LineCharts._2022_02_12_Completed_Count++;
+				ChartDatas.Total_Backup_Count_LineChart_2022_02_12_Completed_Count++;
 			if (strcmp(End_Time,"2022-02-13")==0)
-				Total_Backup_Count_LineCharts._2022_02_13_Completed_Count++;
+				ChartDatas.Total_Backup_Count_LineChart_2022_02_13_Completed_Count++;
 			if (strcmp(End_Time,"2022-02-14")==0)
-				Total_Backup_Count_LineCharts._2022_02_14_Completed_Count++;
+				ChartDatas.Total_Backup_Count_LineChart_2022_02_14_Completed_Count++;
 			if (strcmp(End_Time,"2022-02-15")==0)
-				Total_Backup_Count_LineCharts._2022_02_15_Completed_Count++;
+				ChartDatas.Total_Backup_Count_LineChart_2022_02_15_Completed_Count++;
 		}
 		if (strcmp(Job_Status,"Failed")==0)
 		{
-			Total_Error_Ratio_PieCharts.Total_Error_Count++;	// Error UI
-			Error_Ratio_By_Job_Status_PieCharts.Failed_Error_Count++;
+			ChartDatas.Total_Error_Ratio_PieChart_Total_Error_Count++;	// Error UI
+			ChartDatas.Error_Ratio_By_Job_Status_PieChart_Failed_Error_Count++;
 		}
 		if (strcmp(Job_Status,"Partially Completed")==0)
 		{
-			Total_Error_Ratio_PieCharts.Total_Error_Count++;	// Error UI
-			Error_Ratio_By_Job_Status_PieCharts.Partially_Completed_Count++;
+			ChartDatas.Total_Error_Ratio_PieChart_Total_Error_Count++;	// Error UI
+			ChartDatas.Error_Ratio_By_Job_Status_PieChart_Partially_Completed_Count++;
 		}
 		if (strcmp(Job_Status,"Suspended")==0)
 		{
-			Total_Error_Ratio_PieCharts.Total_Error_Count++;	// Error UI
-			Error_Ratio_By_Job_Status_PieCharts.Suspended_Error_Count++;	// Error UI
+			ChartDatas.Total_Error_Ratio_PieChart_Total_Error_Count++;	// Error UI
+			ChartDatas.Error_Ratio_By_Job_Status_PieChart_Suspended_Error_Count++;	// Error UI
 		}
 		
 		// 작업 종류 수 통계 위한 데이터 가공 (Statistics UI)
 		if (strcmp(Job_Type,"File Backup")==0)
 		{
-			JobType_PieCharts.File_Backup_Count++;
+			ChartDatas.JobType_PieChart_File_Backup_Count++;
 		}
 		if (strcmp(Job_Type,"Informix Onbar Backup")==0)
 		{
-			JobType_PieCharts.Informix_Onbar_Backup_Count++;
+			ChartDatas.JobType_PieChart_Informix_Onbar_Backup_Count++;
 		}
 		if (strcmp(Job_Type,"Mysql Backup")==0)
 		{
-			JobType_PieCharts.Mysql_Backup_Count++;
+			ChartDatas.JobType_PieChart_Mysql_Backup_Count++;
 		}
 		if (strcmp(Job_Type,"Oracle RMAN Backup")==0)
 		{
-			JobType_PieCharts.Oracle_RMAN_Backup_Count++;
+			ChartDatas.JobType_PieChart_Oracle_RMAN_Backup_Count++;
 		}
 		if (strcmp(Job_Type,"Physical Backup")==0)
 		{
-			JobType_PieCharts.Physical_Backup_Count++;
+			ChartDatas.JobType_PieChart_Physical_Backup_Count++;
 		}
 		if (strcmp(Job_Type,"Vmware Backup")==0)
 		{
-			JobType_PieCharts.Vm_Ware_Backup_Count++;
+			ChartDatas.JobType_PieChart_Vm_Ware_Backup_Count++;
 		}
 		
 		// 일별 평균처리시간 위한 데이터 가공 (Statistics UI)
@@ -464,13 +475,32 @@ int main(int argc, char **argv)
 		if (strcmp(End_Time,"2022-02-15")==0)
 		{
 			char *ptr = strtok(array[i].Elapsed_Time,":");
+			_02_15_h_array[i]=atoi(ptr);
 			ptr = strtok(NULL,":");
 			_02_15_m_array[i]= atoi(ptr);
 			ptr = strtok(NULL,":");
 			_02_15_s_array[i] = atoi(ptr);
 			_02_15_count++;
 		}
-		
+
+		// 평균 처리시간 계산위해 총 더한 값들 
+		Sum_02_08_m += _02_08_m_array[i];
+		Sum_02_08_s += _02_08_s_array[i];
+		Sum_02_09_m += _02_09_m_array[i];
+		Sum_02_09_s += _02_09_s_array[i];
+		Sum_02_10_m += _02_10_m_array[i];
+		Sum_02_10_s += _02_10_s_array[i];
+		Sum_02_11_m += _02_11_m_array[i];
+		Sum_02_11_s += _02_11_s_array[i];
+		Sum_02_12_m += _02_12_m_array[i];
+		Sum_02_12_s += _02_12_s_array[i];
+		Sum_02_13_m += _02_13_m_array[i];
+		Sum_02_13_s += _02_13_s_array[i];
+		Sum_02_14_m += _02_14_m_array[i];
+		Sum_02_14_s += _02_14_s_array[i];
+		Sum_02_15_m += _02_15_m_array[i];
+		Sum_02_15_s += _02_15_s_array[i];
+
 		// GB, MB, KB 구분 위한 데이터 가공 (Statistics UI)
 		char *f_ptr2 = strtok(array[i].Files_Size," ");
 		char *f_ptr3 = strtok(NULL," ");
@@ -479,99 +509,67 @@ int main(int argc, char **argv)
 		if (strcmp(f_ptr3,"GB")==0)
 		{
 			t_f_c++;
-			File_Statistics_PieCharts.Total_File_Size += atof(f_ptr2);
+			ChartDatas.File_Statistics_PieChart_Total_File_Size += atof(f_ptr2);
 		}
 		char *w_ptr2 = strtok(array[i].Write_Size," ");
 		char *w_ptr3 = strtok(NULL," ");
 
 		if (strcmp(w_ptr3,"GB")==0)
 		{
-			File_Statistics_PieCharts.Total_Write_Size += atof(w_ptr2);
+			ChartDatas.File_Statistics_PieChart_Total_Write_Size += atof(w_ptr2);
 			t_w_c++;
 		}
 	}
-	Backup_Method_Ratio_Pie_Charts.Total_Count = Total_row_count;
-	Total_Error_Ratio_PieCharts.Total_Count = Total_row_count;
-	JobType_PieCharts.Total_Count = Total_row_count;
-	Error_Ratio_By_Job_Status_PieCharts.Total_Error_Count = Total_Error_Ratio_PieCharts.Total_Error_Count;
+	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_08_Avg_Elapsed_Times = ((Sum_02_08_m+(Sum_02_08_s/60))/_02_08_count)*60;
+	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_09_Avg_Elapsed_Times = ((Sum_02_09_m+(Sum_02_09_s/60))/_02_09_count)*60;
+	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_10_Avg_Elapsed_Times = ((Sum_02_10_m+(Sum_02_10_s/60))/_02_10_count)*60;
+	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_11_Avg_Elapsed_Times = ((Sum_02_11_m+(Sum_02_11_s/60))/_02_11_count)*60;
+	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_12_Avg_Elapsed_Times = ((Sum_02_12_m+(Sum_02_12_s/60))/_02_12_count)*60;
+	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_13_Avg_Elapsed_Times = ((Sum_02_13_m+(Sum_02_13_s/60))/_02_13_count)*60;
+	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_14_Avg_Elapsed_Times = ((Sum_02_14_m+(Sum_02_14_s/60))/_02_14_count)*60;
+	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_15_Avg_Elapsed_Times = ((Sum_02_15_m+(Sum_02_15_s/60))/_02_15_count)*60;
+	
+	ChartDatas.Backup_Method_Ratio_Pie_Chart_Total_Count = Total_row_count;
+	ChartDatas.Total_Error_Ratio_PieChart_Total_Count = Total_row_count;
+	ChartDatas.JobType_PieChart_Total_Count = Total_row_count;
+	ChartDatas.Error_Ratio_By_Job_Status_PieChart_Total_Error_Count = ChartDatas.Total_Error_Ratio_PieChart_Total_Error_Count;
+	ChartDatas.File_Statistics_PieChart_Total_Size = ChartDatas.File_Statistics_PieChart_Total_File_Size + ChartDatas.File_Statistics_PieChart_Total_Write_Size;
 
 	// 가공한 데이터 저장 (.dat)
 	// 파일 변수 선언
-	FILE *_Filtering_Data;
-	FILE *_BackupMethod_PieChart;
-	FILE *_BackupCount_LineChart;
-	FILE *_FileStatistics_PieChart;
-	FILE *_Avg_Elapsed_LineChart;
-	FILE *_JobType_PieChart;
-	FILE *_ErrorRatio_PieChart;
-	FILE *_ErrorRatio_By_JobType_PieChart;
+	FILE *_Filtering_Datas;
+	FILE *_ChartDatas;
 	
 	// 파일에 저장하기 위한 파일을 엽니다. 
-	_BackupMethod_PieChart = fopen("BackupMethod_PieChart.dat","w");
-	_BackupCount_LineChart = fopen("BackupCount_LineChart.dat","w");
-	_FileStatistics_PieChart = fopen("FileStatistics_PieChart.dat","w");
-	_Avg_Elapsed_LineChart = fopen("Avg_Elapsed_LineChart.dat","w");
-	_JobType_PieChart = fopen("JobType_PieChart.dat","w");
-	_ErrorRatio_PieChart = fopen("ErrorRatio_PieChart.dat","w");
-	_ErrorRatio_By_JobType_PieChart = fopen("ErrorRatio_By_JobType_PieChart.dat","w");
+	//_Filtering_Datas = fopen("FilterData.dat","w");
+	_ChartDatas = fopen("ChartDatas.dat","w");
+
 	
-	if (_BackupMethod_PieChart == NULL)
+	//if (_Filtering_Datas == NULL)
+	//{
+	//	fprintf(stderr, "\nError Opened Files\n");
+	//	exit(1);
+	//}
+
+	if (_ChartDatas == NULL)
 	{
 		fprintf(stderr, "\nError Opened Files\n");
 		exit(1);
 	}
-	if (_BackupCount_LineChart == NULL)
-	{
-		fprintf(stderr, "\nError Opened Files\n");
-		exit(1);
-	}
-	if (_FileStatistics_PieChart == NULL)
-	{
-		fprintf(stderr, "\nError Opened Files\n");
-		exit(1);
-	}
-	if (_Avg_Elapsed_LineChart == NULL)
-	{
-		fprintf(stderr, "\nError Opened Files\n");
-		exit(1);
-	}
-	if (_JobType_PieChart == NULL)
-	{
-		fprintf(stderr, "\nError Opened Files\n");
-		exit(1);
-	}
-	if (_ErrorRatio_PieChart == NULL)
-	{
-		fprintf(stderr, "\nError Opened Files\n");
-		exit(1);
-	}
-	if (_ErrorRatio_By_JobType_PieChart == NULL)
-	{
-		fprintf(stderr, "\nError Opened Files\n");
-		exit(1);
-	}
+
 	// 구조체 내용을 파일에 저장한다. 
-	fwrite(&Backup_Method_Ratio_Pie_Charts, sizeof(struct Backup_Method_Ratio_Pie_Chart), 1, _BackupMethod_PieChart);
-	fwrite(&Total_Backup_Count_LineCharts, sizeof(struct Total_Backup_Count_LineChart), 1, _BackupCount_LineChart);
-	fwrite(&File_Statistics_PieCharts, sizeof(struct File_Statistics_PieChart), 1, _FileStatistics_PieChart);
-	fwrite(&Avg_Elapsed_Time_LineCharts, sizeof(struct Avg_Elapsed_Time_LineChart), 1, _Avg_Elapsed_LineChart);
-	fwrite(&JobType_PieCharts, sizeof(struct JobType_PieChart), 1, _JobType_PieChart);
-	fwrite(&Total_Error_Ratio_PieCharts, sizeof(struct Total_Error_Ratio_PieChart), 1, _ErrorRatio_PieChart);
-	fwrite(&Error_Ratio_By_Job_Status_PieCharts, sizeof(struct Error_Ratio_By_Job_Status_PieChart), 1, _ErrorRatio_By_JobType_PieChart);
-	
+	//fwrite(&Filtering_Datas, sizeof(struct Filtering_Data), 1, _Filtering_Datas);
+	fwrite(&ChartDatas, sizeof(struct ChartData), 1, _ChartDatas);
+
 	if (fwrite != 0)
 		printf("Contents to file Written Successfully !\n");
 	else
 		printf("Error Writing file !\n");
+
 	// 파일을 닫아준다. 
-	fclose(_BackupMethod_PieChart);
-	fclose(_BackupCount_LineChart);
-	fclose(_FileStatistics_PieChart);
-	fclose(_Avg_Elapsed_LineChart);
-	fclose(_JobType_PieChart);
-	fclose(_ErrorRatio_PieChart);
-	fclose(_ErrorRatio_By_JobType_PieChart);
-	
+	//fclose(_Filtering_Datas);
+	fclose(_ChartDatas);
+
 	// 소켓 통신 시작 
 	// 소켓 구조체를 선언하고 IP 주소 및 포트를 설정 
 	struct sockaddr_in server_addr;
@@ -580,14 +578,9 @@ int main(int argc, char **argv)
 	server_addr.sin_addr.s_addr = htons(INADDR_ANY);
 	server_addr.sin_port = htons(HELLO_WORLD_SERVER_PORT);
 	// time_t now;
-	FILE *stream;	// For Backup_Method Struct
-	FILE *stream1;	// For BackupCount Struct
-	FILE *stream2;	// For FileStatistics Struct
-	FILE *stream3;	// For Avg_Elapsed Struct
-	FILE *stream4;	// For JobType Struct
-	FILE *stream5;	// For ErrorRatio Struct
-	FILE *stream6;	// For ErrorRatio_By_JobType Struct
-	
+	FILE *stream;	// For Chart Struct 
+	FILE *stream1;	// For Filtering Struct
+
 	// 서버 소켓을 나타내는 server_socket을 사용하여 인터넷용 스트리밍 프로토콜(TCP) 소켓을 만듭니다.
 	int server_socket = socket(AF_INET,SOCK_STREAM,0);
 	if( server_socket < 0)
@@ -630,203 +623,76 @@ int main(int argc, char **argv)
 			printf("Server Recieve Data Failed!\n");
 			exit(1);
 		}
-		printf("n%s",buffer);
+		printf("%s\n",buffer);
 		
-		// For Backup_Method Struct
-		if((stream = fopen("BackupMethod_PieChart.dat","r"))==NULL)
+		// For Chart Data
+		if((stream = fopen("ChartDatas.dat","r"))==NULL)
 		{
-			printf("The file 'BackupMethod_PieChart.dat' was not opened! \n");
-			exit(1);
+			printf("The file 'ChartDatas.dat' was not opened!\n");
+			// exit(1);
 		}
 		else
 		{
-			printf("The file 'BackupMethod_PieChart.dat' was opened! \n");
+			printf("The file 'ChartDatas.dat' was opened!\n");
 		}
 		bzero(buffer,BUFFER_SIZE);
 		int lengsize = 0;
+
+		// 파일 구조체 정보 먼저 전송
+		strcpy(File_Infos.File_Name,"ChartDatas.dat");
+		File_Infos.FileNameLen = strlen(File_Infos.File_Name);
+		
+		send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
+
 		while((lengsize = fread(buffer,1,1024,stream)) > 0)
 		{
 			printf("lengsize = %d\n",lengsize);
 			if(send(new_server_socket,buffer,lengsize,0)<0)
 			{
-				printf("Send File(BackupMethod_PieChart.dat) is Failed\n");
+				printf("Send File(ChartDatas.dat) is Failed\n");
 				break;
 			}
 			bzero(buffer, BUFFER_SIZE);
 		}
 		if(fclose(stream))
 		{
-			printf("The file 'BackupMethod_PieChart.dat' was not closed! \n");
-			exit(1);    
+			printf("The file 'ChartDatas.dat' was not closed! \n");
+			// exit(1);    
 		}
 		
-		// For BackupCount Struct
-		if((stream1 = fopen("BackupCount_LineChart.dat","r"))==NULL)
-		{
-			printf("The file 'BackupCount_LineChart.dat' was not opened! \n");
-			exit(1);
-		}
-		else
-		{
-			printf("The file 'BackupCount_LineChart.dat' was opened! \n");
-		}
-		bzero(buffer,BUFFER_SIZE);
-		lengsize = 0;
-		while((lengsize = fread(buffer,1,1024,stream1)) > 0)
-		{
-			printf("lengsize = %d\n",lengsize);
-			if(send(new_server_socket,buffer,lengsize,0)<0)
-			{
-				printf("Send File(BackupCount_LineChart) is Failed\n");
-				break;
-			}
-			bzero(buffer, BUFFER_SIZE);
-		}
-		if(fclose(stream1))
-		{
-			printf("The file 'BackupCount_LineChart.dat' was not closed! \n");
-			exit(1);    
-		}
-		
-		// For FileStatistics Struct
-		if((stream2 = fopen("FileStatistics_PieChart.dat","r"))==NULL)
-		{
-			printf("The file 'FileStatistics_PieChart.dat' was not opened! \n");
-			exit(1);
-		}
-		else
-		{
-			printf("The file 'FileStatistics_PieChart.dat' was opened! \n");
-		}
-		bzero(buffer,BUFFER_SIZE);
-		lengsize = 0;
-		while((lengsize = fread(buffer,1,1024,stream2)) > 0)
-		{
-			printf("lengsize = %d\n",lengsize);
-			if(send(new_server_socket,buffer,lengsize,0)<0)
-			{
-				printf("Send File(FileStatistics_PieChart.dat) is Failed\n");
-				break;
-			}
-			bzero(buffer, BUFFER_SIZE);
-		}
-		if(fclose(stream2))
-		{
-			printf("The file 'FileStatistics_PieChart.dat' was not closed! \n");
-			exit(1);    
-		}
-		
-		// For Avg_Elapsed Struct
-		if((stream3 = fopen("Avg_Elapsed_LineChart.dat","r"))==NULL)
-		{
-			printf("The file 'Avg_Elapsed_LineChart.dat' was not opened! \n");
-			exit(1);
-		}
-		else
-		{
-			printf("The file 'Avg_Elapsed_LineChart.dat' was opened! \n");
-		}
-		bzero(buffer,BUFFER_SIZE);
-		lengsize = 0;
-		while((lengsize = fread(buffer,1,1024,stream3)) > 0)
-		{
-			printf("lengsize = %d\n",lengsize);
-			if(send(new_server_socket,buffer,lengsize,0)<0)
-			{
-				printf("Send File(Avg_Elapsed_LineChart.dat) is Failed\n");
-				break;
-			}
-			bzero(buffer, BUFFER_SIZE);
-		}
-		if(fclose(stream3))
-		{
-			printf("The file 'Avg_Elapsed_LineChart.dat' was not closed! \n");
-			exit(1);    
-		}
-		
-		// For JobType Struct
-		if((stream4 = fopen("JobType_PieChart.dat","r"))==NULL)
-		{
-			printf("The file 'JobType_PieChart.dat' was not opened! \n");
-			exit(1);
-		}
-		else
-		{
-			printf("The file 'JobType_PieChart.dat' was opened! \n");
-		}
-		bzero(buffer,BUFFER_SIZE);
-		lengsize = 0;
-		while((lengsize = fread(buffer,1,1024,stream4)) > 0)
-		{
-			printf("lengsize = %d\n",lengsize);
-			if(send(new_server_socket,buffer,lengsize,0)<0)
-			{
-				printf("Send File(JobType_PieChart.dat) is Failed\n");
-				break;
-			}
-			bzero(buffer, BUFFER_SIZE);
-		}
-		if(fclose(stream4))
-		{
-			printf("The file 'JobType_PieChart.dat' was not closed! \n");
-			exit(1);    
-		}
-		
-		// For ErrorRatio Struct
-		if((stream5 = fopen("ErrorRatio_PieChart.dat","r"))==NULL)
-		{
-			printf("The file 'ErrorRatio_PieChart.dat' was not opened! \n");
-			exit(1);
-		}
-		else
-		{
-			printf("The file 'ErrorRatio_PieChart.dat' was opened! \n");
-		}
-		bzero(buffer,BUFFER_SIZE);
-		lengsize = 0;
-		while((lengsize = fread(buffer,1,1024,stream5)) > 0)
-		{
-			printf("lengsize = %d\n",lengsize);
-			if(send(new_server_socket,buffer,lengsize,0)<0)
-			{
-				printf("Send File(ErrorRatio_PieChart.dat) is Failed\n");
-				break;
-			}
-			bzero(buffer, BUFFER_SIZE);
-		}
-		if(fclose(stream5))
-		{
-			printf("The file 'ErrorRatio_PieChart.dat' was not closed! \n");
-			exit(1);    
-		}
-		
-		// For ErrorRatio_By_JobType Struct
-		if((stream6 = fopen("ErrorRatio_By_JobType_PieChart.dat","r"))==NULL)
-		{
-			printf("The file 'ErrorRatio_By_JobType_PieChart.dat' was not opened! \n");
-			exit(1);
-		}
-		else
-		{
-			printf("The file 'ErrorRatio_By_JobType_PieChart.dat' was opened! \n");
-		}
-		bzero(buffer,BUFFER_SIZE);
-		lengsize = 0;
-		while((lengsize = fread(buffer,1,1024,stream6)) > 0)
-		{
-			printf("lengsize = %d\n",lengsize);
-			if(send(new_server_socket,buffer,lengsize,0)<0)
-			{
-				printf("Send File(ErrorRatio_By_JobType_PieChart.dat) is Failed\n");
-				break;
-			}
-			bzero(buffer, BUFFER_SIZE);
-		}
-		if(fclose(stream6))
-		{
-			printf("The file 'ErrorRatio_By_JobType_PieChart.dat' was not closed! \n");
-			exit(1);    
-		}
+		// For Filtering data
+		//if((stream1 = fopen("FilterData.dat","r"))==NULL)
+		//{
+		//	printf("The file 'FilterData.dat' was not opened! \n");
+		//	exit(1);
+		//}
+		//else
+		//{
+		//	printf("The file 'FilterData.dat' was opened! \n");
+		//}
+		//bzero(buffer,BUFFER_SIZE);
+		//lengsize = 0;
+
+		// 파일 구조체 정보 먼저 전송
+		//strcpy(File_Infos.File_Name,"FilterData.dat");
+		//File_Infos.FileNameLen = strlen(File_Infos.File_Name);
+		//send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
+
+		//while((lengsize = fread(buffer,1,1024,stream1)) > 0)
+		//{
+		//	printf("lengsize = %d\n",lengsize);
+		//	if(send(new_server_socket,buffer,lengsize,0)<0)
+		//	{
+		//		printf("Send File(FilterData.dat) is Failed\n");
+		//		break;
+		//	}
+		//	bzero(buffer, BUFFER_SIZE);
+		//}
+		//if(fclose(stream1))
+		//{
+		//	printf("The file 'FilterData.dat' was not closed! \n");
+			// exit(1);    
+		//}
 		
 		// 클라이언트와의 연결을 종료합니다.
 		close(new_server_socket);    
