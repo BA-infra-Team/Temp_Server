@@ -10,6 +10,7 @@
 #include <string.h>    // for bzero
 #include <time.h>        //for time_t and time
 #include <sys/stat.h>	// for get the file size
+#include <math.h> // for calculating 
 #define HELLO_WORLD_SERVER_PORT 7754
 #define LENGTH_OF_LISTEN_QUEUE 20
 #define BUFFER_SIZE 1024
@@ -148,6 +149,36 @@ typedef struct ChartData
 
 	// 총 데이터 백업한 파일 개수 (2022-03-24 추가)
 	int Total_Files_Count;
+
+	// 일별 파일 사이즈 (2022-03-24 추가)
+	int Total_File_Size_LineChart_2022_02_08_Count;
+	int Total_File_Size_LineChart_2022_02_09_Count;
+	int Total_File_Size_LineChart_2022_02_10_Count;
+	int Total_File_Size_LineChart_2022_02_11_Count;
+	int Total_File_Size_LineChart_2022_02_12_Count;
+	int Total_File_Size_LineChart_2022_02_13_Count;
+	int Total_File_Size_LineChart_2022_02_14_Count;
+	int Total_File_Size_LineChart_2022_02_15_Count;
+
+	// 일별 저장 사이즈 (2022-03-24 추가)
+	int Total_Write_Size_LineChart_2022_02_08_Count;
+	int Total_Write_Size_LineChart_2022_02_09_Count;
+	int Total_Write_Size_LineChart_2022_02_10_Count;
+	int Total_Write_Size_LineChart_2022_02_11_Count;
+	int Total_Write_Size_LineChart_2022_02_12_Count;
+	int Total_Write_Size_LineChart_2022_02_13_Count;
+	int Total_Write_Size_LineChart_2022_02_14_Count;
+	int Total_Write_Size_LineChart_2022_02_15_Count;
+
+	// 일별 전송 사이즈 (2022-03-24 추가)
+	int Total_Data_Transferred_LineChart_2022_02_08_Count;
+	int Total_Data_Transferred_LineChart_2022_02_09_Count;
+	int Total_Data_Transferred_LineChart_2022_02_10_Count;
+	int Total_Data_Transferred_LineChart_2022_02_11_Count;
+	int Total_Data_Transferred_LineChart_2022_02_12_Count;
+	int Total_Data_Transferred_LineChart_2022_02_13_Count;
+	int Total_Data_Transferred_LineChart_2022_02_14_Count;
+	int Total_Data_Transferred_LineChart_2022_02_15_Count;
 } ChartData;
 ChartData ChartDatas;
 
@@ -286,9 +317,10 @@ int main(int argc, char **argv)
 	int _02_15_count = 0;
 
 	// total file count, total write count
-	// File_Size 와 Write_Size 위한 변수 
-	int t_f_c =0;
-	int t_w_c =0;
+	// File_Size 와 Write_Size DataTransferred 위한 변수 
+	int t_f_c = 0;
+	int t_w_c = 0;
+	int t_d_c = 0;
 
 	// h m s 총 더한 변수
 	double Sum_02_08_m = 0;
@@ -308,6 +340,42 @@ int main(int argc, char **argv)
 	double Sum_02_15_m = 0;
 	double Sum_02_15_s = 0;
 	
+	// 소수점 Write, File_Size, Data_Transferred 처리 위한 변수 
+	float float_Total_File_Size;
+	float float_Total_Write_Size;
+	float float_Total_Data_Transferred;	// (2022-03-24 수정 )
+
+	// 일별 파일 사이즈 (2022-03-24 추가)
+	float Total_File_Size_LineChart_2022_02_08_Count;
+	float Total_File_Size_LineChart_2022_02_09_Count;
+	float Total_File_Size_LineChart_2022_02_10_Count;
+	float Total_File_Size_LineChart_2022_02_11_Count;
+	float Total_File_Size_LineChart_2022_02_12_Count;
+	float Total_File_Size_LineChart_2022_02_13_Count;
+	float Total_File_Size_LineChart_2022_02_14_Count;
+	float Total_File_Size_LineChart_2022_02_15_Count;
+
+	// 일별 저장 사이즈 (2022-03-24 추가)
+	float Total_Write_Size_LineChart_2022_02_08_Count;
+	float Total_Write_Size_LineChart_2022_02_09_Count;
+	float Total_Write_Size_LineChart_2022_02_10_Count;
+	float Total_Write_Size_LineChart_2022_02_11_Count;
+	float Total_Write_Size_LineChart_2022_02_12_Count;
+	float Total_Write_Size_LineChart_2022_02_13_Count;
+	float Total_Write_Size_LineChart_2022_02_14_Count;
+	float Total_Write_Size_LineChart_2022_02_15_Count;
+
+	// 일별 전송 사이즈 (2022-03-24 추가)
+	float Total_Data_Transferred_LineChart_2022_02_08_Count;
+	float Total_Data_Transferred_LineChart_2022_02_09_Count;
+	float Total_Data_Transferred_LineChart_2022_02_10_Count;
+	float Total_Data_Transferred_LineChart_2022_02_11_Count;
+	float Total_Data_Transferred_LineChart_2022_02_12_Count;
+	float Total_Data_Transferred_LineChart_2022_02_13_Count;
+	float Total_Data_Transferred_LineChart_2022_02_14_Count;
+	float Total_Data_Transferred_LineChart_2022_02_15_Count;
+
+
 	for(int i=0;i<Total_row_count;i++)						
 	{
 		strcpy(Backup_Method,array[i].Backup_Method); // 백업 메소드 통계 데이터 가공을 위한 변수 값 복사 (Home UI)
@@ -316,6 +384,35 @@ int main(int argc, char **argv)
 		strcpy(Job_Type,array[i].Job_Type); // 작업 종류 통계 데이터 가공을 위한 변수 값 복사 (Statistics UI)
 		strcpy(Schedule,array[i].Schedule); // 스케줄 데이터 가공을 위한 변수 값 복사 
 		
+		// GB, MB, KB 구분 위한 데이터 가공 (Statistics UI)
+		// GB만 추출해서 저장
+		// 파일 사이즈(File_Size) 가공 
+		char *f_ptr2 = strtok(array[i].Files_Size," ");
+		char *f_ptr3 = strtok(NULL," ");
+		
+		if (strcmp(f_ptr3,"GB")==0)
+		{
+			t_f_c++;
+			float_Total_File_Size += atof(f_ptr2);
+		}
+		char *w_ptr2 = strtok(array[i].Write_Size," ");
+		char *w_ptr3 = strtok(NULL," ");
+
+		// 저장 사이즈(Write_Size) 가공 
+		if (strcmp(w_ptr3,"GB")==0)
+		{
+			float_Total_Write_Size += atof(w_ptr2);
+			t_w_c++;
+		}
+		// 전송 크기(DataTransferred_Size) 가공
+		char *d_ptr2 = strtok(array[i].Data_Transferred," ");
+		char *d_ptr3 = strtok(NULL," ");
+		if (strcmp(d_ptr3,"GB")==0)
+		{
+			float_Total_Data_Transferred += atof(d_ptr2);
+			t_d_c++;
+		}
+
 		// 백업 메소드 통계 (Home UI)
 		if (strcmp(Backup_Method,"Archive Backup")==0)
 		{
@@ -415,6 +512,19 @@ int main(int argc, char **argv)
 		// 일별 평균처리시간 위한 데이터 가공 (Statistics UI)
 		if (strcmp(End_Time,"2022-02-08")==0)
 		{
+			if (strcmp(f_ptr3,"GB")==0)
+			{
+				Total_File_Size_LineChart_2022_02_08_Count += atof(f_ptr2);
+			}
+			if (strcmp(w_ptr3,"GB")==0)
+			{
+				Total_Write_Size_LineChart_2022_02_08_Count += atof(w_ptr2);
+
+			}
+			if (strcmp(d_ptr3,"GB")==0)
+			{
+				Total_Data_Transferred_LineChart_2022_02_08_Count += atof(d_ptr2);
+			}
 			char *ptr = strtok(array[i].Elapsed_Time,":");
 			_02_08_h_array[i]=atoi(ptr);
 			ptr = strtok(NULL,":");
@@ -425,6 +535,19 @@ int main(int argc, char **argv)
 		}
 		if (strcmp(End_Time,"2022-02-09")==0)
 		{
+			if (strcmp(f_ptr3,"GB")==0)
+			{
+				Total_File_Size_LineChart_2022_02_09_Count += atof(f_ptr2);
+			}
+			if (strcmp(w_ptr3,"GB")==0)
+			{
+				Total_Write_Size_LineChart_2022_02_09_Count += atof(w_ptr2);
+
+			}
+			if (strcmp(d_ptr3,"GB")==0)
+			{
+				Total_Data_Transferred_LineChart_2022_02_09_Count += atof(d_ptr2);
+			}
 			char *ptr = strtok(array[i].Elapsed_Time,":");
 			_02_09_h_array[i]=atoi(ptr);
 			ptr = strtok(NULL,":");
@@ -435,6 +558,19 @@ int main(int argc, char **argv)
 		}
 		if (strcmp(End_Time,"2022-02-10")==0)
 		{
+			if (strcmp(f_ptr3,"GB")==0)
+			{
+				Total_File_Size_LineChart_2022_02_10_Count += atof(f_ptr2);
+			}
+			if (strcmp(w_ptr3,"GB")==0)
+			{
+				Total_Write_Size_LineChart_2022_02_10_Count += atof(w_ptr2);
+
+			}
+			if (strcmp(d_ptr3,"GB")==0)
+			{
+				Total_Data_Transferred_LineChart_2022_02_10_Count += atof(d_ptr2);
+			}
 			char *ptr = strtok(array[i].Elapsed_Time,":");
 			_02_10_h_array[i]=atoi(ptr);
 			ptr = strtok(NULL,":");
@@ -445,6 +581,19 @@ int main(int argc, char **argv)
 		}
 		if (strcmp(End_Time,"2022-02-11")==0)
 		{
+			if (strcmp(f_ptr3,"GB")==0)
+			{
+				Total_File_Size_LineChart_2022_02_11_Count += atof(f_ptr2);
+			}
+			if (strcmp(w_ptr3,"GB")==0)
+			{
+				Total_Write_Size_LineChart_2022_02_11_Count += atof(w_ptr2);
+
+			}
+			if (strcmp(d_ptr3,"GB")==0)
+			{
+				Total_Data_Transferred_LineChart_2022_02_11_Count += atof(d_ptr2);
+			}
 			char *ptr = strtok(array[i].Elapsed_Time,":");
 			_02_11_h_array[i]=atoi(ptr);
 			ptr = strtok(NULL,":");
@@ -455,6 +604,19 @@ int main(int argc, char **argv)
 		}
 		if (strcmp(End_Time,"2022-02-12")==0)
 		{
+			if (strcmp(f_ptr3,"GB")==0)
+			{
+				Total_File_Size_LineChart_2022_02_12_Count += atof(f_ptr2);
+			}
+			if (strcmp(w_ptr3,"GB")==0)
+			{
+				Total_Write_Size_LineChart_2022_02_12_Count += atof(w_ptr2);
+
+			}
+			if (strcmp(d_ptr3,"GB")==0)
+			{
+				Total_Data_Transferred_LineChart_2022_02_12_Count += atof(d_ptr2);
+			}
 			char *ptr = strtok(array[i].Elapsed_Time,":");
 			_02_12_h_array[i]=atoi(ptr);
 			ptr = strtok(NULL,":");
@@ -465,6 +627,19 @@ int main(int argc, char **argv)
 		}
 		if (strcmp(End_Time,"2022-02-13")==0)
 		{
+			if (strcmp(f_ptr3,"GB")==0)
+			{
+				Total_File_Size_LineChart_2022_02_13_Count += atof(f_ptr2);
+			}
+			if (strcmp(w_ptr3,"GB")==0)
+			{
+				Total_Write_Size_LineChart_2022_02_13_Count += atof(w_ptr2);
+
+			}
+			if (strcmp(d_ptr3,"GB")==0)
+			{
+				Total_Data_Transferred_LineChart_2022_02_13_Count += atof(d_ptr2);
+			}
 			char *ptr = strtok(array[i].Elapsed_Time,":");
 			_02_13_h_array[i]=atoi(ptr);
 			ptr = strtok(NULL,":");
@@ -475,6 +650,19 @@ int main(int argc, char **argv)
 		}
 		if (strcmp(End_Time,"2022-02-14")==0)
 		{
+			if (strcmp(f_ptr3,"GB")==0)
+			{
+				Total_File_Size_LineChart_2022_02_14_Count += atof(f_ptr2);
+			}
+			if (strcmp(w_ptr3,"GB")==0)
+			{
+				Total_Write_Size_LineChart_2022_02_14_Count += atof(w_ptr2);
+
+			}
+			if (strcmp(d_ptr3,"GB")==0)
+			{
+				Total_Data_Transferred_LineChart_2022_02_14_Count += atof(d_ptr2);
+			}
 			char *ptr = strtok(array[i].Elapsed_Time,":");
 			_02_14_h_array[i]=atoi(ptr);
 			ptr = strtok(NULL,":");
@@ -485,6 +673,19 @@ int main(int argc, char **argv)
 		}
 		if (strcmp(End_Time,"2022-02-15")==0)
 		{
+			if (strcmp(f_ptr3,"GB")==0)
+			{
+				Total_File_Size_LineChart_2022_02_15_Count += atof(f_ptr2);
+			}
+			if (strcmp(w_ptr3,"GB")==0)
+			{
+				Total_Write_Size_LineChart_2022_02_15_Count += atof(w_ptr2);
+
+			}
+			if (strcmp(d_ptr3,"GB")==0)
+			{
+				Total_Data_Transferred_LineChart_2022_02_15_Count += atof(d_ptr2);
+			}
 			char *ptr = strtok(array[i].Elapsed_Time,":");
 			_02_15_h_array[i]=atoi(ptr);
 			ptr = strtok(NULL,":");
@@ -511,35 +712,6 @@ int main(int argc, char **argv)
 		Sum_02_14_s += _02_14_s_array[i];
 		Sum_02_15_m += _02_15_m_array[i];
 		Sum_02_15_s += _02_15_s_array[i];
-
-		// GB, MB, KB 구분 위한 데이터 가공 (Statistics UI)
-		// GB만 추출해서 저장
-		// 파일 사이즈(File_Size) 가공 
-		char *f_ptr2 = strtok(array[i].Files_Size," ");
-		char *f_ptr3 = strtok(NULL," ");
-		
-		// 저장 사이즈(Write_Size) 가공 
-		if (strcmp(f_ptr3,"GB")==0)
-		{
-			t_f_c++;
-			ChartDatas.File_Statistics_PieChart_Total_File_Size += atof(f_ptr2);
-		}
-		char *w_ptr2 = strtok(array[i].Write_Size," ");
-		char *w_ptr3 = strtok(NULL," ");
-
-		if (strcmp(w_ptr3,"GB")==0)
-		{
-			ChartDatas.File_Statistics_PieChart_Total_Write_Size += atof(w_ptr2);
-			t_w_c++;
-		}
-		// 전송 크기(DataTransferred_Size) 가공
-		char *d_ptr2 = strtok(array[i].Data_Transferred," ");
-		char *d_ptr3 = strtok(NULL," ");
-		if (strcmp(d_ptr3,"GB")==0)
-		{
-			ChartDatas.File_Statistics_PieChart_Total_Data_Transferred += atof(d_ptr2);
-			t_w_c++;
-		}
 
 		// schedule 데이터 가공
 		if (strcmp(Schedule,"testsc_1")==0)
@@ -574,6 +746,41 @@ int main(int argc, char **argv)
 	ChartDatas.Total_Error_Ratio_PieChart_Total_Count = Total_row_count;
 	ChartDatas.JobType_PieChart_Total_Count = Total_row_count;
 	ChartDatas.Error_Ratio_By_Job_Status_PieChart_Total_Error_Count = ChartDatas.Total_Error_Ratio_PieChart_Total_Error_Count;
+
+	ChartDatas.File_Statistics_PieChart_Total_File_Size = (int)float_Total_File_Size; 
+	ChartDatas.File_Statistics_PieChart_Total_Write_Size = (int)float_Total_Write_Size;
+	ChartDatas.File_Statistics_PieChart_Total_Data_Transferred= (int)float_Total_Data_Transferred;
+
+	// 일별 파일 사이즈 (2022-03-24 추가)
+	ChartDatas.Total_File_Size_LineChart_2022_02_08_Count = (int)Total_File_Size_LineChart_2022_02_08_Count;
+	ChartDatas.Total_File_Size_LineChart_2022_02_09_Count = (int)Total_File_Size_LineChart_2022_02_09_Count;
+	ChartDatas.Total_File_Size_LineChart_2022_02_10_Count = (int)Total_File_Size_LineChart_2022_02_10_Count;
+	ChartDatas.Total_File_Size_LineChart_2022_02_11_Count = (int)Total_File_Size_LineChart_2022_02_11_Count;
+	ChartDatas.Total_File_Size_LineChart_2022_02_12_Count = (int)Total_File_Size_LineChart_2022_02_12_Count;
+	ChartDatas.Total_File_Size_LineChart_2022_02_13_Count = (int)Total_File_Size_LineChart_2022_02_13_Count;
+	ChartDatas.Total_File_Size_LineChart_2022_02_14_Count = (int)Total_File_Size_LineChart_2022_02_14_Count;
+	ChartDatas.Total_File_Size_LineChart_2022_02_15_Count = (int)Total_File_Size_LineChart_2022_02_15_Count;
+
+	// 일별 저장 사이즈 (2022-03-24 추가)
+	ChartDatas.Total_Write_Size_LineChart_2022_02_08_Count = (int)Total_Write_Size_LineChart_2022_02_08_Count;
+	ChartDatas.Total_Write_Size_LineChart_2022_02_09_Count = (int)Total_Write_Size_LineChart_2022_02_09_Count;
+	ChartDatas.Total_Write_Size_LineChart_2022_02_10_Count = (int)Total_Write_Size_LineChart_2022_02_10_Count;
+	ChartDatas.Total_Write_Size_LineChart_2022_02_11_Count = (int)Total_Write_Size_LineChart_2022_02_11_Count;
+	ChartDatas.Total_Write_Size_LineChart_2022_02_12_Count = (int)Total_Write_Size_LineChart_2022_02_12_Count;
+	ChartDatas.Total_Write_Size_LineChart_2022_02_13_Count = (int)Total_Write_Size_LineChart_2022_02_13_Count;
+	ChartDatas.Total_Write_Size_LineChart_2022_02_14_Count = (int)Total_Write_Size_LineChart_2022_02_14_Count;
+	ChartDatas.Total_Write_Size_LineChart_2022_02_15_Count = (int)Total_Write_Size_LineChart_2022_02_15_Count;
+
+	// 일별 전송 사이즈 (2022-03-24 추가)
+	ChartDatas.Total_Data_Transferred_LineChart_2022_02_08_Count = (int)Total_Data_Transferred_LineChart_2022_02_08_Count;
+	ChartDatas.Total_Data_Transferred_LineChart_2022_02_09_Count = (int)Total_Data_Transferred_LineChart_2022_02_09_Count;
+	ChartDatas.Total_Data_Transferred_LineChart_2022_02_10_Count = (int)Total_Data_Transferred_LineChart_2022_02_10_Count;
+	ChartDatas.Total_Data_Transferred_LineChart_2022_02_11_Count = (int)Total_Data_Transferred_LineChart_2022_02_11_Count;
+	ChartDatas.Total_Data_Transferred_LineChart_2022_02_12_Count = (int)Total_Data_Transferred_LineChart_2022_02_12_Count;
+	ChartDatas.Total_Data_Transferred_LineChart_2022_02_13_Count = (int)Total_Data_Transferred_LineChart_2022_02_13_Count;
+	ChartDatas.Total_Data_Transferred_LineChart_2022_02_14_Count = (int)Total_Data_Transferred_LineChart_2022_02_14_Count;
+	ChartDatas.Total_Data_Transferred_LineChart_2022_02_15_Count = (int)Total_Data_Transferred_LineChart_2022_02_15_Count;
+
 	// 가공한 데이터 저장 (.dat)
 	// 파일 변수 선언
 	FILE *_Filtering_Datas;

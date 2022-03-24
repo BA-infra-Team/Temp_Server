@@ -294,9 +294,9 @@ int main()
 	for(int i=0;i<991;i++)
 	{
 		char *f_ptr2 = strtok(array[i].Files_Size," ");
-		//printf("f_ptr2 : %s\n",f_ptr2);
+		printf("f_ptr2 : %s\n",f_ptr2);
 		char *f_ptr3 = strtok(NULL," ");
-		//printf("f_ptr3 : %s\n",f_ptr3);
+		printf("f_ptr3 : %s\n",f_ptr3);
 		if (strcmp(f_ptr3,"GB")==0)
 		{
 			t_f_c++;
@@ -304,9 +304,9 @@ int main()
 			File_Statistics_PieCharts.Total_File_Size += atof(f_ptr2);
 		}
 		char *w_ptr2 = strtok(array[i].Write_Size," ");
-		//printf("w_ptr2 : %s\n",w_ptr2);
+		printf("w_ptr2 : %s\n",w_ptr2);
 		char *w_ptr3 = strtok(NULL," ");
-		//printf("w_ptr3 : %s\n",w_ptr3);
+		printf("w_ptr3 : %s\n",w_ptr3);
 		if (strcmp(w_ptr3,"GB")==0)
 		{
 			File_Statistics_PieCharts.Total_Write_Size += atof(w_ptr2);
