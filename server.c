@@ -105,7 +105,7 @@ typedef struct ChartData
 	int Total_Backup_Count_LineChart_2022_02_15_Completed_Count;
 
 	// 파일통계화면 UI, 파일 관련 통계를 보여줄 데이터 구조체 선언 
-	int File_Statistics_PieChart_Total_Size;
+	int File_Statistics_PieChart_Total_Data_Transferred;	// (2022-03-24 수정 )
 	int File_Statistics_PieChart_Total_File_Size;
 	int File_Statistics_PieChart_Total_Write_Size;
 
@@ -139,6 +139,15 @@ typedef struct ChartData
 	int Error_Ratio_By_Job_Status_PieChart_Suspended_Error_Count;
 	int Error_Ratio_By_Job_Status_PieChart_Failed_Error_Count;
 	int Error_Ratio_By_Job_Status_PieChart_Canceled_Error_Count;
+
+	// 스케줄 별 개수 표시 (2022-03-24 추가)
+	int Schedule_testsc1_Count;
+	int Schedule_testsc2_Count;
+	int Schedule_testsc3_Count;
+	int Schedule_testsc4_Count;
+
+	// 총 데이터 백업한 파일 개수 (2022-03-24 추가)
+	int Total_Files_Count;
 } ChartData;
 ChartData ChartDatas;
 
@@ -232,6 +241,8 @@ int main(int argc, char **argv)
 	char End_Time[300];
 	// 작업 종류 통계 데이터 가공을 위한 변수 선언 (Statistics UI)
 	char Job_Type[300];
+	// 스케줄 데이터 가공 위한 변수 선언 
+	char Schedule[300];
 	// 평균 처리시간 위한 변수 선언 
 	int _02_08_h_array[991] = { 0, };
 	int _02_08_m_array[991] = { 0, };
@@ -299,11 +310,11 @@ int main(int argc, char **argv)
 	
 	for(int i=0;i<Total_row_count;i++)						
 	{
-		// 에러 File_Statistics_PieChart.Total_File_Size += array[i].File_Size;
 		strcpy(Backup_Method,array[i].Backup_Method); // 백업 메소드 통계 데이터 가공을 위한 변수 값 복사 (Home UI)
 		strcpy(Job_Status,array[i].Job_Status); // 작업완료 수 통계 데이터 가공을 위한 변수 값 복사 (Home UI), 에러 통계 데이터 가공을 위한 변수 값 복사 (Error UI)
 		strcpy(End_Time,array[i].End_Time);	// 완료일자 계산 위한 변수 값 복사 
 		strcpy(Job_Type,array[i].Job_Type); // 작업 종류 통계 데이터 가공을 위한 변수 값 복사 (Statistics UI)
+		strcpy(Schedule,array[i].Schedule); // 스케줄 데이터 가공을 위한 변수 값 복사 
 		
 		// 백업 메소드 통계 (Home UI)
 		if (strcmp(Backup_Method,"Archive Backup")==0)
@@ -502,10 +513,12 @@ int main(int argc, char **argv)
 		Sum_02_15_s += _02_15_s_array[i];
 
 		// GB, MB, KB 구분 위한 데이터 가공 (Statistics UI)
+		// GB만 추출해서 저장
+		// 파일 사이즈(File_Size) 가공 
 		char *f_ptr2 = strtok(array[i].Files_Size," ");
 		char *f_ptr3 = strtok(NULL," ");
 		
-		// GB만 추출해서 저장
+		// 저장 사이즈(Write_Size) 가공 
 		if (strcmp(f_ptr3,"GB")==0)
 		{
 			t_f_c++;
@@ -519,6 +532,34 @@ int main(int argc, char **argv)
 			ChartDatas.File_Statistics_PieChart_Total_Write_Size += atof(w_ptr2);
 			t_w_c++;
 		}
+		// 전송 크기(DataTransferred_Size) 가공
+		char *d_ptr2 = strtok(array[i].Data_Transferred," ");
+		char *d_ptr3 = strtok(NULL," ");
+		if (strcmp(d_ptr3,"GB")==0)
+		{
+			ChartDatas.File_Statistics_PieChart_Total_Data_Transferred += atof(d_ptr2);
+			t_w_c++;
+		}
+
+		// schedule 데이터 가공
+		if (strcmp(Schedule,"testsc_1")==0)
+		{
+			ChartDatas.Schedule_testsc1_Count++;
+		}
+		if (strcmp(Schedule,"testsc_2")==0)
+		{
+			ChartDatas.Schedule_testsc2_Count++;
+		}
+		if (strcmp(Schedule,"testsc_3")==0)
+		{
+			ChartDatas.Schedule_testsc3_Count++;
+		}
+		if (strcmp(Schedule,"testsc_4")==0)
+		{
+			ChartDatas.Schedule_testsc4_Count++;
+		}
+		// 파일 총 개수 가공
+		ChartDatas.Total_Files_Count += atoi(array[i].Files);
 	}
 	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_08_Avg_Elapsed_Times = ((Sum_02_08_m+(Sum_02_08_s/60))/_02_08_count)*60;
 	ChartDatas.Avg_Elapsed_Time_LineChart_2022_02_09_Avg_Elapsed_Times = ((Sum_02_09_m+(Sum_02_09_s/60))/_02_09_count)*60;
@@ -533,8 +574,6 @@ int main(int argc, char **argv)
 	ChartDatas.Total_Error_Ratio_PieChart_Total_Count = Total_row_count;
 	ChartDatas.JobType_PieChart_Total_Count = Total_row_count;
 	ChartDatas.Error_Ratio_By_Job_Status_PieChart_Total_Error_Count = ChartDatas.Total_Error_Ratio_PieChart_Total_Error_Count;
-	ChartDatas.File_Statistics_PieChart_Total_Size = ChartDatas.File_Statistics_PieChart_Total_File_Size + ChartDatas.File_Statistics_PieChart_Total_Write_Size;
-
 	// 가공한 데이터 저장 (.dat)
 	// 파일 변수 선언
 	FILE *_Filtering_Datas;
@@ -638,12 +677,13 @@ int main(int argc, char **argv)
 		bzero(buffer,BUFFER_SIZE);
 		int lengsize = 0;
 
-		// 파일 구조체 정보 먼저 전송
+		// 파일 구조체 정보 할당 
 		strcpy(File_Infos.File_Name,"ChartDatas.dat");
 		File_Infos.FileNameLen = strlen(File_Infos.File_Name);
-		
+		// 파일 구조체 정보 먼저 전송
 		send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
 
+		// 파일 내용 전송 
 		while((lengsize = fread(buffer,1,1024,stream)) > 0)
 		{
 			printf("lengsize = %d\n",lengsize);
@@ -673,9 +713,10 @@ int main(int argc, char **argv)
 		//bzero(buffer,BUFFER_SIZE);
 		//lengsize = 0;
 
-		// 파일 구조체 정보 먼저 전송
+		// 필터링 파일 구조체 정보 할당
 		//strcpy(File_Infos.File_Name,"FilterData.dat");
 		//File_Infos.FileNameLen = strlen(File_Infos.File_Name);
+		// 필터링 파일 구조체 정보 먼저 전송 
 		//send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
 
 		//while((lengsize = fread(buffer,1,1024,stream1)) > 0)

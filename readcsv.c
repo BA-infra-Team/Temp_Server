@@ -40,6 +40,14 @@ int main()
 
 	Total_Error_Ratio_PieChart Array_Error_Ratio_PieChart;
 
+	typedef struct ChartData{
+		// 스케줄 별 개수 표시 (2022-03-24 추가)
+		int Schedule_testsc1_Count;
+		int Schedule_testsc2_Count;
+		int Schedule_testsc3_Count;
+		int Schedule_testsc4_Count;
+	} ChartData;
+	ChartData ChartDatas;
 	FILE *the_file = fopen("/home/ubuntu/Workspace/LogData.csv","r");
 	if (the_file == NULL)
 	{
@@ -127,9 +135,11 @@ int main()
 	}
 
 	char Job_Status[300];
+	char Schedule[300];
 	for(int i=0;i<991;i++)
 	{
 		strcpy(Job_Status,array[i].Job_Status);
+		strcpy(Schedule,array[i].Schedule);
 		if (strcmp(Job_Status,"Canceled")==0)
 		{
 			Array_Error_Ratio_PieChart.Total_Error_Count++;
@@ -150,9 +160,31 @@ int main()
 		{
 			Array_Error_Ratio_PieChart.Total_Error_Count++;
 		}
+		// schedule 데이터 가공
+		if (strcmp(Schedule,"testsc_1")==0)
+		{
+			ChartDatas.Schedule_testsc1_Count++;
+		}
+		if (strcmp(Schedule,"testsc_2")==0)
+		{
+			ChartDatas.Schedule_testsc2_Count++;
+		}
+		if (strcmp(Schedule,"testsc_3")==0)
+		{
+			ChartDatas.Schedule_testsc3_Count++;
+		}
+		if (strcmp(Schedule,"testsc_4")==0)
+		{
+			ChartDatas.Schedule_testsc4_Count++;
+		}
 	}
 	Array_Error_Ratio_PieChart.Total_Count = Array_Error_Ratio_PieChart.Total_Completed_Count+Array_Error_Ratio_PieChart.Total_Error_Count;
 	printf("%d,%d,%d\n",Array_Error_Ratio_PieChart.Total_Count,Array_Error_Ratio_PieChart.Total_Completed_Count,Array_Error_Ratio_PieChart.Total_Error_Count);
+
+	printf("testsc1 %d\n",ChartDatas.Schedule_testsc1_Count);
+	printf("testsc2 %d\n",ChartDatas.Schedule_testsc2_Count);
+	printf("testsc3 %d\n",ChartDatas.Schedule_testsc3_Count);
+	printf("testsc4 %d\n",ChartDatas.Schedule_testsc4_Count);
 	return 0;
 }
 
