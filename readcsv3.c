@@ -185,128 +185,48 @@ int main()
 	char Job_Status[300];
 	char Schedule[300];
 	char End_Time[300];
+	char Job_Type[300];
+	
+	int VmWare_array_count = 0;
 
-	for(int i=0;i<991;i++)
+	// 파일 변수 선언
+	FILE *_Filtering_Datas;
+	char *CopyNameSource;
+	char *CopyNameDest;
+
+	for(int i=0;i<Total_row_count;i++)
 	{
-		strcpy(Job_Status,array[i].Job_Status);
-		strcpy(Schedule,array[i].Schedule);
-
-		// GB, MB, KB 구분 위한 데이터 가공 (Statistics UI)
-		// GB만 추출해서 저장
-		// 파일 사이즈(File_Size) 가공 
-		char *f_ptr2 = strtok(array[i].Files_Size," ");
-		char *f_ptr3 = strtok(NULL," ");
-		
-		// 저장 사이즈(Write_Size) 가공 
-		if (strcmp(f_ptr3,"GB")==0)
+		CopyNameSource = array[i].Job_Status;
+		if (strcmp(array[i].Job_Type,"Vmware Backup")==0)
 		{
-			t_f_c++;
-			//ChartDatas.File_Statistics_PieChart_Total_File_Size += atof(f_ptr2);
-		}
-		char *w_ptr2 = strtok(array[i].Write_Size," ");
-		char *w_ptr3 = strtok(NULL," ");
-
-		if (strcmp(w_ptr3,"GB")==0)
-		{
-			//ChartDatas.File_Statistics_PieChart_Total_Write_Size += atof(w_ptr2);
-			t_w_c++;
-		}
-		// 전송 크기(DataTransferred_Size) 가공
-		char *d_ptr2 = strtok(array[i].Data_Transferred," ");
-		char *d_ptr3 = strtok(NULL," ");
-		if (strcmp(d_ptr3,"GB")==0)
-		{
-			//ChartDatas.File_Statistics_PieChart_Total_Data_Transferred += atof(d_ptr2);
-			t_w_c++;
-		}
-
-		if (strcmp(Job_Status,"Canceled")==0)
-		{
-			Array_Error_Ratio_PieChart.Total_Error_Count++;
-		}
-		if (strcmp(Job_Status,"Completed")==0)
-		{
-			Array_Error_Ratio_PieChart.Total_Completed_Count++;
-			if (strcmp(End_Time,"2022-02-08")==0)
-				ChartDatas.Total_File_Size_LineChart_2022_02_08_Count += atof(f_ptr2);
-				ChartDatas.Total_Write_Size_LineChart_2022_02_08_Count += atof(w_ptr2);
-				ChartDatas.Total_Data_Transferred_LineChart_2022_02_08_Count += atof(d_ptr2);
-				printf("f_ptr2 = %s\n",f_ptr2);
-				printf("w_ptr2 = %s\n",w_ptr2);
-				printf("d_ptr2 = %s\n",d_ptr2);
-				printf("Total_File_Size_LineChart_2022_02_08_Count = %d\n",ChartDatas.Total_File_Size_LineChart_2022_02_08_Count);
-				printf("Total_Write_Size_LineChart_2022_02_08_Count = %d\n",ChartDatas.Total_Write_Size_LineChart_2022_02_08_Count);
-				printf("Total_Data_Transferred_LineChart_2022_02_08_Count = %d\n",ChartDatas.Total_Data_Transferred_LineChart_2022_02_08_Count);
-			if (strcmp(End_Time,"2022-02-09")==0)
-				ChartDatas.Total_File_Size_LineChart_2022_02_09_Count += atof(f_ptr2);
-				ChartDatas.Total_Write_Size_LineChart_2022_02_09_Count += atof(w_ptr2);
-				ChartDatas.Total_Data_Transferred_LineChart_2022_02_09_Count += atof(d_ptr2);
-			if (strcmp(End_Time,"2022-02-10")==0)
-				ChartDatas.Total_File_Size_LineChart_2022_02_10_Count += atof(f_ptr2);
-				ChartDatas.Total_Write_Size_LineChart_2022_02_10_Count += atof(w_ptr2);
-				ChartDatas.Total_Data_Transferred_LineChart_2022_02_10_Count += atof(d_ptr2);
-			if (strcmp(End_Time,"2022-02-11")==0)
-				ChartDatas.Total_File_Size_LineChart_2022_02_11_Count += atof(f_ptr2);
-				ChartDatas.Total_Write_Size_LineChart_2022_02_11_Count += atof(w_ptr2);
-				ChartDatas.Total_Data_Transferred_LineChart_2022_02_11_Count += atof(d_ptr2);
-			if (strcmp(End_Time,"2022-02-12")==0)
-				ChartDatas.Total_File_Size_LineChart_2022_02_12_Count += atof(f_ptr2);
-				ChartDatas.Total_Write_Size_LineChart_2022_02_12_Count += atof(w_ptr2);
-				ChartDatas.Total_Data_Transferred_LineChart_2022_02_12_Count += atof(d_ptr2);
-			if (strcmp(End_Time,"2022-02-13")==0)
-				ChartDatas.Total_File_Size_LineChart_2022_02_13_Count += atof(f_ptr2);
-				ChartDatas.Total_Write_Size_LineChart_2022_02_13_Count += atof(w_ptr2);
-				ChartDatas.Total_Data_Transferred_LineChart_2022_02_13_Count += atof(d_ptr2);
-			if (strcmp(End_Time,"2022-02-14")==0)
-				ChartDatas.Total_File_Size_LineChart_2022_02_14_Count += atof(f_ptr2);
-				ChartDatas.Total_Write_Size_LineChart_2022_02_14_Count += atof(w_ptr2);
-				ChartDatas.Total_Data_Transferred_LineChart_2022_02_14_Count += atof(d_ptr2);
-			if (strcmp(End_Time,"2022-02-15")==0)
-				ChartDatas.Total_File_Size_LineChart_2022_02_15_Count += atof(f_ptr2);
-				ChartDatas.Total_Write_Size_LineChart_2022_02_15_Count += atof(w_ptr2);
-				ChartDatas.Total_Data_Transferred_LineChart_2022_02_15_Count += atof(d_ptr2);
-		}
-		if (strcmp(Job_Status,"Failed")==0)
-		{
-			Array_Error_Ratio_PieChart.Total_Error_Count++;
-		}
-		if (strcmp(Job_Status,"Partially Completed")==0)
-		{
-			Array_Error_Ratio_PieChart.Total_Completed_Count++;
-		}
-		if (strcmp(Job_Status,"Suspended")==0)
-		{
-			Array_Error_Ratio_PieChart.Total_Error_Count++;
-		}
-		// schedule 데이터 가공
-		if (strcmp(Schedule,"testsc_1")==0)
-		{
-			ChartDatas.Schedule_testsc1_Count++;
-		}
-		if (strcmp(Schedule,"testsc_2")==0)
-		{
-			ChartDatas.Schedule_testsc2_Count++;
-		}
-		if (strcmp(Schedule,"testsc_3")==0)
-		{
-			ChartDatas.Schedule_testsc3_Count++;
-		}
-		if (strcmp(Schedule,"testsc_4")==0)
-		{
-			ChartDatas.Schedule_testsc4_Count++;
+			// Vmware Backup으로만 구성 된 필터링 데이터 구조체 할당 
+			strcpy(Filtering_Datas[VmWare_array_count].Job_Status,array[i].Job_Status);
+			strcpy(Filtering_Datas[VmWare_array_count].Job_Type,array[i].Job_Type);
+			strcpy(Filtering_Datas[VmWare_array_count].Server,array[i].Server);
+			strcpy(Filtering_Datas[VmWare_array_count].Client,array[i].Client);
+			strcpy(Filtering_Datas[VmWare_array_count].Schedule,array[i].Schedule);
+			strcpy(Filtering_Datas[VmWare_array_count].Files,array[i].Files);
+			VmWare_array_count++;
 		}
 	}
-	Array_Error_Ratio_PieChart.Total_Count = Array_Error_Ratio_PieChart.Total_Completed_Count+Array_Error_Ratio_PieChart.Total_Error_Count;
-	printf("%d,%d,%d\n",Array_Error_Ratio_PieChart.Total_Count,Array_Error_Ratio_PieChart.Total_Completed_Count,Array_Error_Ratio_PieChart.Total_Error_Count);
+	// for문 실시간 탐색 및 구조체 정의 끝나고 파일 저장
+	_Filtering_Datas = fopen("FilterData.dat","w");
+	if (_Filtering_Datas == NULL)
+	{
+		fprintf(stderr, "\nError Opened Files\n");
+		// exit(1);
+	}
+	// 필터링 구조체 내용을 파일에 저장한다. 
+	fwrite(&VmWare_array_count, sizeof(int),1, _Filtering_Datas);
+	fwrite(Filtering_Datas, sizeof(Filtering_Data), VmWare_array_count, _Filtering_Datas);
+	if (fwrite != 0)
+		printf("Contents to Filtering file Written Successfully !\n");
+	else
+		printf("Error Writing Filtering file !\n");
+	// 파일을 닫아준다. 
+	fclose(_Filtering_Datas);
 
-	printf("testsc1 %d\n",ChartDatas.Schedule_testsc1_Count);
-	printf("testsc2 %d\n",ChartDatas.Schedule_testsc2_Count);
-	printf("testsc3 %d\n",ChartDatas.Schedule_testsc3_Count);
-	printf("testsc4 %d\n",ChartDatas.Schedule_testsc4_Count);
 
-	printf("Total_File_Size_LineChart_2022_02_08_Count %d\n",ChartDatas.Total_File_Size_LineChart_2022_02_08_Count);
-	printf("Total_Write_Size_LineChart_2022_02_08_Count %d\n",ChartDatas.Total_Write_Size_LineChart_2022_02_08_Count);
-	printf("Total_Data_Transferred_LineChart_2022_02_08_Count %d\n",ChartDatas.Total_Data_Transferred_LineChart_2022_02_08_Count);
 	return 0;
 }
 
