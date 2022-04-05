@@ -31,7 +31,7 @@ typedef struct File_Info
 {
 	int FileNameLen;
 	char File_Name[15]; 
-	//int File_Size;
+	int File_Size;
 }File_Info;
 File_Info File_Infos;
 #pragma pack(pop)        // 정렬 설정을 이전 상태(기본값)로 되돌림
@@ -1008,6 +1008,12 @@ int main(int argc, char **argv)
 				// 파일 구조체 정보 할당 
 				strcpy(File_Infos.File_Name,"FilterData.csv");
 				File_Infos.FileNameLen = strlen(File_Infos.File_Name);
+				char filename[50];
+				strcpy(filename,"FilterData.csv");
+				stat(filename, &st);
+				int size = st.st_size;
+				File_Infos.File_Size = size;
+				printf("file size = %d\n",File_Infos.File_Size);
 				// 파일 구조체 정보 먼저 전송
 				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
 
