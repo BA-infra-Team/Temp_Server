@@ -11,7 +11,7 @@
 #include <time.h>        //for time_t and time
 #include <sys/stat.h>	// for get the file size
 #include <math.h> // for calculating 
-#define HELLO_WORLD_SERVER_PORT 7755
+#define HELLO_WORLD_SERVER_PORT 7756
 #define LENGTH_OF_LISTEN_QUEUE 20
 #define BUFFER_SIZE 1024
 
@@ -854,7 +854,7 @@ int main(int argc, char **argv)
 	server_addr.sin_port = htons(HELLO_WORLD_SERVER_PORT);
 	// time_t now;
 	FILE *stream;	// For Chart Struct 
-	FILE *stream1;	// For Filtering Struct
+	FILE *Filterstream;	// For Filtering Struct
 
 	// 서버 소켓을 나타내는 server_socket을 사용하여 인터넷용 스트리밍 프로토콜(TCP) 소켓을 만듭니다.
 	int server_socket = socket(AF_INET,SOCK_STREAM,0);
@@ -880,6 +880,7 @@ int main(int argc, char **argv)
 		struct sockaddr_in client_addr;
 		socklen_t length = sizeof(client_addr);
 		int new_server_socket = accept(server_socket,(struct sockaddr*)&client_addr,&length);
+		printf("new_server_socket = %d\n",new_server_socket);
 		if ( new_server_socket < 0)
 		{
 			printf("Server Accept Failed!\n");
@@ -890,6 +891,7 @@ int main(int argc, char **argv)
 		strcpy(buffer,"Hello,World! From the server! ");
 		strcat(buffer,"\n"); // C 문자열 연결
 		send(new_server_socket,buffer,BUFFER_SIZE,0);
+		
 		bzero(buffer,BUFFER_SIZE);
 		// 클라이언트가 버퍼로 보낸 정보 수신
 		length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
@@ -898,7 +900,8 @@ int main(int argc, char **argv)
 			printf("Server Recieve Data Failed!\n");
 			// exit(1);
 		}
-		printf("%s\n",buffer);
+		printf("%s\n",buffer);	// 처음이 Connected with Client 인데 없애자 
+		
 
 		//////////////////////////////////////////////////////
 		// 로그인 처리 
@@ -956,8 +959,10 @@ int main(int argc, char **argv)
 			_Filtering_Datas = fopen("FilterData.csv","w");
 			int Filter_array_count = 0;
 
-			printf("Filtering_Data!\n");
+			printf("Filtering_Data Enter!\n");
 			bzero(buffer,BUFFER_SIZE);
+			
+			usleep(100000);	// 0.5 초 기다리기  ,이건 0.1초
 			length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
 			if (length < 0)
 			{
@@ -993,7 +998,7 @@ int main(int argc, char **argv)
 				}
 				fclose(_Filtering_Datas);
 
-				if((stream = fopen("FilterData.csv","r"))==NULL)
+				if((Filterstream = fopen("FilterData.csv","r"))==NULL)
 				{
 					printf("The file 'FilterData.csv' was not opened!\n");
 					// exit(1);
@@ -1018,7 +1023,7 @@ int main(int argc, char **argv)
 				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
 
 				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
+				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
 					printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
@@ -1028,7 +1033,7 @@ int main(int argc, char **argv)
 					}
 					bzero(buffer, BUFFER_SIZE);
 				}
-				if(fclose(stream))
+				if(fclose(Filterstream))
 				{
 					printf("The file 'FilterData.csv' was not closed! \n");
 					// exit(1);    
@@ -1064,7 +1069,7 @@ int main(int argc, char **argv)
 				}
 				fclose(_Filtering_Datas);
 
-				if((stream = fopen("FilterData.csv","r"))==NULL)
+				if((Filterstream = fopen("FilterData.csv","r"))==NULL)
 				{
 					printf("The file 'FilterData.csv' was not opened!\n");
 					// exit(1);
@@ -1089,7 +1094,7 @@ int main(int argc, char **argv)
 				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
 
 				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
+				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
 					printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
@@ -1099,7 +1104,7 @@ int main(int argc, char **argv)
 					}
 					bzero(buffer, BUFFER_SIZE);
 				}
-				if(fclose(stream))
+				if(fclose(Filterstream))
 				{
 					printf("The file 'FilterData.csv' was not closed! \n");
 					// exit(1);    
@@ -1135,7 +1140,7 @@ int main(int argc, char **argv)
 				}
 				fclose(_Filtering_Datas);
 
-				if((stream = fopen("FilterData.csv","r"))==NULL)
+				if((Filterstream = fopen("FilterData.csv","r"))==NULL)
 				{
 					printf("The file 'FilterData.csv' was not opened!\n");
 					// exit(1);
@@ -1160,7 +1165,7 @@ int main(int argc, char **argv)
 				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
 
 				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
+				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
 					printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
@@ -1170,7 +1175,7 @@ int main(int argc, char **argv)
 					}
 					bzero(buffer, BUFFER_SIZE);
 				}
-				if(fclose(stream))
+				if(fclose(Filterstream))
 				{
 					printf("The file 'FilterData.csv' was not closed! \n");
 					// exit(1);    
@@ -1206,7 +1211,7 @@ int main(int argc, char **argv)
 				}
 				fclose(_Filtering_Datas);
 
-				if((stream = fopen("FilterData.csv","r"))==NULL)
+				if((Filterstream = fopen("FilterData.csv","r"))==NULL)
 				{
 					printf("The file 'FilterData.csv' was not opened!\n");
 					// exit(1);
@@ -1231,7 +1236,7 @@ int main(int argc, char **argv)
 				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
 
 				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
+				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
 					printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
@@ -1241,7 +1246,7 @@ int main(int argc, char **argv)
 					}
 					bzero(buffer, BUFFER_SIZE);
 				}
-				if(fclose(stream))
+				if(fclose(Filterstream))
 				{
 					printf("The file 'FilterData.csv' was not closed! \n");
 					// exit(1);    
@@ -1277,7 +1282,7 @@ int main(int argc, char **argv)
 				}
 				fclose(_Filtering_Datas);
 
-				if((stream = fopen("FilterData.csv","r"))==NULL)
+				if((Filterstream = fopen("FilterData.csv","r"))==NULL)
 				{
 					printf("The file 'FilterData.csv' was not opened!\n");
 					// exit(1);
@@ -1302,7 +1307,7 @@ int main(int argc, char **argv)
 				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
 
 				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
+				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
 					printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
@@ -1312,7 +1317,7 @@ int main(int argc, char **argv)
 					}
 					bzero(buffer, BUFFER_SIZE);
 				}
-				if(fclose(stream))
+				if(fclose(Filterstream))
 				{
 					printf("The file 'FilterData.csv' was not closed! \n");
 					// exit(1);    
@@ -1348,7 +1353,7 @@ int main(int argc, char **argv)
 				}
 				fclose(_Filtering_Datas);
 
-				if((stream = fopen("FilterData.csv","r"))==NULL)
+				if((Filterstream = fopen("FilterData.csv","r"))==NULL)
 				{
 					printf("The file 'FilterData.csv' was not opened!\n");
 					// exit(1);
@@ -1373,7 +1378,7 @@ int main(int argc, char **argv)
 				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
 
 				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
+				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
 					printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
@@ -1383,11 +1388,16 @@ int main(int argc, char **argv)
 					}
 					bzero(buffer, BUFFER_SIZE);
 				}
-				if(fclose(stream))
+				if(fclose(Filterstream))
 				{
 					printf("The file 'FilterData.csv' was not closed! \n");
 					// exit(1);    
 				}
+			}
+			else
+			{
+				// 검색기준이 서버에 없는 경우
+				printf("해당 검색기준이 지금 서버 코드에 없습니다\n"); 
 			}
 			/////////////////////////////////////////////////////////////
 
@@ -1398,6 +1408,8 @@ int main(int argc, char **argv)
 
 		if (strcmp(buffer,"ChartData")==0)
 		{
+			// msg 수신 내용과 상관없이 ChartData 열고 보내기 
+			// For Chart Data
 			if((stream = fopen("ChartDatas.dat","r"))==NULL)
 			{
 				printf("The file 'ChartDatas.dat' was not opened!\n");
@@ -1413,8 +1425,14 @@ int main(int argc, char **argv)
 			// 파일 구조체 정보 할당 
 			strcpy(File_Infos.File_Name,"ChartDatas.dat");
 			File_Infos.FileNameLen = strlen(File_Infos.File_Name);
+			char filename[50];
+			strcpy(filename,"ChartDatas.dat");
+			stat(filename, &st);
+			int size = st.st_size;
+			File_Infos.File_Size = size;
 			// 파일 구조체 정보 먼저 전송
 			send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
+			bzero(buffer,BUFFER_SIZE);
 
 			// 파일 내용 전송 
 			while((lengsize = fread(buffer,1,1024,stream)) > 0)
@@ -1437,6 +1455,7 @@ int main(int argc, char **argv)
 		
 		// 클라이언트와의 연결을 종료합니다.
 		close(new_server_socket);    
+		printf("Client Connection Closed\n");
 	}
 	// 수신을 위한 서버소켓을 종료합니다. 
 	close(server_socket);

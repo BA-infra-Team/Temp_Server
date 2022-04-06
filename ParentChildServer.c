@@ -11,7 +11,7 @@
 #include <time.h>        //for time_t and time
 #include <sys/stat.h>	// for get the file size
 #include <math.h> // for calculating 
-#define HELLO_WORLD_SERVER_PORT 7755
+#define HELLO_WORLD_SERVER_PORT 7754
 #define LENGTH_OF_LISTEN_QUEUE 20
 #define BUFFER_SIZE 1024
 
@@ -31,7 +31,7 @@ typedef struct File_Info
 {
 	int FileNameLen;
 	char File_Name[15]; 
-	int File_Size;
+	//int File_Size;
 }File_Info;
 File_Info File_Infos;
 #pragma pack(pop)        // 정렬 설정을 이전 상태(기본값)로 되돌림
@@ -73,7 +73,7 @@ typedef struct Filtering_Data
 	char Schedule[50];
 	char Files[50];
 } Filtering_Data;
-//Filtering_Data Filtering_Datas[991];
+// Filtering_Data Filtering_Datas[991];
 
 // 홈 UI, 백업-메소드 비율을 보여주기 위한 데이터 구조체 선언 
 typedef struct ChartData
@@ -185,7 +185,7 @@ ChartData ChartDatas;
 
 int main(int argc, char **argv)
 {
-	int Filter_array_count = 0;
+
 	Filtering_Data Filtering_Datas[991] = { 0 };
 	char UserName[20] = "BA_infra";
 	char Password[20] = "BA_infra123";
@@ -845,34 +845,32 @@ int main(int argc, char **argv)
 	// 파일을 닫아준다. 
 	fclose(_ChartDatas);
 
-	// 소켓 통신 시작 
-	// 소켓 구조체를 선언하고 IP 주소 및 포트를 설정 
+
+	//Set a socket address structure server_addr, representing the server Internet address, port
 	struct sockaddr_in server_addr;
-	bzero(&server_addr,sizeof(server_addr)); // 모든 내용을 0으로 초기화 
+	bzero(&server_addr,sizeof(server_addr)); //Set all the contents of a section of memory to 0
 	server_addr.sin_family = AF_INET;
 	server_addr.sin_addr.s_addr = htons(INADDR_ANY);
 	server_addr.sin_port = htons(HELLO_WORLD_SERVER_PORT);
 	// time_t now;
-	FILE *stream;	// For Chart Struct 
-	FILE *stream1;	// For Filtering Struct
-
-	// 서버 소켓을 나타내는 server_socket을 사용하여 인터넷용 스트리밍 프로토콜(TCP) 소켓을 만듭니다.
+	FILE *stream;
+	//Create a streaming protocol (TCP)socket for the Internet, with server_socket representing the server socket
 	int server_socket = socket(AF_INET,SOCK_STREAM,0);
 	if( server_socket < 0)
 	{
-		printf("Create Socket Failed!\n");
+		printf("Create Socket Failed!");
 		exit(1);
 	}
-	// 할당 된 소켓 주소에 소켓을 연결합니다. 
+	//Connect the socket to the socket address structure
 	if( bind(server_socket,(struct sockaddr*)&server_addr,sizeof(server_addr)))
 	{
-		printf("Server Bind Port : %d Failed!\n", HELLO_WORLD_SERVER_PORT);
+		printf("Server Bind Port : %d Failed!", HELLO_WORLD_SERVER_PORT);
 		exit(1);
 	}
-	// Server_socket은 수신에 사용됩니다.
+	//Server_socket is used for listening
 	if ( listen(server_socket, LENGTH_OF_LISTEN_QUEUE) )
 	{
-		printf("Server Listen Failed!\n");
+		printf("Server Listen Failed!");
 		exit(1);
 	}
 	while (1) // 서버측을 항상 가동 시킵니다.
@@ -885,554 +883,126 @@ int main(int argc, char **argv)
 			printf("Server Accept Failed!\n");
 			//break;
 		}
-		char buffer[BUFFER_SIZE];
-		bzero(buffer, BUFFER_SIZE);
-		strcpy(buffer,"Hello,World! From the server! ");
-		strcat(buffer,"\n"); // C 문자열 연결
-		send(new_server_socket,buffer,BUFFER_SIZE,0);
-		bzero(buffer,BUFFER_SIZE);
-		// 클라이언트가 버퍼로 보낸 정보 수신
-		length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
-		if (length < 0)
-		{
-			printf("Server Recieve Data Failed!\n");
-			// exit(1);
-		}
-		printf("%s\n",buffer);
 
-		//////////////////////////////////////////////////////
-		// 로그인 처리 
-		if (strcmp(buffer,"Login")==0)
+		if ((pid = fork()) > 0) // 부모 프로세스
 		{
+			// 다른클라이언트의 요청접수
+			printf("Parent Process Start\n"); 
+			char buffer[BUFFER_SIZE];
+			bzero(buffer, BUFFER_SIZE);
+			strcpy(buffer,"Hello,World! From the server! ");
+			strcat(buffer,"\n"); // C 문자열 연결
+			send(new_server_socket,buffer,BUFFER_SIZE,0);
 			bzero(buffer,BUFFER_SIZE);
-			// 로그인 아이디 및 비밀번호 전송 받는다.
+			// 클라이언트가 버퍼로 보낸 정보 수신
 			length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
 			if (length < 0)
 			{
-				printf("Server Recieve Login ID Data Failed!\n");
-				//exit(1);
+				printf("Server Recieve Data Failed!\n");
+				// exit(1);
 			}
-			// ID Check 
-			// ID, Password 한번에 체크할지 여부 고민 
-			if (strcmp(buffer, UserName)==0)
+			printf("%s\n",buffer);
+
+					//////////////////////////////////////////////////////
+			// 로그인 처리 
+			if (strcmp(buffer,"Login")==0)
 			{
-				printf("ID is Correct!\n");
 				bzero(buffer,BUFFER_SIZE);
-				
-				// Password Check
+				// 로그인 아이디 및 비밀번호 전송 받는다.
 				length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
 				if (length < 0)
 				{
-					printf("Server Recieve Login Password Data Failed!\n");
+					printf("Server Recieve Login ID Data Failed!\n");
 					//exit(1);
 				}
-				else if (strcmp(buffer, Password)==0)
+				// ID Check 
+				// ID, Password 한번에 체크할지 여부 고민 
+				if (strcmp(buffer, UserName)==0)
 				{
-					printf("Password is Correct!\n");
-					strcpy(buffer,"Login_Success");
-					strcat(buffer,"\n"); // C 문자열 연결
-					send(new_server_socket,buffer,BUFFER_SIZE,0);
+					printf("ID is Correct!\n");
 					bzero(buffer,BUFFER_SIZE);
-					bzero(buffer,BUFFER_SIZE);
-					//exit(1);
+					
+					// Password Check
+					length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
+					if (length < 0)
+					{
+						printf("Server Recieve Login Password Data Failed!\n");
+						//exit(1);
+					}
+					else if (strcmp(buffer, Password)==0)
+					{
+						printf("Password is Correct!\n");
+						strcpy(buffer,"Login_Success");
+						strcat(buffer,"\n"); // C 문자열 연결
+						send(new_server_socket,buffer,BUFFER_SIZE,0);
+						bzero(buffer,BUFFER_SIZE);
+						bzero(buffer,BUFFER_SIZE);
+						//exit(1);
+					}
+					else
+					{
+						printf("Password is UnMatching\n");
+					}
 				}
-				else
+				else 
 				{
-					printf("Password is UnMatching\n");
+					printf("ID is UnMatching\n");
 				}
 			}
-			else 
-			{
-				printf("ID is UnMatching\n");
-			}
+
+				close(new_server_socket);
+				continue;
 		}
-		////////////////////////////////////////////////////////// 
 
-
-		//////////////////////////////////////////////////////////
-		// Filtering 처리
-		if (strcmp(buffer,"Filtering_Data")==0)
+		else if (pid == 0)	// 자식 프로세스 
 		{
-			_Filtering_Datas = fopen("FilterData.csv","w");
-			int Filter_array_count = 0;
+			// 클라이언트의 요청처리 
+			printf("Child Process Start\n");
+			close(server_socket);
+			do_service(new_server_socket);
+			exit(0);
+		}
 
-			printf("Filtering_Data!\n");
-			bzero(buffer,BUFFER_SIZE);
-			length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
-			if (length < 0)
-			{
-				printf("Server Recieve Filtering Data Failed!\n");
-				//exit(1);
-			}
 
-			/////////////////////////////////////////////////////////////////
-			// 검색 기준이 File Backup 이라면 			
-			if (strcmp(buffer, "File Backup")==0)
-			{
-				printf("검색 기준은 File Backup 입니다.\n");
-				for(int i=0;i<Total_row_count;i++)
-				{
-					// Job Type == File Backup
-					if (strcmp(array[i].Job_Type,"File Backup")==0)
-					{
-						strcpy(Filtering_Datas[Filter_array_count].Job_Status,array[i].Job_Status);
-						strcpy(Filtering_Datas[Filter_array_count].Job_Type,array[i].Job_Type);
-						strcpy(Filtering_Datas[Filter_array_count].Server,array[i].Server);
-						strcpy(Filtering_Datas[Filter_array_count].Client,array[i].Client);
-						strcpy(Filtering_Datas[Filter_array_count].Schedule,array[i].Schedule);
-						strcpy(Filtering_Datas[Filter_array_count].Files,array[i].Files);
-						Filter_array_count++;
-					}
-				}
-
-				for (int i=0; i<Filter_array_count; i++)
-				{
-					fprintf(_Filtering_Datas,"%s,%s,%s,%s,%s,%s\n", Filtering_Datas[i].Job_Status,Filtering_Datas[i].Job_Type,
-					Filtering_Datas[i].Server,Filtering_Datas[i].Client,
-					Filtering_Datas[i].Schedule,Filtering_Datas[i].Files);
-				}
-				fclose(_Filtering_Datas);
-
-				if((stream = fopen("FilterData.csv","r"))==NULL)
-				{
-					printf("The file 'FilterData.csv' was not opened!\n");
-					// exit(1);
-				}
-				else
-				{
-					printf("The file 'FilterData.csv' was opened!\n");
-				}
-				bzero(buffer,BUFFER_SIZE);
-				int lengsize = 0;
-
-				// 파일 구조체 정보 할당 
-				strcpy(File_Infos.File_Name,"FilterData.csv");
-				File_Infos.FileNameLen = strlen(File_Infos.File_Name);
-				char filename[50];
-				strcpy(filename,"FilterData.csv");
-				stat(filename, &st);
-				int size = st.st_size;
-				File_Infos.File_Size = size;
-				printf("file size = %d\n",File_Infos.File_Size);
-				// 파일 구조체 정보 먼저 전송
-				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
-
-				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
-				{
-					printf("lengsize = %d\n",lengsize);
-					if(send(new_server_socket,buffer,lengsize,0)<0)
-					{
-						printf("Send File(FilterData.csv) is Failed\n");
-						// break;
-					}
-					bzero(buffer, BUFFER_SIZE);
-				}
-				if(fclose(stream))
-				{
-					printf("The file 'FilterData.csv' was not closed! \n");
-					// exit(1);    
-				}
-			}
-			/////////////////////////////////////////////////////////////
-
-			/////////////////////////////////////////////////////////////////
-			// 검색 기준이 Informix Onbar Backup 이라면 			
-			else if (strcmp(buffer, "Informix Onbar Backup")==0)
-			{
-				printf("검색 기준은 Informix Onbar Backup 입니다.\n");
-				for(int i=0;i<Total_row_count;i++)
-				{
-					// Job Type == File Backup
-					if (strcmp(array[i].Job_Type,"Informix Onbar Backup")==0)
-					{
-						strcpy(Filtering_Datas[Filter_array_count].Job_Status,array[i].Job_Status);
-						strcpy(Filtering_Datas[Filter_array_count].Job_Type,array[i].Job_Type);
-						strcpy(Filtering_Datas[Filter_array_count].Server,array[i].Server);
-						strcpy(Filtering_Datas[Filter_array_count].Client,array[i].Client);
-						strcpy(Filtering_Datas[Filter_array_count].Schedule,array[i].Schedule);
-						strcpy(Filtering_Datas[Filter_array_count].Files,array[i].Files);
-						Filter_array_count++;
-					}
-				}
-
-				for (int i=0; i<Filter_array_count; i++)
-				{
-					fprintf(_Filtering_Datas,"%s,%s,%s,%s,%s,%s\n", Filtering_Datas[i].Job_Status,Filtering_Datas[i].Job_Type,
-					Filtering_Datas[i].Server,Filtering_Datas[i].Client,
-					Filtering_Datas[i].Schedule,Filtering_Datas[i].Files);
-				}
-				fclose(_Filtering_Datas);
-
-				if((stream = fopen("FilterData.csv","r"))==NULL)
-				{
-					printf("The file 'FilterData.csv' was not opened!\n");
-					// exit(1);
-				}
-				else
-				{
-					printf("The file 'FilterData.csv' was opened!\n");
-				}
-				bzero(buffer,BUFFER_SIZE);
-				int lengsize = 0;
-
-				// 파일 구조체 정보 할당 
-				strcpy(File_Infos.File_Name,"FilterData.csv");
-				File_Infos.FileNameLen = strlen(File_Infos.File_Name);
-				char filename[50];
-				strcpy(filename,"FilterData.csv");
-				stat(filename, &st);
-				int size = st.st_size;
-				File_Infos.File_Size = size;
-				printf("file size = %d\n",File_Infos.File_Size);
-				// 파일 구조체 정보 먼저 전송
-				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
-
-				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
-				{
-					printf("lengsize = %d\n",lengsize);
-					if(send(new_server_socket,buffer,lengsize,0)<0)
-					{
-						printf("Send File(FilterData.csv) is Failed\n");
-						// break;
-					}
-					bzero(buffer, BUFFER_SIZE);
-				}
-				if(fclose(stream))
-				{
-					printf("The file 'FilterData.csv' was not closed! \n");
-					// exit(1);    
-				}
-			}
-			/////////////////////////////////////////////////////////////
-
-			/////////////////////////////////////////////////////////////////
-			// 검색 기준이 Mysql Backup 이라면 			
-			else if (strcmp(buffer, "Mysql Backup")==0)
-			{
-				printf("검색 기준은 Mysql Backup 입니다.\n");
-				for(int i=0;i<Total_row_count;i++)
-				{
-					// Job Type == File Backup
-					if (strcmp(array[i].Job_Type,"Mysql Backup")==0)
-					{
-						strcpy(Filtering_Datas[Filter_array_count].Job_Status,array[i].Job_Status);
-						strcpy(Filtering_Datas[Filter_array_count].Job_Type,array[i].Job_Type);
-						strcpy(Filtering_Datas[Filter_array_count].Server,array[i].Server);
-						strcpy(Filtering_Datas[Filter_array_count].Client,array[i].Client);
-						strcpy(Filtering_Datas[Filter_array_count].Schedule,array[i].Schedule);
-						strcpy(Filtering_Datas[Filter_array_count].Files,array[i].Files);
-						Filter_array_count++;
-					}
-				}
-
-				for (int i=0; i<Filter_array_count; i++)
-				{
-					fprintf(_Filtering_Datas,"%s,%s,%s,%s,%s,%s\n", Filtering_Datas[i].Job_Status,Filtering_Datas[i].Job_Type,
-					Filtering_Datas[i].Server,Filtering_Datas[i].Client,
-					Filtering_Datas[i].Schedule,Filtering_Datas[i].Files);
-				}
-				fclose(_Filtering_Datas);
-
-				if((stream = fopen("FilterData.csv","r"))==NULL)
-				{
-					printf("The file 'FilterData.csv' was not opened!\n");
-					// exit(1);
-				}
-				else
-				{
-					printf("The file 'FilterData.csv' was opened!\n");
-				}
-				bzero(buffer,BUFFER_SIZE);
-				int lengsize = 0;
-
-				// 파일 구조체 정보 할당 
-				strcpy(File_Infos.File_Name,"FilterData.csv");
-				File_Infos.FileNameLen = strlen(File_Infos.File_Name);
-				char filename[50];
-				strcpy(filename,"FilterData.csv");
-				stat(filename, &st);
-				int size = st.st_size;
-				File_Infos.File_Size = size;
-				printf("file size = %d\n",File_Infos.File_Size);
-				// 파일 구조체 정보 먼저 전송
-				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
-
-				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
-				{
-					printf("lengsize = %d\n",lengsize);
-					if(send(new_server_socket,buffer,lengsize,0)<0)
-					{
-						printf("Send File(FilterData.csv) is Failed\n");
-						// break;
-					}
-					bzero(buffer, BUFFER_SIZE);
-				}
-				if(fclose(stream))
-				{
-					printf("The file 'FilterData.csv' was not closed! \n");
-					// exit(1);    
-				}
-			}
-			/////////////////////////////////////////////////////////////
-
-			/////////////////////////////////////////////////////////////////
-			// 검색 기준이 Oracle RMAN Backup 이라면 			
-			else if (strcmp(buffer, "Oracle RMAN Backup")==0)
-			{
-				printf("검색 기준은 Oracle RMAN Backup 입니다.\n");
-				for(int i=0;i<Total_row_count;i++)
-				{
-					// Job Type == File Backup
-					if (strcmp(array[i].Job_Type,"Oracle RMAN Backup")==0)
-					{
-						strcpy(Filtering_Datas[Filter_array_count].Job_Status,array[i].Job_Status);
-						strcpy(Filtering_Datas[Filter_array_count].Job_Type,array[i].Job_Type);
-						strcpy(Filtering_Datas[Filter_array_count].Server,array[i].Server);
-						strcpy(Filtering_Datas[Filter_array_count].Client,array[i].Client);
-						strcpy(Filtering_Datas[Filter_array_count].Schedule,array[i].Schedule);
-						strcpy(Filtering_Datas[Filter_array_count].Files,array[i].Files);
-						Filter_array_count++;
-					}
-				}
-
-				for (int i=0; i<Filter_array_count; i++)
-				{
-					fprintf(_Filtering_Datas,"%s,%s,%s,%s,%s,%s\n", Filtering_Datas[i].Job_Status,Filtering_Datas[i].Job_Type,
-					Filtering_Datas[i].Server,Filtering_Datas[i].Client,
-					Filtering_Datas[i].Schedule,Filtering_Datas[i].Files);
-				}
-				fclose(_Filtering_Datas);
-
-				if((stream = fopen("FilterData.csv","r"))==NULL)
-				{
-					printf("The file 'FilterData.csv' was not opened!\n");
-					// exit(1);
-				}
-				else
-				{
-					printf("The file 'FilterData.csv' was opened!\n");
-				}
-				bzero(buffer,BUFFER_SIZE);
-				int lengsize = 0;
-
-				// 파일 구조체 정보 할당 
-				strcpy(File_Infos.File_Name,"FilterData.csv");
-				File_Infos.FileNameLen = strlen(File_Infos.File_Name);
-				char filename[50];
-				strcpy(filename,"FilterData.csv");
-				stat(filename, &st);
-				int size = st.st_size;
-				File_Infos.File_Size = size;
-				printf("file size = %d\n",File_Infos.File_Size);
-				// 파일 구조체 정보 먼저 전송
-				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
-
-				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
-				{
-					printf("lengsize = %d\n",lengsize);
-					if(send(new_server_socket,buffer,lengsize,0)<0)
-					{
-						printf("Send File(FilterData.csv) is Failed\n");
-						// break;
-					}
-					bzero(buffer, BUFFER_SIZE);
-				}
-				if(fclose(stream))
-				{
-					printf("The file 'FilterData.csv' was not closed! \n");
-					// exit(1);    
-				}
-			}
-			/////////////////////////////////////////////////////////////
-			
-			/////////////////////////////////////////////////////////////
-			// 검색 기준이 Physical Backup 이라면 			
-			else if (strcmp(buffer, "Physical Backup")==0)
-			{
-				printf("검색 기준은 Physical Backup 입니다.\n");
-				for(int i=0;i<Total_row_count;i++)
-				{
-					// Job Type == File Backup
-					if (strcmp(array[i].Job_Type,"Physical Backup")==0)
-					{
-						strcpy(Filtering_Datas[Filter_array_count].Job_Status,array[i].Job_Status);
-						strcpy(Filtering_Datas[Filter_array_count].Job_Type,array[i].Job_Type);
-						strcpy(Filtering_Datas[Filter_array_count].Server,array[i].Server);
-						strcpy(Filtering_Datas[Filter_array_count].Client,array[i].Client);
-						strcpy(Filtering_Datas[Filter_array_count].Schedule,array[i].Schedule);
-						strcpy(Filtering_Datas[Filter_array_count].Files,array[i].Files);
-						Filter_array_count++;
-					}
-				}
-
-				for (int i=0; i<Filter_array_count; i++)
-				{
-					fprintf(_Filtering_Datas,"%s,%s,%s,%s,%s,%s\n", Filtering_Datas[i].Job_Status,Filtering_Datas[i].Job_Type,
-					Filtering_Datas[i].Server,Filtering_Datas[i].Client,
-					Filtering_Datas[i].Schedule,Filtering_Datas[i].Files);
-				}
-				fclose(_Filtering_Datas);
-
-				if((stream = fopen("FilterData.csv","r"))==NULL)
-				{
-					printf("The file 'FilterData.csv' was not opened!\n");
-					// exit(1);
-				}
-				else
-				{
-					printf("The file 'FilterData.csv' was opened!\n");
-				}
-				bzero(buffer,BUFFER_SIZE);
-				int lengsize = 0;
-
-				// 파일 구조체 정보 할당 
-				strcpy(File_Infos.File_Name,"FilterData.csv");
-				File_Infos.FileNameLen = strlen(File_Infos.File_Name);
-				char filename[50];
-				strcpy(filename,"FilterData.csv");
-				stat(filename, &st);
-				int size = st.st_size;
-				File_Infos.File_Size = size;
-				printf("file size = %d\n",File_Infos.File_Size);
-				// 파일 구조체 정보 먼저 전송
-				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
-
-				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
-				{
-					printf("lengsize = %d\n",lengsize);
-					if(send(new_server_socket,buffer,lengsize,0)<0)
-					{
-						printf("Send File(FilterData.csv) is Failed\n");
-						// break;
-					}
-					bzero(buffer, BUFFER_SIZE);
-				}
-				if(fclose(stream))
-				{
-					printf("The file 'FilterData.csv' was not closed! \n");
-					// exit(1);    
-				}
-			}
-			/////////////////////////////////////////////////////////////
-
-			/////////////////////////////////////////////////////////////
-			// 검색 기준이 Vmware Backup 이라면 			
-			else if (strcmp(buffer, "Vmware Backup")==0)
-			{
-				printf("검색 기준은 Vmware Backup 입니다.\n");
-				for(int i=0;i<Total_row_count;i++)
-				{
-					// Job Type == File Backup
-					if (strcmp(array[i].Job_Type,"Vmware Backup")==0)
-					{
-						strcpy(Filtering_Datas[Filter_array_count].Job_Status,array[i].Job_Status);
-						strcpy(Filtering_Datas[Filter_array_count].Job_Type,array[i].Job_Type);
-						strcpy(Filtering_Datas[Filter_array_count].Server,array[i].Server);
-						strcpy(Filtering_Datas[Filter_array_count].Client,array[i].Client);
-						strcpy(Filtering_Datas[Filter_array_count].Schedule,array[i].Schedule);
-						strcpy(Filtering_Datas[Filter_array_count].Files,array[i].Files);
-						Filter_array_count++;
-					}
-				}
-
-				for (int i=0; i<Filter_array_count; i++)
-				{
-					fprintf(_Filtering_Datas,"%s,%s,%s,%s,%s,%s\n", Filtering_Datas[i].Job_Status,Filtering_Datas[i].Job_Type,
-					Filtering_Datas[i].Server,Filtering_Datas[i].Client,
-					Filtering_Datas[i].Schedule,Filtering_Datas[i].Files);
-				}
-				fclose(_Filtering_Datas);
-
-				if((stream = fopen("FilterData.csv","r"))==NULL)
-				{
-					printf("The file 'FilterData.csv' was not opened!\n");
-					// exit(1);
-				}
-				else
-				{
-					printf("The file 'FilterData.csv' was opened!\n");
-				}
-				bzero(buffer,BUFFER_SIZE);
-				int lengsize = 0;
-
-				// 파일 구조체 정보 할당 
-				strcpy(File_Infos.File_Name,"FilterData.csv");
-				File_Infos.FileNameLen = strlen(File_Infos.File_Name);
-				char filename[50];
-				strcpy(filename,"FilterData.csv");
-				stat(filename, &st);
-				int size = st.st_size;
-				File_Infos.File_Size = size;
-				printf("file size = %d\n",File_Infos.File_Size);
-				// 파일 구조체 정보 먼저 전송
-				send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
-
-				// 파일 내용 전송 
-				while((lengsize = fread(buffer,1,1024,stream)) > 0)
-				{
-					printf("lengsize = %d\n",lengsize);
-					if(send(new_server_socket,buffer,lengsize,0)<0)
-					{
-						printf("Send File(FilterData.csv) is Failed\n");
-						// break;
-					}
-					bzero(buffer, BUFFER_SIZE);
-				}
-				if(fclose(stream))
-				{
-					printf("The file 'FilterData.csv' was not closed! \n");
-					// exit(1);    
-				}
-			}
-			/////////////////////////////////////////////////////////////
-
-		}		
+		////////////////////////////////////////////////////////// 
 
 		// msg 수신 내용과 상관없이 ChartData 열고 보내기 
 		// For Chart Data
-
-		if (strcmp(buffer,"ChartData")==0)
+		if((stream = fopen("ChartDatas.dat","r"))==NULL)
 		{
-			if((stream = fopen("ChartDatas.dat","r"))==NULL)
-			{
-				printf("The file 'ChartDatas.dat' was not opened!\n");
-				// exit(1);
-			}
-			else
-			{
-				printf("The file 'ChartDatas.dat' was opened!\n");
-			}
-			bzero(buffer,BUFFER_SIZE);
-			int lengsize = 0;
-
-			// 파일 구조체 정보 할당 
-			strcpy(File_Infos.File_Name,"ChartDatas.dat");
-			File_Infos.FileNameLen = strlen(File_Infos.File_Name);
-			// 파일 구조체 정보 먼저 전송
-			send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
-
-			// 파일 내용 전송 
-			while((lengsize = fread(buffer,1,1024,stream)) > 0)
-			{
-				printf("lengsize = %d\n",lengsize);
-				if(send(new_server_socket,buffer,lengsize,0)<0)
-				{
-					printf("Send File(ChartDatas.dat) is Failed\n");
-					// break;
-				}
-				bzero(buffer, BUFFER_SIZE);
-			}
-			if(fclose(stream))
-			{
-				printf("The file 'ChartDatas.dat' was not closed! \n");
-				// exit(1);    
-			}
+			printf("The file 'ChartDatas.dat' was not opened!\n");
+			// exit(1);
 		}
+		else
+		{
+			printf("The file 'ChartDatas.dat' was opened!\n");
+		}
+		bzero(buffer,BUFFER_SIZE);
+		int lengsize = 0;
+
+		// 파일 구조체 정보 할당 
+		strcpy(File_Infos.File_Name,"ChartDatas.dat");
+		File_Infos.FileNameLen = strlen(File_Infos.File_Name);
+		// 파일 구조체 정보 먼저 전송
+		send(new_server_socket,(char*)&File_Infos,sizeof(File_Infos),0);
+
+		// 파일 내용 전송 
+		while((lengsize = fread(buffer,1,1024,stream)) > 0)
+		{
+			printf("lengsize = %d\n",lengsize);
+			if(send(new_server_socket,buffer,lengsize,0)<0)
+			{
+				printf("Send File(ChartDatas.dat) is Failed\n");
+				// break;
+			}
+			bzero(buffer, BUFFER_SIZE);
+		}
+		if(fclose(stream))
+		{
+			printf("The file 'ChartDatas.dat' was not closed! \n");
+			// exit(1);    
+		}
+		
 		
 		
 		// 클라이언트와의 연결을 종료합니다.
@@ -1441,4 +1011,10 @@ int main(int argc, char **argv)
 	// 수신을 위한 서버소켓을 종료합니다. 
 	close(server_socket);
 	return 0;
+}
+
+do_service(int new_server_socket)
+{
+	// 클라이언트의 요청 처리 루틴
+	//
 }
