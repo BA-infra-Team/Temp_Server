@@ -907,6 +907,7 @@ int main(int argc, char **argv)
 			bzero(buffer,BUFFER_SIZE);
 			// 로그인 아이디 및 비밀번호 전송 받는다.
 			length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
+			printf("ID = %s\n",buffer);
 			if (length < 0)
 			{
 				printf("Server Recieve Login ID Data Failed!\n");
@@ -921,6 +922,7 @@ int main(int argc, char **argv)
 				
 				// Password Check
 				length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
+				printf("ID = %s\n",buffer);
 				if (length < 0)
 				{
 					printf("Server Recieve Login Password Data Failed!\n");
@@ -1436,6 +1438,7 @@ int main(int argc, char **argv)
 		
 		
 		// 클라이언트와의 연결을 종료합니다.
+		printf("Client Connection Closed\n");
 		close(new_server_socket);    
 	}
 	// 수신을 위한 서버소켓을 종료합니다. 

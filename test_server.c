@@ -81,8 +81,12 @@ typedef struct ChartData
 	// 홈 UI, 백업-메소드 비율을 보여주기 위한 데이터 구조체 선언 
 	int Backup_Method_Ratio_Pie_Chart_Total_Count;
 	int Backup_Method_Ratio_Pie_Chart_Archive_Backup_Count;
+	int Backup_Method_Ratio_Pie_Chart_Cumulative_Backup_Count;
 	int Backup_Method_Ratio_Pie_Chart_Differential_Backup_Count;
 	int Backup_Method_Ratio_Pie_Chart_Dump_Backup_Count;
+	int Backup_Method_Ratio_Pie_Chart_Enterprise_Differential_Backup_Count;
+	int Backup_Method_Ratio_Pie_Chart_Enterprise_Full_Backup_Count;
+	int Backup_Method_Ratio_Pie_Chart_Enterprise_Incremental_Backup_Count;
 	int Backup_Method_Ratio_Pie_Chart_Full_Backup_Count;
 	int Backup_Method_Ratio_Pie_Chart_Incremental_Backup_Count;
 	int Backup_Method_Ratio_Pie_Chart_Synthetic_Count;
@@ -426,6 +430,10 @@ int main(int argc, char **argv)
 		{
 			ChartDatas.Backup_Method_Ratio_Pie_Chart_Archive_Backup_Count++;
 		}
+		if (strcmp(Backup_Method,"Cumulative Backup")==0)
+		{
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Cumulative_Backup_Count++;
+		}
 		if (strcmp(Backup_Method,"Differential Backup")==0)
 		{
 			ChartDatas.Backup_Method_Ratio_Pie_Chart_Differential_Backup_Count++;
@@ -433,6 +441,18 @@ int main(int argc, char **argv)
 		if (strcmp(Backup_Method,"Dump Backup")==0)
 		{
 			ChartDatas.Backup_Method_Ratio_Pie_Chart_Dump_Backup_Count++;
+		}
+		if (strcmp(Backup_Method,"Enterprise Differential Backup")==0)
+		{
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Enterprise_Differential_Backup_Count++;
+		}
+		if (strcmp(Backup_Method,"Enterprise Full Backup")==0)
+		{
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Enterprise_Full_Backup_Count++;
+		}
+		if (strcmp(Backup_Method,"Enterprise Incremental Backup")==0)
+		{
+			ChartDatas.Backup_Method_Ratio_Pie_Chart_Enterprise_Incremental_Backup_Count++;
 		}
 		if (strcmp(Backup_Method,"Full Backup")==0)
 		{
@@ -908,8 +928,14 @@ int main(int argc, char **argv)
 		if (strcmp(buffer,"Login")==0)
 		{
 			bzero(buffer,BUFFER_SIZE);
-			// 로그인 아이디 및 비밀번호 전송 받는다.
+			strcpy(buffer,"Login_Enter");
+			strcat(buffer,"\n"); // C 문자열 연결
+			send(new_server_socket,buffer,BUFFER_SIZE,0);
+			bzero(buffer,BUFFER_SIZE);
+
+			// 로그인 아이디 정보를 전송 받는다. 
 			length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
+			printf("ID = %s\n",buffer);
 			if (length < 0)
 			{
 				printf("Server Recieve Login ID Data Failed!\n");
@@ -920,10 +946,16 @@ int main(int argc, char **argv)
 			if (strcmp(buffer, UserName)==0)
 			{
 				printf("ID is Correct!\n");
+				printf("ID = %s\n",buffer);
 				bzero(buffer,BUFFER_SIZE);
-				
-				// Password Check
+				strcpy(buffer,"ID_Correct");
+				strcat(buffer,"\n"); // C 문자열 연결
+				send(new_server_socket,buffer,BUFFER_SIZE,0);
+				bzero(buffer,BUFFER_SIZE);
+
+				// 로그인 비밀번호 정보를 전송 받는다. 
 				length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
+				printf("PWD = %s\n",buffer);
 				if (length < 0)
 				{
 					printf("Server Recieve Login Password Data Failed!\n");
@@ -935,7 +967,6 @@ int main(int argc, char **argv)
 					strcpy(buffer,"Login_Success");
 					strcat(buffer,"\n"); // C 문자열 연결
 					send(new_server_socket,buffer,BUFFER_SIZE,0);
-					bzero(buffer,BUFFER_SIZE);
 					bzero(buffer,BUFFER_SIZE);
 					//exit(1);
 				}
@@ -956,13 +987,18 @@ int main(int argc, char **argv)
 		// Filtering 처리
 		if (strcmp(buffer,"Filtering_Data")==0)
 		{
+			bzero(buffer,BUFFER_SIZE);
+			strcpy(buffer,"Filtering_Enter");
+			strcat(buffer,"\n"); // C 문자열 연결
+			send(new_server_socket,buffer,BUFFER_SIZE,0);
+
 			_Filtering_Datas = fopen("FilterData.csv","w");
 			int Filter_array_count = 0;
 
 			printf("Filtering_Data Enter!\n");
 			bzero(buffer,BUFFER_SIZE);
 			
-			usleep(100000);	// 0.5 초 기다리기  ,이건 0.1초
+			//usleep(100000);	// 0.5 초 기다리기  ,이건 0.1초
 			length = recv(new_server_socket,buffer,BUFFER_SIZE,0);
 			if (length < 0)
 			{
