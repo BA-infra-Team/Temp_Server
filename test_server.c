@@ -15,14 +15,6 @@
 #define LENGTH_OF_LISTEN_QUEUE 20
 #define BUFFER_SIZE 1024
 
-// Login Info
-typedef struct Login
-{
-	char UserName[20];
-	char Password[20]; 
-}Login;
-Login Login_Data;
-
 // get the file size 
 struct stat st;
 // File_Information
@@ -189,12 +181,11 @@ ChartData ChartDatas;
 
 int main(int argc, char **argv)
 {
+	printf("Server Start!\n");
 	int Filter_array_count = 0;
 	Filtering_Data Filtering_Datas[991] = { 0 };
 	char UserName[20] = "BA_infra";
 	char Password[20] = "BA_infra123";
-	strcpy(Login_Data.UserName,UserName);
-	strcpy(Login_Data.Password,Password);
 	 
 	// LogData.csv 파일을 읽는다
 	FILE *the_file = fopen("/home/ubuntu/Workspace/LogData.csv","r");
@@ -858,7 +849,7 @@ int main(int argc, char **argv)
 	fwrite(&ChartDatas, sizeof(struct ChartData), 1, _ChartDatas);
 
 	if (fwrite != 0)
-		printf("Contents to file Written Successfully !\n");
+		printf("Chartdata.dat file Written Successfully !\n");
 	else
 		printf("Error Writing file !\n");
 
@@ -1061,7 +1052,7 @@ int main(int argc, char **argv)
 				// 파일 내용 전송 
 				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
-					printf("lengsize = %d\n",lengsize);
+					//printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
 					{
 						printf("Send File(FilterData.csv) is Failed\n");
@@ -1132,7 +1123,7 @@ int main(int argc, char **argv)
 				// 파일 내용 전송 
 				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
-					printf("lengsize = %d\n",lengsize);
+					//printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
 					{
 						printf("Send File(FilterData.csv) is Failed\n");
@@ -1203,7 +1194,7 @@ int main(int argc, char **argv)
 				// 파일 내용 전송 
 				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
-					printf("lengsize = %d\n",lengsize);
+					//printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
 					{
 						printf("Send File(FilterData.csv) is Failed\n");
@@ -1274,7 +1265,7 @@ int main(int argc, char **argv)
 				// 파일 내용 전송 
 				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
-					printf("lengsize = %d\n",lengsize);
+					//printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
 					{
 						printf("Send File(FilterData.csv) is Failed\n");
@@ -1345,7 +1336,7 @@ int main(int argc, char **argv)
 				// 파일 내용 전송 
 				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
-					printf("lengsize = %d\n",lengsize);
+					//printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
 					{
 						printf("Send File(FilterData.csv) is Failed\n");
@@ -1416,7 +1407,7 @@ int main(int argc, char **argv)
 				// 파일 내용 전송 
 				while((lengsize = fread(buffer,1,1024,Filterstream)) > 0)
 				{
-					printf("lengsize = %d\n",lengsize);
+					//printf("lengsize = %d\n",lengsize);
 					if(send(new_server_socket,buffer,lengsize,0)<0)
 					{
 						printf("Send File(FilterData.csv) is Failed\n");
@@ -1439,13 +1430,11 @@ int main(int argc, char **argv)
 
 		}		
 
-		// msg 수신 내용과 상관없이 ChartData 열고 보내기 
-		// For Chart Data
+		//////////////////////////////////////////////////////////
+		// Chart Data 처리
 
 		if (strcmp(buffer,"ChartData")==0)
 		{
-			// msg 수신 내용과 상관없이 ChartData 열고 보내기 
-			// For Chart Data
 			if((stream = fopen("ChartDatas.dat","r"))==NULL)
 			{
 				printf("The file 'ChartDatas.dat' was not opened!\n");
@@ -1473,7 +1462,7 @@ int main(int argc, char **argv)
 			// 파일 내용 전송 
 			while((lengsize = fread(buffer,1,1024,stream)) > 0)
 			{
-				printf("lengsize = %d\n",lengsize);
+				//printf("lengsize = %d\n",lengsize);
 				if(send(new_server_socket,buffer,lengsize,0)<0)
 				{
 					printf("Send File(ChartDatas.dat) is Failed\n");
